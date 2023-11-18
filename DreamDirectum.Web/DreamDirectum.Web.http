@@ -1,0 +1,6 @@
+@DreamDirectum.Web_HostAddress = http://localhost:5201
+
+GET {{DreamDirectum.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

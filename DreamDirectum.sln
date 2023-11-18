@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamDirectum.Web", "DreamDirectum.Web\DreamDirectum.Web.csproj", "{CC3377BC-4318-408E-99F9-56026E806612}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC3377BC-4318-408E-99F9-56026E806612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3377BC-4318-408E-99F9-56026E806612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3377BC-4318-408E-99F9-56026E806612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3377BC-4318-408E-99F9-56026E806612}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2EBF0FE-BA41-40E5-B52E-1A9D1F193F00}
+	EndGlobalSection
+EndGlobal
