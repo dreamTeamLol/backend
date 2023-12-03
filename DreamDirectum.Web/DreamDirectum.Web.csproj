@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\DreamDirectum.Core\DreamDirectum.Core.csproj" />
+    <ProjectReference Include="..\DreamDirectum.Infrastructure\DreamDirectum.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
