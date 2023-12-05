@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DreamDirectum.Core\DreamDirectum.Core.csproj" />
     <ProjectReference Include="..\DreamDirectum.Infrastructure\DreamDirectum.Infrastructure.csproj" />
+    <ProjectReference Include="..\DreamDirectum.UseCases\DreamDirectum.UseCases.csproj" />
   </ItemGroup>
 
 </Project>
