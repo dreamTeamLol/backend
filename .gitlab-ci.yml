@@ -1,0 +1,16 @@
+stages:
+  - deploy
+
+services:
+  - docker:dind
+
+deploy:
+  stage: deploy
+  image: docker:latest
+  script:
+    - cd $CI_PROJECT_DIR
+    - docker login -u $CI_REGISTRY_USER -p $CI_JOB_TOKEN $CI_REGISTRY
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME .
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_NAME
+  only:
+    - dev
