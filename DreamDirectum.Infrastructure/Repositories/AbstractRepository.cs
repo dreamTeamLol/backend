@@ -1,4 +1,5 @@
-﻿using Sungero.IntegrationService;
+﻿using Microsoft.OData.Client;
+using Sungero.IntegrationService;
 
 namespace DreamDirectum.Infrastructure.Repositories
 {
@@ -9,6 +10,17 @@ namespace DreamDirectum.Infrastructure.Repositories
         protected AbstractRepository(Container container)
         {
             this.container = container;
+        }
+
+        protected void SetAuthorizationHeader(string authToken)
+        {
+            container.Configurations.RequestPipeline.OnMessageCreating = (args) =>
+            {
+                var message = new HttpClientRequestMessage(args);
+                message.SetHeader("Authorization", $"Bearer {authToken}");
+
+                return message;
+            };
         }
     }
 }
