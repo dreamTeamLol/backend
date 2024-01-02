@@ -40,14 +40,7 @@ namespace DreamDirectum.UseCases.Queries.EmployeeQueries
                     Id = e.Id,
                     FullName = e.Name,
                     DepartmentName = e.Department.Name,
-                    Mutations = e.MutationsStudent
-                        .Select(m => new MutationDto
-                        {
-                            Id = m.Id,
-                            Name = mutationDictionary[m.Id],
-                            AppliedDate = m.AppliedDate,
-                            Note = m.Note
-                        }).ToArray()
+                    
                 }).ToArray();
         }
     }

@@ -4,7 +4,10 @@ using Sungero.IntegrationService.Models.Generated.EmployeeModule;
 
 namespace DreamDirectum.Infrastructure.Repositories
 {
-    public class EmployeeMutationKindRepository : AbstractRepository, IReadOnlyRepository<IEmployeeMutationKindDto, long>
+    public class EmployeeMutationKindRepository 
+        : AbstractRepository, 
+        IReadOnlySinglePageRepository<IEmployeeMutationKindDto, long>,
+        IReadOnlyRepository<IEmployeeMutationKindDto, long>
     {
         public EmployeeMutationKindRepository(Container container) : base(container)
         { }
@@ -15,19 +18,36 @@ namespace DreamDirectum.Infrastructure.Repositories
             return Task.FromResult(container.IEmployeeMutationKinds.AsEnumerable());
         }
 
-        public Task<IEnumerable<IEmployeeMutationKindDto>> GetAllWithPaginationAsync(string authToken, int limit, int offset, CancellationToken cancellationToken = default)
+        public Task<IEnumerable<IEmployeeMutationKindDto>> GetAllWithSpecifiedOptionsAsync(string authToken, CancellationToken cancellationToken = default, params (string key, string value)[] options)
         {
             SetAuthorizationHeader(authToken);
-            return Task.FromResult(container.IEmployeeMutationKinds
-                .AddQueryOption("$top", limit)
-                .AddQueryOption("$skip", offset)
-                .AsEnumerable());
+            var result = container.IEmployeeMutationKinds;
+
+            foreach (var option in options)
+            {
+                result = result.AddQueryOption(option.key, option.value);
+            }
+
+            return Task.FromResult(result.AsEnumerable());
         }
 
         public Task<IEmployeeMutationKindDto?> GetByIdAsync(string authToken, long id, CancellationToken cancellationToken = default)
         {
             SetAuthorizationHeader(authToken);
             return Task.FromResult(container.IEmployeeMutationKinds.Where(e => e.Id == id).SingleOrDefault());
+        }
+
+        public Task<IEmployeeMutationKindDto?> GetByIdWithSpecifiedOptionsAsync(string authToken, long id, CancellationToken cancellationToken = default, params (string key, string value)[] options)
+        {
+            SetAuthorizationHeader(authToken);
+            var result = container.IEmployeeMutationKinds;
+
+            foreach (var option in options)
+            {
+                result = result.AddQueryOption(option.key, option.value);
+            }
+
+            return Task.FromResult(result.Where(e => e.Id == id).SingleOrDefault());
         }
     }
 }
