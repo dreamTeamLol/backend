@@ -1,4 +1,5 @@
 ﻿using DreamDirectum.Core.Interfaces;
+using DreamDirectum.Core.Models.RequestModels;
 using DreamDirectum.UseCases.Queries.MockEmployeeQueries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -14,10 +15,14 @@ namespace DreamDirectum.Web.Controllers
         { }
 
         [HttpGet("")]
-        public async Task<IActionResult> GetAll(int daysBefore, int daysAfter)
+        public async Task<IActionResult> GetAll([FromQuery] DateOffsetParameters dateOffsetParameters)
         {
             //await SetAuthTokenToService();
-            return Ok(await mediator.Send(new GetMockEmployeesBirthdaysInRangeQuery { DaysBefore = daysBefore, DaysAfter = daysAfter }));
+            return Ok(await mediator.Send(new GetMockEmployeesBirthdaysInRangeQuery 
+            { 
+                DaysBefore = dateOffsetParameters.DaysBefore, 
+                DaysAfter = dateOffsetParameters.DaysAfter 
+            }));
         }
     }
 }

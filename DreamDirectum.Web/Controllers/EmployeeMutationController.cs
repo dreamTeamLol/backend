@@ -1,4 +1,5 @@
 ﻿using DreamDirectum.Core.Interfaces;
+using DreamDirectum.Core.Models.RequestModels;
 using DreamDirectum.UseCases.Queries.EmployeeQueries;
 using DreamDirectum.UseCases.Queries.MockEmployeeQueries;
 using MediatR;
@@ -15,10 +16,14 @@ namespace DreamDirectum.Web.Controllers
         { }
 
         [HttpGet("")]
-        public async Task<IActionResult> GetAll(int limit, int offset)
+        public async Task<IActionResult> GetAll([FromQuery] PaginationParameters paginationParameters)
         {
             //await SetAuthTokenToService();
-            return Ok(await mediator.Send(new GetMockEmployeeMutationsLogQuery { Limit = limit, Offset = offset }));
+            return Ok(await mediator.Send(new GetMockEmployeeMutationsLogQuery 
+            { 
+                Limit = paginationParameters.Limit, 
+                Offset = paginationParameters.Offset 
+            }));
         }
     }
 }

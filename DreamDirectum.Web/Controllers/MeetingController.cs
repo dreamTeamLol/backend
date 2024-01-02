@@ -1,4 +1,5 @@
 ﻿using DreamDirectum.Core.Interfaces;
+using DreamDirectum.Core.Models.RequestModels;
 using DreamDirectum.UseCases.Queries.MockSubstitutionQueries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -13,9 +14,13 @@ namespace DreamDirectum.Web.Controllers
         { }
 
         [HttpGet("")]
-        public async Task<IActionResult> GetAll(int limit, int offset)
+        public async Task<IActionResult> GetAll([FromQuery] PaginationParameters paginationParameters)
         {
-            return Ok(await mediator.Send(new GetMockSubstitutionsQuery { Limit = limit, Offset = offset }));
+            return Ok(await mediator.Send(new GetMockSubstitutionsQuery 
+            { 
+                Limit = paginationParameters.Limit, 
+                Offset = paginationParameters.Offset 
+            }));
         }
     }
 }
