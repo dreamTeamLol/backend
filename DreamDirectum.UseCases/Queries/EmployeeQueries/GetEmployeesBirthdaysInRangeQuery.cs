@@ -1,4 +1,5 @@
-﻿using DreamDirectum.Core.Interfaces;
+﻿using AutoMapper;
+using DreamDirectum.Core.Interfaces;
 using DreamDirectum.Core.Models.Dtos;
 using MediatR;
 using Sungero.IntegrationService.Models.Generated.NewDreamSolution;
@@ -18,18 +19,21 @@ namespace DreamDirectum.UseCases.Queries.EmployeeQueries
     {
         private readonly IReadOnlySinglePageRepository<IEmployeeDto, long> employeeRespository;
         private readonly IUserAuthTokenService userAuthToken;
+        private readonly IMapper mapper;
 
         public GetEmployeesBirthdaysInRangeQueryHandler
             (IReadOnlySinglePageRepository<IEmployeeDto, long> employeeRespository,
-            IUserAuthTokenService userAuthToken)
+            IUserAuthTokenService userAuthToken,
+            IMapper mapper)
         {
             this.employeeRespository = employeeRespository;
             this.userAuthToken = userAuthToken;
+            this.mapper = mapper;
         }
 
         public async Task<EmployeeDto[]> Handle(GetEmployeesBirthdaysInRangeQuery request, CancellationToken cancellationToken)
         {
-            return (await employeeRespository
+            var result = (await employeeRespository
                 .GetAllWithSpecifiedOptionsAsync
                 (userAuthToken.AuthToken,
                 //request.Limit,
@@ -37,17 +41,9 @@ namespace DreamDirectum.UseCases.Queries.EmployeeQueries
                 cancellationToken,
                 [
                     ("$filter", BuildFilterDateString(request.DaysBefore, request.DaysAfter, "Person/DateOfBirth"))
-                ]))
-                .Select(e => new EmployeeDto
-                {
-                    Id = e.Id,
-                    DateOfBirth = e.Person.DateOfBirth.Value.UtcDateTime,
-                    DepartmentName = e.Department.Name,
-                    FullName = e.Name,
-                    JobTitle = e.JobTitle?.Name,
-                    Phone = e.Phone
-                })
-                .ToArray();
+                ]));
+
+            return mapper.Map<IEnumerable<IEmployeeDto>, EmployeeDto[]>(result);
         }
 
         private string BuildFilterDateString(int daysBefore, int daysAfter, string dateFieldName)

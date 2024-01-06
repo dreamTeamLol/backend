@@ -1,6 +1,8 @@
 
+using AutoMapper;
 using DreamDirectum.Core.Interfaces;
 using DreamDirectum.Core.Models.Configuration;
+using DreamDirectum.Core.Models.MappingProfiles;
 using DreamDirectum.Core.Services;
 using DreamDirectum.Infrastructure.Repositories;
 using DreamDirectum.UseCases;
@@ -21,6 +23,11 @@ namespace DreamDirectum.Web
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddSingleton(provider => new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile(new EmployeeProfile());
+            }).CreateMapper());
 
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<MediatrPing>());
 
