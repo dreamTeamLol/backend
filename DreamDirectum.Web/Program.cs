@@ -7,6 +7,7 @@ using DreamDirectum.Core.Services;
 using DreamDirectum.Infrastructure.Repositories;
 using DreamDirectum.UseCases;
 using Sungero.IntegrationService;
+using Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule;
 using Sungero.IntegrationService.Models.Generated.NewDreamSolution;
 
 namespace DreamDirectum.Web
@@ -23,10 +24,11 @@ namespace DreamDirectum.Web
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            
             builder.Services.AddSingleton(provider => new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new EmployeeProfile());
+                cfg.AddProfile(new MutationRecordProfile());
             }).CreateMapper());
 
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<MediatrPing>());
@@ -36,6 +38,9 @@ namespace DreamDirectum.Web
             builder.Services.AddScoped<IReadOnlyPaginalRepository<IEmployeeDto, long>, EmployeeRepository>();
             builder.Services.AddScoped<IReadOnlyRepository<IEmployeeDto, long>, EmployeeRepository>();
             builder.Services.AddScoped<IReadOnlySinglePageRepository<IEmployeeDto, long>, EmployeeRepository>();
+
+            builder.Services.AddScoped<IReadOnlyPaginalRepository<IEmployeeMutationsLogDto, long>, EmployeeMutationLogRepository>();
+            builder.Services.AddScoped<IReadOnlyRepository<IEmployeeMutationsLogDto, long>, EmployeeMutationLogRepository>();
             
             builder.Services.AddScoped((sp) => new Container(new Uri("https://drim-student.starkovgrp.ru/Integration/odata/")));
 
