@@ -7,6 +7,7 @@ using DreamDirectum.Core.Services;
 using DreamDirectum.Infrastructure.Repositories;
 using DreamDirectum.UseCases;
 using Sungero.IntegrationService;
+using Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule;
 using Sungero.IntegrationService.Models.Generated.NewDreamSolution;
 
 namespace DreamDirectum.Web
@@ -27,6 +28,7 @@ namespace DreamDirectum.Web
             builder.Services.AddSingleton(provider => new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new EmployeeProfile());
+                cfg.AddProfile(new MutationRecordProfile());
             }).CreateMapper());
 
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<MediatrPing>());
