@@ -1,6 +1,6 @@
-﻿using DreamDirectum.Core.Interfaces;
+﻿/*using DreamDirectum.Core.Interfaces;
 using Sungero.IntegrationService;
-using Sungero.IntegrationService.Models.Generated.EmployeeModule;
+using Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule;
 
 namespace DreamDirectum.Infrastructure.Repositories
 {
@@ -51,3 +51,4 @@ namespace DreamDirectum.Infrastructure.Repositories
         }
     }
 }
+*/

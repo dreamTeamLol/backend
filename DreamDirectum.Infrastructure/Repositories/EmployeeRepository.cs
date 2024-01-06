@@ -1,7 +1,6 @@
 ﻿using DreamDirectum.Core.Interfaces;
 using Sungero.IntegrationService;
-using Sungero.IntegrationService.Models.Generated.DreamSolution;
-using System.Collections.Generic;
+using Sungero.IntegrationService.Models.Generated.NewDreamSolution;
 
 namespace DreamDirectum.Infrastructure.Repositories
 {
@@ -20,8 +19,9 @@ namespace DreamDirectum.Infrastructure.Repositories
             return Task.FromResult(container.IEmployees
                 .AddQueryOption("$top", limit)
                 .AddQueryOption("$skip", offset)
-                .Expand("MutationsStudent")
-                .Expand("Department") // TODO : Also expand a birthday
+                .Expand("JobTitle")
+                .Expand("Department")
+                .Expand("Person")
                 .AsEnumerable());
         }
 
@@ -37,8 +37,9 @@ namespace DreamDirectum.Infrastructure.Repositories
                 result = result.AddQueryOption(option.key, option.value);
             }
 
-            result = result.Expand("MutationsStudent")
-                .Expand("Department"); // TODO : Also expand a birthday
+            result = result.Expand("JobTitle")
+                .Expand("Department")
+                .Expand("Person");
 
             return Task.FromResult(result.AsEnumerable());
         }
@@ -59,6 +60,10 @@ namespace DreamDirectum.Infrastructure.Repositories
                 result = result.AddQueryOption(option.key, option.value);
             }
 
+            result = result.Expand("JobTitle")
+                .Expand("Department")
+                .Expand("Person");
+
             return Task.FromResult(result.Where(e => e.Id == id).SingleOrDefault());
         }
 
@@ -66,8 +71,9 @@ namespace DreamDirectum.Infrastructure.Repositories
         {
             SetAuthorizationHeader(authToken);
             return Task.FromResult(container.IEmployees
-                .Expand("MutationsStudent")
-                .Expand("Department") // TODO : Also expand a birthday
+                .Expand("JobTitle")
+                .Expand("Department")
+                .Expand("Person")
                 .AsEnumerable());
         }
 
@@ -81,8 +87,9 @@ namespace DreamDirectum.Infrastructure.Repositories
                 result = result.AddQueryOption(option.key, option.value);
             }
 
-            result = result.Expand("MutationsStudent")
-                .Expand("Department"); // TODO : Also expand a birthday
+            result = result.Expand("JobTitle")
+                .Expand("Department")
+                .Expand("Person");
 
             return Task.FromResult(result.AsEnumerable());
         }

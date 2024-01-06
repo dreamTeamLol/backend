@@ -3,11 +3,9 @@ using DreamDirectum.Core.Interfaces;
 using DreamDirectum.Core.Models.Configuration;
 using DreamDirectum.Core.Services;
 using DreamDirectum.Infrastructure.Repositories;
-using DreamDirectum.UseCases.Queries.EmployeeQueries;
-using Microsoft.Extensions.Configuration;
+using DreamDirectum.UseCases;
 using Sungero.IntegrationService;
-using System.Net.NetworkInformation;
-using System.Reflection;
+using Sungero.IntegrationService.Models.Generated.NewDreamSolution;
 
 namespace DreamDirectum.Web
 {
@@ -24,18 +22,21 @@ namespace DreamDirectum.Web
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<GetAllEmployeesQuery>());
+            builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<MediatrPing>());
 
             builder.Services.AddScoped<IUserAuthTokenService, UserAuthTokenService>();
-            builder.Services.AddScoped<EmployeeRepository>();
-            builder.Services.AddScoped<EmployeeMutationKindRepository>();
+
+            builder.Services.AddScoped<IReadOnlyPaginalRepository<IEmployeeDto, long>, EmployeeRepository>();
+            builder.Services.AddScoped<IReadOnlyRepository<IEmployeeDto, long>, EmployeeRepository>();
+            builder.Services.AddScoped<IReadOnlySinglePageRepository<IEmployeeDto, long>, EmployeeRepository>();
+            
             builder.Services.AddScoped((sp) => new Container(new Uri("https://drim-student.starkovgrp.ru/Integration/odata/")));
 
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
             //if (app.Environment.IsDevelopment())
-            //{
+            //{ 
                 app.UseSwagger();
                 app.UseSwaggerUI();
             //}
