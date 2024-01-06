@@ -47,7 +47,13 @@ namespace DreamDirectum.Infrastructure.Repositories
         public Task<IEmployeeDto?> GetByIdAsync(string authToken, long id, CancellationToken cancellationToken = default)
         {
             SetAuthorizationHeader(authToken);
-            return Task.FromResult(container.IEmployees.Where(e => e.Id == id).SingleOrDefault());
+            return Task.FromResult
+                (container.IEmployees
+                .Expand("JobTitle")
+                .Expand("Department")
+                .Expand("Person")
+                .Where(e => e.Id == id)
+                .SingleOrDefault());
         }
 
         public Task<IEmployeeDto?> GetByIdWithSpecifiedOptionsAsync(string authToken, long id, CancellationToken cancellationToken = default, params (string key, string value)[] options)
