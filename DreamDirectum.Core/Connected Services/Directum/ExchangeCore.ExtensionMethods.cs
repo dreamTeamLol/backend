@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
+// Generation date: 05.01.2024 23:02:18
 namespace ExchangeCore
 {
     /// <summary>

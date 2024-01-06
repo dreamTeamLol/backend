@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
+// Generation date: 05.01.2024 23:02:18
 namespace Sungero.IntegrationService.Models.Generated.Company
 {
     /// <summary>
@@ -40,7 +40,7 @@ namespace Sungero.IntegrationService.Models.Generated.Company
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Manager")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle Manager
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Manager
         {
             get
             {
@@ -50,13 +50,13 @@ namespace Sungero.IntegrationService.Models.Generated.Company
                 }
                 if ((this._Manager == null))
                 {
-                    this._Manager = new global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Manager"));
+                    this._Manager = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Manager"));
                 }
                 return this._Manager;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle _Manager;
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Manager;
         /// <summary>
         /// There are no comments for HeadOffice in the schema.
         /// </summary>
@@ -293,7 +293,7 @@ namespace Sungero.IntegrationService.Models.Generated.Company
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
 
         [global::Microsoft.OData.Client.OriginalNameAttribute("Manager")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto Manager
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto Manager
         {
             get
             {
@@ -308,8 +308,8 @@ namespace Sungero.IntegrationService.Models.Generated.Company
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto _Manager;
-        partial void OnManagerChanging(global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto value);
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _Manager;
+        partial void OnManagerChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
         partial void OnManagerChanged();
         /// <summary>
         /// There are no comments for Property HeadOffice in the schema.

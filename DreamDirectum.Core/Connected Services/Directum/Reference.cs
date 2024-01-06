@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
+// Generation date: 05.01.2024 23:02:18
 namespace Sungero.IntegrationService.Models.Generated.Content
 {
 }
@@ -39,13 +39,10 @@ namespace Sungero.IntegrationService.Models.Generated.Workflow
 namespace Sungero.IntegrationService.Models.Generated.Company
 {
 }
-namespace Sungero.IntegrationService.Models.Generated.DreamSolution
+namespace Sungero.IntegrationService.Models.Generated.NewDreamSolution
 {
 }
-namespace Sungero.IntegrationService.Models.Generated.EmployeeModule
-{
-}
-namespace Sungero.IntegrationService.Models.Generated.HelpDesk
+namespace Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule
 {
 }
 namespace Sungero.IntegrationService.Models.Generated.Commons
@@ -147,7 +144,12 @@ namespace Sungero.IntegrationService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         protected global::System.Type ResolveTypeFromName(string typeName)
         {
-            global::System.Type resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.PowerOfAttorneyCore", "Sungero.IntegrationService.Models.Generated.PowerOfAttorneyCore");
+            global::System.Type resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule", "Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
+            resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.PowerOfAttorneyCore", "Sungero.IntegrationService.Models.Generated.PowerOfAttorneyCore");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -162,22 +164,17 @@ namespace Sungero.IntegrationService
             {
                 return resolvedType;
             }
+            resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.NewDreamSolution", "Sungero.IntegrationService.Models.Generated.NewDreamSolution");
+            if ((resolvedType != null))
+            {
+                return resolvedType;
+            }
             resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.RecordManagement", "Sungero.IntegrationService.Models.Generated.RecordManagement");
             if ((resolvedType != null))
             {
                 return resolvedType;
             }
             resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.SmartProcessing", "Sungero.IntegrationService.Models.Generated.SmartProcessing");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.EmployeeModule", "Sungero.IntegrationService.Models.Generated.EmployeeModule");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.DreamSolution", "Sungero.IntegrationService.Models.Generated.DreamSolution");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -198,11 +195,6 @@ namespace Sungero.IntegrationService
                 return resolvedType;
             }
             resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.Exchange", "Sungero.IntegrationService.Models.Generated.Exchange");
-            if ((resolvedType != null))
-            {
-                return resolvedType;
-            }
-            resolvedType = this.DefaultResolveType(typeName, "Sungero.IntegrationService.Models.Generated.HelpDesk", "Sungero.IntegrationService.Models.Generated.HelpDesk");
             if ((resolvedType != null))
             {
                 return resolvedType;
@@ -328,6 +320,14 @@ namespace Sungero.IntegrationService
         protected string ResolveNameFromType(global::System.Type clientType)
         {
             global::Microsoft.OData.Client.OriginalNameAttribute originalNameAttribute = (global::Microsoft.OData.Client.OriginalNameAttribute)global::System.Linq.Enumerable.SingleOrDefault(global::Microsoft.OData.Client.Utility.GetCustomAttributes(clientType, typeof(global::Microsoft.OData.Client.OriginalNameAttribute), true));
+            if (clientType.Namespace.Equals("Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.", clientType.Name);
+            }
             if (clientType.Namespace.Equals("Sungero.IntegrationService.Models.Generated.PowerOfAttorneyCore", global::System.StringComparison.Ordinal))
             {
                 if (originalNameAttribute != null)
@@ -352,6 +352,14 @@ namespace Sungero.IntegrationService
                 }
                 return string.Concat("Sungero.IntegrationService.Models.Generated.FinancialArchive.", clientType.Name);
             }
+            if (clientType.Namespace.Equals("Sungero.IntegrationService.Models.Generated.NewDreamSolution", global::System.StringComparison.Ordinal))
+            {
+                if (originalNameAttribute != null)
+                {
+                    return string.Concat("Sungero.IntegrationService.Models.Generated.NewDreamSolution.", originalNameAttribute.OriginalName);
+                }
+                return string.Concat("Sungero.IntegrationService.Models.Generated.NewDreamSolution.", clientType.Name);
+            }
             if (clientType.Namespace.Equals("Sungero.IntegrationService.Models.Generated.RecordManagement", global::System.StringComparison.Ordinal))
             {
                 if (originalNameAttribute != null)
@@ -367,22 +375,6 @@ namespace Sungero.IntegrationService
                     return string.Concat("Sungero.IntegrationService.Models.Generated.SmartProcessing.", originalNameAttribute.OriginalName);
                 }
                 return string.Concat("Sungero.IntegrationService.Models.Generated.SmartProcessing.", clientType.Name);
-            }
-            if (clientType.Namespace.Equals("Sungero.IntegrationService.Models.Generated.EmployeeModule", global::System.StringComparison.Ordinal))
-            {
-                if (originalNameAttribute != null)
-                {
-                    return string.Concat("Sungero.IntegrationService.Models.Generated.EmployeeModule.", originalNameAttribute.OriginalName);
-                }
-                return string.Concat("Sungero.IntegrationService.Models.Generated.EmployeeModule.", clientType.Name);
-            }
-            if (clientType.Namespace.Equals("Sungero.IntegrationService.Models.Generated.DreamSolution", global::System.StringComparison.Ordinal))
-            {
-                if (originalNameAttribute != null)
-                {
-                    return string.Concat("Sungero.IntegrationService.Models.Generated.DreamSolution.", originalNameAttribute.OriginalName);
-                }
-                return string.Concat("Sungero.IntegrationService.Models.Generated.DreamSolution.", clientType.Name);
             }
             if (clientType.Namespace.Equals("Sungero.IntegrationService.Models.Generated.CoreEntities", global::System.StringComparison.Ordinal))
             {
@@ -415,14 +407,6 @@ namespace Sungero.IntegrationService
                     return string.Concat("Sungero.IntegrationService.Models.Generated.Exchange.", originalNameAttribute.OriginalName);
                 }
                 return string.Concat("Sungero.IntegrationService.Models.Generated.Exchange.", clientType.Name);
-            }
-            if (clientType.Namespace.Equals("Sungero.IntegrationService.Models.Generated.HelpDesk", global::System.StringComparison.Ordinal))
-            {
-                if (originalNameAttribute != null)
-                {
-                    return string.Concat("Sungero.IntegrationService.Models.Generated.HelpDesk.", originalNameAttribute.OriginalName);
-                }
-                return string.Concat("Sungero.IntegrationService.Models.Generated.HelpDesk.", clientType.Name);
             }
             if (clientType.Namespace.Equals("Sungero.IntegrationService.Models.Generated.Meetings", global::System.StringComparison.Ordinal))
             {
@@ -701,19 +685,19 @@ namespace Sungero.IntegrationService
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployees")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto> IEmployees
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto> IEmployees
         {
             get
             {
                 if ((this._IEmployees == null))
                 {
-                    this._IEmployees = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto>("IEmployees");
+                    this._IEmployees = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto>("IEmployees");
                 }
                 return this._IEmployees;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto> _IEmployees;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto> _IEmployees;
         /// <summary>
         /// There are no comments for ILogins in the schema.
         /// </summary>
@@ -751,23 +735,59 @@ namespace Sungero.IntegrationService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto> _ICertificates;
         /// <summary>
-        /// There are no comments for IEmployeeMutationKinds in the schema.
+        /// There are no comments for ISubstitutions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployeeMutationKinds")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeModule.IEmployeeMutationKindDto> IEmployeeMutationKinds
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ISubstitutions")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto> ISubstitutions
         {
             get
             {
-                if ((this._IEmployeeMutationKinds == null))
+                if ((this._ISubstitutions == null))
                 {
-                    this._IEmployeeMutationKinds = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeModule.IEmployeeMutationKindDto>("IEmployeeMutationKinds");
+                    this._ISubstitutions = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto>("ISubstitutions");
                 }
-                return this._IEmployeeMutationKinds;
+                return this._ISubstitutions;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeModule.IEmployeeMutationKindDto> _IEmployeeMutationKinds;
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto> _ISubstitutions;
+        /// <summary>
+        /// There are no comments for IEmployeeMutationsModuleEmployeeMutationKinds in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployeeMutationsModuleEmployeeMutationKinds")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto> IEmployeeMutationsModuleEmployeeMutationKinds
+        {
+            get
+            {
+                if ((this._IEmployeeMutationsModuleEmployeeMutationKinds == null))
+                {
+                    this._IEmployeeMutationsModuleEmployeeMutationKinds = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto>("IEmployeeMutationsModuleEmployeeMutationKinds");
+                }
+                return this._IEmployeeMutationsModuleEmployeeMutationKinds;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto> _IEmployeeMutationsModuleEmployeeMutationKinds;
+        /// <summary>
+        /// There are no comments for IEmployeeMutationsModuleEmployeeMutationsLogs in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployeeMutationsModuleEmployeeMutationsLogs")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDto> IEmployeeMutationsModuleEmployeeMutationsLogs
+        {
+            get
+            {
+                if ((this._IEmployeeMutationsModuleEmployeeMutationsLogs == null))
+                {
+                    this._IEmployeeMutationsModuleEmployeeMutationsLogs = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDto>("IEmployeeMutationsModuleEmployeeMutationsLogs");
+                }
+                return this._IEmployeeMutationsModuleEmployeeMutationsLogs;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDto> _IEmployeeMutationsModuleEmployeeMutationsLogs;
         /// <summary>
         /// There are no comments for ICities in the schema.
         /// </summary>
@@ -894,6 +914,24 @@ namespace Sungero.IntegrationService
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto> _IExchangeServices;
+        /// <summary>
+        /// There are no comments for IMeetings in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IMeetings")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto> IMeetings
+        {
+            get
+            {
+                if ((this._IMeetings == null))
+                {
+                    this._IMeetings = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto>("IMeetings");
+                }
+                return this._IMeetings;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto> _IMeetings;
         /// <summary>
         /// There are no comments for ICounterpartyKinds in the schema.
         /// </summary>
@@ -1039,24 +1077,6 @@ namespace Sungero.IntegrationService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> _IGroupRecipientLinkss;
         /// <summary>
-        /// There are no comments for IEmployeeMutationsStudents in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployeeMutationsStudents")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto> IEmployeeMutationsStudents
-        {
-            get
-            {
-                if ((this._IEmployeeMutationsStudents == null))
-                {
-                    this._IEmployeeMutationsStudents = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto>("IEmployeeMutationsStudents");
-                }
-                return this._IEmployeeMutationsStudents;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto> _IEmployeeMutationsStudents;
-        /// <summary>
         /// There are no comments for IBusinessUnitBoxExchangeServiceCertificatess in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1092,6 +1112,24 @@ namespace Sungero.IntegrationService
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> _IBusinessUnitBoxFormalizedPoAInfoss;
+        /// <summary>
+        /// There are no comments for IMeetingMemberss in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IMeetingMemberss")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto> IMeetingMemberss
+        {
+            get
+            {
+                if ((this._IMeetingMemberss == null))
+                {
+                    this._IMeetingMemberss = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto>("IMeetingMemberss");
+                }
+                return this._IMeetingMemberss;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto> _IMeetingMemberss;
         /// <summary>
         /// There are no comments for ICounterpartyExchangeBoxess in the schema.
         /// </summary>
@@ -1154,7 +1192,7 @@ namespace Sungero.IntegrationService
         /// There are no comments for IEmployees in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToIEmployees(global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto iEmployeeDto)
+        public virtual void AddToIEmployees(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto iEmployeeDto)
         {
             base.AddObject("IEmployees", iEmployeeDto);
         }
@@ -1175,12 +1213,28 @@ namespace Sungero.IntegrationService
             base.AddObject("ICertificates", iCertificateDto);
         }
         /// <summary>
-        /// There are no comments for IEmployeeMutationKinds in the schema.
+        /// There are no comments for ISubstitutions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToIEmployeeMutationKinds(global::Sungero.IntegrationService.Models.Generated.EmployeeModule.IEmployeeMutationKindDto iEmployeeMutationKindDto)
+        public virtual void AddToISubstitutions(global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto iSubstitutionDto)
         {
-            base.AddObject("IEmployeeMutationKinds", iEmployeeMutationKindDto);
+            base.AddObject("ISubstitutions", iSubstitutionDto);
+        }
+        /// <summary>
+        /// There are no comments for IEmployeeMutationsModuleEmployeeMutationKinds in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToIEmployeeMutationsModuleEmployeeMutationKinds(global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto iEmployeeMutationKindDto)
+        {
+            base.AddObject("IEmployeeMutationsModuleEmployeeMutationKinds", iEmployeeMutationKindDto);
+        }
+        /// <summary>
+        /// There are no comments for IEmployeeMutationsModuleEmployeeMutationsLogs in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToIEmployeeMutationsModuleEmployeeMutationsLogs(global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDto iEmployeeMutationsLogDto)
+        {
+            base.AddObject("IEmployeeMutationsModuleEmployeeMutationsLogs", iEmployeeMutationsLogDto);
         }
         /// <summary>
         /// There are no comments for ICities in the schema.
@@ -1237,6 +1291,14 @@ namespace Sungero.IntegrationService
         public virtual void AddToIExchangeServices(global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto iExchangeServiceDto)
         {
             base.AddObject("IExchangeServices", iExchangeServiceDto);
+        }
+        /// <summary>
+        /// There are no comments for IMeetings in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToIMeetings(global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto iMeetingDto)
+        {
+            base.AddObject("IMeetings", iMeetingDto);
         }
         /// <summary>
         /// There are no comments for ICounterpartyKinds in the schema.
@@ -1303,14 +1365,6 @@ namespace Sungero.IntegrationService
             base.AddObject("IGroupRecipientLinkss", iGroupRecipientLinksDto);
         }
         /// <summary>
-        /// There are no comments for IEmployeeMutationsStudents in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToIEmployeeMutationsStudents(global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto iEmployeeMutationsStudentDto)
-        {
-            base.AddObject("IEmployeeMutationsStudents", iEmployeeMutationsStudentDto);
-        }
-        /// <summary>
         /// There are no comments for IBusinessUnitBoxExchangeServiceCertificatess in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1325,6 +1379,14 @@ namespace Sungero.IntegrationService
         public virtual void AddToIBusinessUnitBoxFormalizedPoAInfoss(global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto iBusinessUnitBoxFormalizedPoAInfosDto)
         {
             base.AddObject("IBusinessUnitBoxFormalizedPoAInfoss", iBusinessUnitBoxFormalizedPoAInfosDto);
+        }
+        /// <summary>
+        /// There are no comments for IMeetingMemberss in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public virtual void AddToIMeetingMemberss(global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto iMeetingMembersDto)
+        {
+            base.AddObject("IMeetingMemberss", iMeetingMembersDto);
         }
         /// <summary>
         /// There are no comments for ICounterpartyExchangeBoxess in the schema.

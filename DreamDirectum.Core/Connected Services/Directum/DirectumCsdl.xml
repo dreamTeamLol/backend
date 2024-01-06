@@ -93,6 +93,13 @@
         <Property Name="IsHeldByCounterParty" Type="Edm.Boolean" />
         <Property Name="ReturnDeadline" Type="Edm.DateTimeOffset" />
         <Property Name="ReturnDate" Type="Edm.DateTimeOffset" />
+        <Property Name="ScheduledReturnDateFromCounterparty" Type="Edm.DateTimeOffset" />
+        <Property Name="Subject" Type="Edm.String" />
+        <Property Name="Note" Type="Edm.String" />
+        <Property Name="ExternalId" Type="Edm.String" />
+        <Property Name="PaperCount" Type="Edm.Int32" />
+        <Property Name="AddendaPaperCount" Type="Edm.Int32" />
+        <Property Name="StoredIn" Type="Edm.String" />
         <Property Name="LifeCycleState" Type="Edm.String" />
         <Property Name="RegistrationState" Type="Edm.String" />
         <Property Name="InternalApprovalState" Type="Edm.String" />
@@ -100,30 +107,23 @@
         <Property Name="ExecutionState" Type="Edm.String" />
         <Property Name="ControlExecutionState" Type="Edm.String" />
         <Property Name="LocationState" Type="Edm.String" />
-        <Property Name="ScheduledReturnDateFromCounterparty" Type="Edm.DateTimeOffset" />
-        <Property Name="Subject" Type="Edm.String" />
-        <Property Name="Note" Type="Edm.String" />
         <Property Name="ExchangeState" Type="Edm.String" />
         <Property Name="VerificationState" Type="Edm.String" />
         <Property Name="DocumentDate" Type="Edm.DateTimeOffset" />
-        <Property Name="ExternalId" Type="Edm.String" />
-        <Property Name="PaperCount" Type="Edm.Int32" />
         <Property Name="LastVersionChanged" Type="Edm.DateTimeOffset" />
-        <Property Name="AddendaPaperCount" Type="Edm.Int32" />
-        <Property Name="StoredIn" Type="Edm.String" />
+        <NavigationProperty Name="Tracking" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentTrackingDto)" />
         <NavigationProperty Name="DocumentRegister" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentRegisterDto" />
         <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="CaseFile" Type="Sungero.IntegrationService.Models.Generated.Docflow.ICaseFileDto" />
-        <NavigationProperty Name="Tracking" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentTrackingDto)" />
-        <NavigationProperty Name="DeliveredTo" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="ResponsibleForReturnEmployee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="DeliveredTo" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ResponsibleForReturnEmployee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="DocumentKind" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentKindDto" />
         <NavigationProperty Name="BusinessUnit" Type="Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto" />
-        <NavigationProperty Name="OurSignatory" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="OurSignatory" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="DocumentGroup" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentGroupBaseDto" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Department" Type="Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto" />
-        <NavigationProperty Name="PreparedBy" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="PreparedBy" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Project" Type="Sungero.IntegrationService.Models.Generated.Docflow.IProjectBaseDto" />
         <NavigationProperty Name="LeadingDocument" Type="Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentDto" />
         <NavigationProperty Name="OurSigningReason" Type="Sungero.IntegrationService.Models.Generated.Docflow.ISignatureSettingDto" />
@@ -140,17 +140,17 @@
         <Property Name="SellerSignatureId" Type="Edm.Int64" />
         <Property Name="BuyerSignatureId" Type="Edm.Int64" />
         <Property Name="IsAdjustment" Type="Edm.Boolean" />
-        <Property Name="FormalizedServiceType" Type="Edm.String" />
-        <Property Name="FormalizedFunction" Type="Edm.String" />
         <Property Name="IsRevision" Type="Edm.Boolean" />
         <Property Name="IsFormalizedSignatoryEmpty" Type="Edm.Boolean" />
         <Property Name="CounterpartySigningReason" Type="Edm.String" />
         <Property Name="VatAmount" Type="Edm.Double" />
         <Property Name="NetAmount" Type="Edm.Double" />
         <Property Name="PurchaseOrderNumber" Type="Edm.String" />
+        <Property Name="FormalizedServiceType" Type="Edm.String" />
+        <Property Name="FormalizedFunction" Type="Edm.String" />
         <NavigationProperty Name="Currency" Type="Sungero.IntegrationService.Models.Generated.Commons.ICurrencyDto" />
         <NavigationProperty Name="Counterparty" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
-        <NavigationProperty Name="ResponsibleEmployee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ResponsibleEmployee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Contact" Type="Sungero.IntegrationService.Models.Generated.Parties.IContactDto" />
         <NavigationProperty Name="CounterpartySignatory" Type="Sungero.IntegrationService.Models.Generated.Parties.IContactDto" />
         <NavigationProperty Name="BusinessUnitBox" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
@@ -180,10 +180,10 @@
         <Property Name="IsManyAddressees" Type="Edm.Boolean" />
         <Property Name="ManyAddresseesPlaceholder" Type="Edm.String" />
         <Property Name="ManyAddresseesLabel" Type="Edm.String" />
+        <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IIncomingDocumentBaseAddresseesDto)" />
         <NavigationProperty Name="Correspondent" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
         <NavigationProperty Name="InResponseTo" Type="Sungero.IntegrationService.Models.Generated.Docflow.IOutgoingDocumentBaseDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IIncomingDocumentBaseAddresseesDto)" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IInternalDocumentBaseDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentDto" />
       <EntityType Name="IAddendumDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IInternalDocumentBaseDto" />
@@ -194,8 +194,8 @@
         <Property Name="IsManyAddressees" Type="Edm.Boolean" />
         <Property Name="ManyAddresseesPlaceholder" Type="Edm.String" />
         <Property Name="ManyAddresseesLabel" Type="Edm.String" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IMemoAddresseesDto)" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IMinutesBaseDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IInternalDocumentBaseDto" />
       <EntityType Name="IPowerOfAttorneyBaseDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IInternalDocumentBaseDto">
@@ -204,7 +204,7 @@
         <Property Name="ValidFrom" Type="Edm.DateTimeOffset" />
         <Property Name="Powers" Type="Edm.String" />
         <Property Name="AgentType" Type="Edm.String" />
-        <NavigationProperty Name="IssuedTo" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="IssuedTo" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="IssuedToParty" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
         <NavigationProperty Name="Representative" Type="Sungero.IntegrationService.Models.Generated.Parties.IPersonDto" />
       </EntityType>
@@ -226,10 +226,10 @@
         <Property Name="DistributionCorrespondent" Type="Edm.String" />
         <Property Name="SentDate" Type="Edm.DateTimeOffset" />
         <Property Name="TrackNumber" Type="Edm.String" />
+        <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IOutgoingDocumentBaseAddresseesDto)" />
         <NavigationProperty Name="Correspondent" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
         <NavigationProperty Name="InResponseTo" Type="Sungero.IntegrationService.Models.Generated.Docflow.IIncomingDocumentBaseDto" />
         <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.Parties.IContactDto" />
-        <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IOutgoingDocumentBaseAddresseesDto)" />
       </EntityType>
       <EntityType Name="IRegistrationGroupDto" BaseType="Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto">
         <Property Name="Index" Type="Edm.String" />
@@ -237,22 +237,22 @@
         <Property Name="CanRegisterOutgoing" Type="Edm.Boolean" />
         <Property Name="CanRegisterInternal" Type="Edm.Boolean" />
         <Property Name="CanRegisterContractual" Type="Edm.Boolean" />
-        <NavigationProperty Name="ResponsibleEmployee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Departments" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IRegistrationGroupDepartmentsDto)" />
+        <NavigationProperty Name="ResponsibleEmployee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IAccessRightsRuleDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="GrantRightsOnLeadingDocument" Type="Edm.Boolean" />
         <Property Name="Note" Type="Edm.String" />
-        <Property Name="Modified" Type="Edm.DateTimeOffset" />
         <Property Name="GrantRightsOnExistingDocuments" Type="Edm.Boolean" />
-        <Property Name="BulkProcessingState" Type="Edm.String" />
         <Property Name="LaunchId" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="Modified" Type="Edm.DateTimeOffset" />
+        <Property Name="BulkProcessingState" Type="Edm.String" />
         <NavigationProperty Name="DocumentKinds" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IAccessRightsRuleDocumentKindsDto)" />
         <NavigationProperty Name="BusinessUnits" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IAccessRightsRuleBusinessUnitsDto)" />
         <NavigationProperty Name="Departments" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IAccessRightsRuleDepartmentsDto)" />
@@ -264,10 +264,10 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
-        <Property Name="Type" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Description" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="Type" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IApprovalRoleDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRoleBaseDto" />
       <EntityType Name="IApprovalRuleBaseDto">
@@ -275,17 +275,17 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Priority" Type="Edm.Int32" />
-        <Property Name="DocumentFlow" Type="Edm.String" />
         <Property Name="IsDefaultRule" Type="Edm.Boolean" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="VersionNumber" Type="Edm.Int32" />
         <Property Name="IsSmallApprovalAllowed" Type="Edm.Boolean" />
-        <Property Name="ReworkPerformerType" Type="Edm.String" />
         <Property Name="ReworkDeadline" Type="Edm.Int32" />
         <Property Name="NeedRestrictInitiatorRights" Type="Edm.Boolean" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="DocumentFlow" Type="Edm.String" />
+        <Property Name="ReworkPerformerType" Type="Edm.String" />
         <NavigationProperty Name="DocumentKinds" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRuleBaseDocumentKindsDto)" />
         <NavigationProperty Name="Departments" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRuleBaseDepartmentsDto)" />
         <NavigationProperty Name="Stages" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRuleBaseStagesDto)" />
@@ -303,11 +303,11 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="DeadlineInDays" Type="Edm.Int32" />
         <Property Name="DeadlineInHours" Type="Edm.Int32" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IApprovalFunctionStageBaseDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageBaseDto">
         <Property Name="TimeoutInDays" Type="Edm.Int32" />
@@ -322,27 +322,27 @@
         <Property Name="WaitReviewTaskCompletion" Type="Edm.Boolean" />
       </EntityType>
       <EntityType Name="IApprovalStageDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageBaseDto">
-        <Property Name="StageType" Type="Edm.String" />
-        <Property Name="Sequence" Type="Edm.String" />
-        <Property Name="ReworkType" Type="Edm.String" />
         <Property Name="NeedStrongSign" Type="Edm.Boolean" />
         <Property Name="StartDelayDays" Type="Edm.Int32" />
         <Property Name="Subject" Type="Edm.String" />
         <Property Name="AllowSendToRework" Type="Edm.Boolean" />
         <Property Name="IsConfirmSigning" Type="Edm.Boolean" />
         <Property Name="IsResultSubmission" Type="Edm.Boolean" />
-        <Property Name="AssigneeType" Type="Edm.String" />
         <Property Name="AllowAdditionalApprovers" Type="Edm.Boolean" />
         <Property Name="AllowChangeReworkPerformer" Type="Edm.Boolean" />
-        <Property Name="ReworkPerformerType" Type="Edm.String" />
-        <Property Name="RightType" Type="Edm.String" />
         <Property Name="NeedRestrictPerformerRights" Type="Edm.Boolean" />
         <Property Name="AllowApproveWithSuggestions" Type="Edm.Boolean" />
+        <Property Name="StageType" Type="Edm.String" />
+        <Property Name="Sequence" Type="Edm.String" />
+        <Property Name="ReworkType" Type="Edm.String" />
+        <Property Name="AssigneeType" Type="Edm.String" />
+        <Property Name="ReworkPerformerType" Type="Edm.String" />
+        <Property Name="RightType" Type="Edm.String" />
         <Property Name="AssignmentInstruction" Type="Edm.String" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto" />
-        <NavigationProperty Name="ApprovalRole" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRoleBaseDto" />
         <NavigationProperty Name="ApprovalRoles" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageApprovalRolesDto)" />
         <NavigationProperty Name="Recipients" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageRecipientsDto)" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto" />
+        <NavigationProperty Name="ApprovalRole" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRoleBaseDto" />
         <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto" />
         <NavigationProperty Name="ReworkApprovalRole" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRoleBaseDto" />
       </EntityType>
@@ -351,7 +351,6 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Title" Type="Edm.String" />
         <Property Name="Index" Type="Edm.String" />
         <Property Name="StartDate" Type="Edm.DateTimeOffset" />
@@ -361,6 +360,7 @@
         <Property Name="Location" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="PaperCount" Type="Edm.Int32" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Department" Type="Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto" />
         <NavigationProperty Name="RetentionPeriod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IFileRetentionPeriodDto" />
         <NavigationProperty Name="RegistrationGroup" Type="Sungero.IntegrationService.Models.Generated.Docflow.IRegistrationGroupDto" />
@@ -371,19 +371,19 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+        <Property Name="Amount" Type="Edm.Double" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="Status" Type="Edm.String" />
-        <Property Name="Name" Type="Edm.String" />
         <Property Name="ConditionType" Type="Edm.String" />
-        <Property Name="Amount" Type="Edm.Double" />
         <Property Name="AmountOperator" Type="Edm.String" />
         <NavigationProperty Name="Currencies" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IConditionBaseCurrenciesDto)" />
         <NavigationProperty Name="DocumentKinds" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IConditionBaseDocumentKindsDto)" />
         <NavigationProperty Name="ConditionDocumentKinds" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IConditionBaseConditionDocumentKindsDto)" />
+        <NavigationProperty Name="DeliveryMethods" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IConditionBaseDeliveryMethodsDto)" />
         <NavigationProperty Name="ApprovalRole" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRoleBaseDto" />
         <NavigationProperty Name="ApprovalRoleForComparison" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRoleBaseDto" />
         <NavigationProperty Name="RecipientForComparison" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto" />
-        <NavigationProperty Name="DeliveryMethods" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IConditionBaseDeliveryMethodsDto)" />
         <NavigationProperty Name="AddendaDocumentKind" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentKindDto" />
       </EntityType>
       <EntityType Name="IConditionDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IConditionBaseDto">
@@ -394,9 +394,9 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="Status" Type="Edm.String" />
-        <Property Name="Name" Type="Edm.String" />
         <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IDistributionListAddresseesDto)" />
       </EntityType>
       <EntityType Name="IDocumentComparisonInfoDto">
@@ -404,7 +404,6 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="FirstDocumentId" Type="Edm.Int64" />
         <Property Name="SecondDocumentId" Type="Edm.Int64" />
@@ -414,12 +413,13 @@
         <Property Name="SecondArioTaskId" Type="Edm.Int32" />
         <Property Name="DifferencesCount" Type="Edm.Int32" />
         <Property Name="ErrorMessage" Type="Edm.String" />
-        <Property Name="ProcessingStatus" Type="Edm.String" />
-        <Property Name="DeletionDate" Type="Edm.DateTimeOffset" />
         <Property Name="FirstVersionNumber" Type="Edm.Int32" />
         <Property Name="SecondVersionNumber" Type="Edm.Int32" />
         <Property Name="FirstVersionHash" Type="Edm.String" />
         <Property Name="SecondVersionHash" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="ProcessingStatus" Type="Edm.String" />
+        <Property Name="DeletionDate" Type="Edm.DateTimeOffset" />
         <NavigationProperty Name="Author" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto" />
         <NavigationProperty Name="FirstPdfVersion" Type="Sungero.IntegrationService.Generator.IBinaryDataDto" ContainsTarget="true" />
         <NavigationProperty Name="SecondPdfVersion" Type="Sungero.IntegrationService.Generator.IBinaryDataDto" ContainsTarget="true" />
@@ -430,9 +430,9 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="DocumentKinds" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IDocumentGroupBaseDocumentKindsDto)" />
       </EntityType>
       <EntityType Name="IDocumentKindDto">
@@ -440,35 +440,35 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
-        <Property Name="DocumentFlow" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="DeadlineInDays" Type="Edm.Int32" />
         <Property Name="ShortName" Type="Edm.String" />
         <Property Name="DeadlineInHours" Type="Edm.Int32" />
-        <Property Name="NumberingType" Type="Edm.String" />
         <Property Name="GenerateDocumentName" Type="Edm.Boolean" />
         <Property Name="AutoNumbering" Type="Edm.Boolean" />
         <Property Name="ProjectsAccounting" Type="Edm.Boolean" />
         <Property Name="GrantRightsToProject" Type="Edm.Boolean" />
         <Property Name="IsDefault" Type="Edm.Boolean" />
         <Property Name="Code" Type="Edm.String" />
-        <NavigationProperty Name="DocumentType" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentTypeDto" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="DocumentFlow" Type="Edm.String" />
+        <Property Name="NumberingType" Type="Edm.String" />
         <NavigationProperty Name="AvailableActions" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IDocumentKindAvailableActionsDto)" />
+        <NavigationProperty Name="DocumentType" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentTypeDto" />
       </EntityType>
       <EntityType Name="IDocumentRegisterDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Index" Type="Edm.String" />
         <Property Name="NumberOfDigitsInNumber" Type="Edm.Int32" />
-        <Property Name="DocumentFlow" Type="Edm.String" />
         <Property Name="ValueExample" Type="Edm.String" />
         <Property Name="DisplayName" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="DocumentFlow" Type="Edm.String" />
         <Property Name="RegisterType" Type="Edm.String" />
         <Property Name="NumberingPeriod" Type="Edm.String" />
         <Property Name="NumberingSection" Type="Edm.String" />
@@ -480,49 +480,47 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="ActionGuid" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IDocumentTypeDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="DocumentTypeGuid" Type="Edm.String" />
-        <Property Name="DocumentFlow" Type="Edm.String" />
         <Property Name="IsRegistrationAllowed" Type="Edm.Boolean" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="DocumentFlow" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IFileRetentionPeriodDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="RetentionPeriod" Type="Edm.Int32" />
         <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IMailDeliveryMethodDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="Sid" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IPersonalSettingDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
-        <Property Name="Period" Type="Edm.String" />
         <Property Name="StartDate" Type="Edm.DateTimeOffset" />
         <Property Name="EndDate" Type="Edm.DateTimeOffset" />
         <Property Name="IsAutoCalcSupervisor" Type="Edm.Boolean" />
@@ -531,31 +529,33 @@
         <Property Name="FollowUpActionItem" Type="Edm.Boolean" />
         <Property Name="MyContractsNotification" Type="Edm.Boolean" />
         <Property Name="MySubordinatesContractsNotification" Type="Edm.Boolean" />
-        <Property Name="EnvelopeFormat" Type="Edm.String" />
         <Property Name="PrintSender" Type="Edm.Boolean" />
         <Property Name="FinArchiveExportPath" Type="Edm.String" />
         <Property Name="ShowNotApproveSign" Type="Edm.Boolean" />
-        <Property Name="CompanyService" Type="Edm.String" />
         <Property Name="MyPowersOfAttorneyNotification" Type="Edm.Boolean" />
         <Property Name="MySubordinatesPowersOfAttorneyNotification" Type="Edm.Boolean" />
         <Property Name="IsAutoExecLeadingActionItem" Type="Edm.Boolean" />
         <Property Name="RightIndent" Type="Edm.Double" />
         <Property Name="BottomIndent" Type="Edm.Double" />
-        <Property Name="RegistrationStampPosition" Type="Edm.String" />
         <Property Name="MyRevokedFormalizedPoANotification" Type="Edm.Boolean" />
         <Property Name="MySubordinatesRevokedFormalizedPoANotification" Type="Edm.Boolean" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="Period" Type="Edm.String" />
+        <Property Name="EnvelopeFormat" Type="Edm.String" />
+        <Property Name="CompanyService" Type="Edm.String" />
+        <Property Name="RegistrationStampPosition" Type="Edm.String" />
         <NavigationProperty Name="IncomingDocRegister" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentRegisterDto" />
         <NavigationProperty Name="OutgoingDocRegister" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentRegisterDto" />
         <NavigationProperty Name="InnerDocRegister" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentRegisterDto" />
-        <NavigationProperty Name="Supervisor" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Supervisor" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="IncomingCaseFile" Type="Sungero.IntegrationService.Models.Generated.Docflow.ICaseFileDto" />
         <NavigationProperty Name="OutgoingCaseFile" Type="Sungero.IntegrationService.Models.Generated.Docflow.ICaseFileDto" />
         <NavigationProperty Name="InnerCaseFile" Type="Sungero.IntegrationService.Models.Generated.Docflow.ICaseFileDto" />
         <NavigationProperty Name="IncomingDeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="OutgoingDeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="InnerDeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
-        <NavigationProperty Name="ResolutionAuthor" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="Employee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ResolutionAuthor" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Employee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="BusinessUnit" Type="Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto" />
         <NavigationProperty Name="ContractDocRegister" Type="Sungero.IntegrationService.Models.Generated.Docflow.IDocumentRegisterDto" />
         <NavigationProperty Name="Department" Type="Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto" />
@@ -565,18 +565,18 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IRegistrationSettingDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
-        <Property Name="DocumentFlow" Type="Edm.String" />
         <Property Name="Priority" Type="Edm.Int32" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="DocumentFlow" Type="Edm.String" />
         <Property Name="SettingType" Type="Edm.String" />
         <NavigationProperty Name="DocumentKinds" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IRegistrationSettingDocumentKindsDto)" />
         <NavigationProperty Name="BusinessUnits" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IRegistrationSettingBusinessUnitsDto)" />
@@ -588,26 +588,26 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="ValidTill" Type="Edm.DateTimeOffset" />
         <Property Name="ValidFrom" Type="Edm.DateTimeOffset" />
-        <Property Name="Reason" Type="Edm.String" />
-        <Property Name="Limit" Type="Edm.String" />
         <Property Name="Amount" Type="Edm.Double" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="IsSystem" Type="Edm.Boolean" />
         <Property Name="DocumentInfo" Type="Edm.String" />
-        <Property Name="DocumentFlow" Type="Edm.String" />
         <Property Name="Priority" Type="Edm.Int32" />
         <Property Name="SigningReason" Type="Edm.String" />
-        <NavigationProperty Name="Recipient" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto" />
-        <NavigationProperty Name="Document" Type="Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentDto" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="Reason" Type="Edm.String" />
+        <Property Name="Limit" Type="Edm.String" />
+        <Property Name="DocumentFlow" Type="Edm.String" />
         <NavigationProperty Name="BusinessUnits" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.ISignatureSettingBusinessUnitsDto)" />
         <NavigationProperty Name="DocumentKinds" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.ISignatureSettingDocumentKindsDto)" />
-        <NavigationProperty Name="Currency" Type="Sungero.IntegrationService.Models.Generated.Commons.ICurrencyDto" />
         <NavigationProperty Name="Departments" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.ISignatureSettingDepartmentsDto)" />
         <NavigationProperty Name="Categories" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.ISignatureSettingCategoriesDto)" />
+        <NavigationProperty Name="Recipient" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto" />
+        <NavigationProperty Name="Document" Type="Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentDto" />
+        <NavigationProperty Name="Currency" Type="Sungero.IntegrationService.Models.Generated.Commons.ICurrencyDto" />
         <NavigationProperty Name="Certificate" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto" />
         <NavigationProperty Name="JobTitle" Type="Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto" />
       </EntityType>
@@ -616,9 +616,6 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="LimitsDescription" Type="Edm.String" />
-        <Property Name="Password" Type="Edm.String" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="ArioUrl" Type="Edm.String" />
         <Property Name="LowerConfidenceLimit" Type="Edm.Int32" />
@@ -629,6 +626,9 @@
         <Property Name="FirstPageClassifierId" Type="Edm.Int32" />
         <Property Name="Login" Type="Edm.String" />
         <Property Name="Languages" Type="Edm.String" />
+        <Property Name="LimitsDescription" Type="Edm.String" />
+        <Property Name="Password" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="CaptureSources" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.ISmartProcessingSettingCaptureSourcesDto)" />
         <NavigationProperty Name="ProcessingRules" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.ISmartProcessingSettingProcessingRulesDto)" />
         <NavigationProperty Name="AdditionalClassifiers" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.ISmartProcessingSettingAdditionalClassifiersDto)" />
@@ -638,18 +638,18 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Priority" Type="Edm.Int32" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="DocumentKinds" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IStoragePolicyBaseDocumentKindsDto)" />
       </EntityType>
       <EntityType Name="IRetentionPolicyDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IStoragePolicyBaseDto">
-        <Property Name="DocumentDateType" Type="Edm.String" />
         <Property Name="DaysToMove" Type="Edm.Int32" />
+        <Property Name="Interval" Type="Edm.Int32" />
+        <Property Name="DocumentDateType" Type="Edm.String" />
         <Property Name="NextRetention" Type="Edm.DateTimeOffset" />
         <Property Name="LastRetention" Type="Edm.DateTimeOffset" />
-        <Property Name="Interval" Type="Edm.Int32" />
         <Property Name="RepeatType" Type="Edm.String" />
         <Property Name="IntervalType" Type="Edm.String" />
       </EntityType>
@@ -659,17 +659,17 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Note" Type="Edm.String" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Code" Type="Edm.String" />
+        <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Parent" Type="Sungero.IntegrationService.Models.Generated.Docflow.ITopicDto" />
       </EntityType>
       <EntityType Name="IApprovalFunctionQueueItemDto" BaseType="Sungero.IntegrationService.Models.Generated.ExchangeCore.IQueueItemBaseDto">
         <Property Name="TaskId" Type="Edm.Int64" />
         <Property Name="TaskStartId" Type="Edm.Int32" />
-        <Property Name="ErrorMessage" Type="Edm.String" />
         <Property Name="IsNoticeSended" Type="Edm.Boolean" />
+        <Property Name="ErrorMessage" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IDocumentFullTextSearchQueueItemDto" BaseType="Sungero.IntegrationService.Models.Generated.ExchangeCore.IQueueItemBaseDto">
         <Property Name="DocumentId" Type="Edm.Int64" />
@@ -677,14 +677,14 @@
         <Property Name="ExtractTextTaskId" Type="Edm.Int32" />
       </EntityType>
       <EntityType Name="IPowerOfAttorneyQueueItemDto" BaseType="Sungero.IntegrationService.Models.Generated.ExchangeCore.IQueueItemBaseDto">
-        <Property Name="FormalizedPoAServiceStatus" Type="Edm.String" />
         <Property Name="OperationId" Type="Edm.String" />
         <Property Name="DocumentId" Type="Edm.Int64" />
-        <Property Name="OperationType" Type="Edm.String" />
         <Property Name="RejectCode" Type="Edm.String" />
         <Property Name="RevocationDate" Type="Edm.DateTimeOffset" />
         <Property Name="OperationState" Type="Edm.String" />
         <Property Name="TaskId" Type="Edm.Int64" />
+        <Property Name="FormalizedPoAServiceStatus" Type="Edm.String" />
+        <Property Name="OperationType" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IDocumentTemplateVersionsDto" BaseType="Sungero.IntegrationService.Models.Generated.Content.IElectronicDocumentTemplateVersionsDto" />
       <EntityType Name="IOfficialDocumentVersionsDto" BaseType="Sungero.IntegrationService.Models.Generated.Content.IElectronicDocumentVersionsDto" />
@@ -771,7 +771,7 @@
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <NavigationProperty Name="ApprovalManagerAssignment" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalManagerAssignmentDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalPrintingAssignmentCollapsedStagesTypesPrDto">
         <Key>
@@ -803,7 +803,7 @@
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <NavigationProperty Name="ApprovalReworkAssignment" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReworkAssignmentDto" />
-        <NavigationProperty Name="Approver" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Approver" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalReworkAssignmentAddresseesDto">
         <Key>
@@ -811,18 +811,18 @@
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <NavigationProperty Name="ApprovalReworkAssignment" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReworkAssignmentDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalReworkAssignmentApproversDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
+        <Property Name="IsRequiredApprover" Type="Edm.Boolean" />
         <Property Name="Approved" Type="Edm.String" />
         <Property Name="Action" Type="Edm.String" />
-        <Property Name="IsRequiredApprover" Type="Edm.Boolean" />
         <NavigationProperty Name="ApprovalReworkAssignment" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReworkAssignmentDto" />
-        <NavigationProperty Name="Approver" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Approver" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalReworkAssignmentRegApproversDto">
         <Key>
@@ -830,7 +830,7 @@
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <NavigationProperty Name="ApprovalReworkAssignment" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReworkAssignmentDto" />
-        <NavigationProperty Name="Approver" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Approver" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalRuleBaseBusinessUnitsDto">
         <Key>
@@ -963,7 +963,7 @@
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <NavigationProperty Name="ApprovalTask" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalTaskDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalTaskRemovedAddendaDto">
         <Key>
@@ -996,7 +996,7 @@
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <NavigationProperty Name="Condition" Type="Sungero.IntegrationService.Models.Generated.Docflow.IConditionDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IConditionBaseConditionDocumentKindsDto">
         <Key>
@@ -1103,7 +1103,7 @@
         <Property Name="Approved" Type="Edm.String" />
         <Property Name="Action" Type="Edm.String" />
         <NavigationProperty Name="FreeApprovalReworkAssignment" Type="Sungero.IntegrationService.Models.Generated.Docflow.IFreeApprovalReworkAssignmentDto" />
-        <NavigationProperty Name="Approver" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Approver" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IFreeApprovalTaskAddedAddendaDto">
         <Key>
@@ -1137,7 +1137,7 @@
         <Property Name="Number" Type="Edm.Int32" />
         <Property Name="Note" Type="Edm.String" />
         <NavigationProperty Name="IncomingDocumentBase" Type="Sungero.IntegrationService.Models.Generated.Docflow.IIncomingDocumentBaseDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Department" Type="Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto" />
       </EntityType>
       <EntityType Name="IMemoAddresseesDto">
@@ -1148,7 +1148,7 @@
         <Property Name="Number" Type="Edm.Int32" />
         <Property Name="Note" Type="Edm.String" />
         <NavigationProperty Name="Memo" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMemoDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Department" Type="Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto" />
       </EntityType>
       <EntityType Name="IOfficialDocumentTrackingDto">
@@ -1156,17 +1156,17 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Action" Type="Edm.String" />
         <Property Name="IsOriginal" Type="Edm.Boolean" />
         <Property Name="ReturnDeadline" Type="Edm.DateTimeOffset" />
         <Property Name="ReturnDate" Type="Edm.DateTimeOffset" />
         <Property Name="DeliveryDate" Type="Edm.DateTimeOffset" />
-        <Property Name="ReturnResult" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="Iteration" Type="Edm.Int32" />
         <Property Name="ExternalLinkId" Type="Edm.Int64" />
+        <Property Name="Action" Type="Edm.String" />
+        <Property Name="ReturnResult" Type="Edm.String" />
         <NavigationProperty Name="OfficialDocument" Type="Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentDto" />
-        <NavigationProperty Name="DeliveredTo" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="DeliveredTo" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="ReturnTask" Type="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto" />
       </EntityType>
       <EntityType Name="IAccountingDocumentBaseTrackingDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentTrackingDto" />
@@ -1304,59 +1304,59 @@
       <EntityType Name="IApprovalAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="StageNumber" Type="Edm.Int32" />
         <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalCheckingAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="StageSubject" Type="Edm.String" />
         <Property Name="StageNumber" Type="Edm.Int32" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalCheckReturnAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="StageNumber" Type="Edm.Int32" />
         <Property Name="AutoReturned" Type="Edm.Boolean" />
       </EntityType>
       <EntityType Name="IApprovalExecutionAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
-        <Property Name="ResolutionText" Type="Edm.String" />
         <Property Name="StageNumber" Type="Edm.Int32" />
         <Property Name="DeliveryMethodDescription" Type="Edm.String" />
-        <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
+        <Property Name="ResolutionText" Type="Edm.String" />
         <NavigationProperty Name="CollapsedStagesTypesExe" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalExecutionAssignmentCollapsedStagesTypesExeDto)" />
+        <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
         <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalManagerAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="StageNumber" Type="Edm.Int32" />
         <NavigationProperty Name="AddApprovers" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalManagerAssignmentAddApproversDto)" />
-        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalManagerAssignmentAddresseesDto)" />
+        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
         <NavigationProperty Name="ApprovalRule" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRuleBaseDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalManagerAssignmentAddresseesDto)" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalPrintingAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="StageNumber" Type="Edm.Int32" />
         <Property Name="DeliveryMethodDescription" Type="Edm.String" />
-        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
         <NavigationProperty Name="CollapsedStagesTypesPr" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalPrintingAssignmentCollapsedStagesTypesPrDto)" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalRegistrationAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="StageNumber" Type="Edm.Int32" />
         <Property Name="DeliveryMethodDescription" Type="Edm.String" />
-        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
         <NavigationProperty Name="CollapsedStagesTypesReg" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRegistrationAssignmentCollapsedStagesTypesRegDto)" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalReviewAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="IsResultSubmission" Type="Edm.Boolean" />
@@ -1364,45 +1364,45 @@
         <Property Name="NeedHideAddResolutionAction" Type="Edm.Boolean" />
         <Property Name="IsCollapsed" Type="Edm.Boolean" />
         <Property Name="DeliveryMethodDescription" Type="Edm.String" />
-        <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
         <NavigationProperty Name="CollapsedStagesTypesRe" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReviewAssignmentCollapsedStagesTypesReDto)" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalReworkAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="StageNumber" Type="Edm.Int32" />
         <NavigationProperty Name="AddApprovers" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReworkAssignmentAddApproversDto)" />
-        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
         <NavigationProperty Name="RegApprovers" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReworkAssignmentRegApproversDto)" />
-        <NavigationProperty Name="ApprovalRule" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRuleBaseDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Approvers" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReworkAssignmentApproversDto)" />
+        <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReworkAssignmentAddresseesDto)" />
+        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ApprovalRule" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRuleBaseDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="ForwardPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalReworkAssignmentAddresseesDto)" />
+        <NavigationProperty Name="ForwardPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalSendingAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="StageNumber" Type="Edm.Int32" />
         <Property Name="DeliveryMethodDescription" Type="Edm.String" />
-        <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
         <NavigationProperty Name="CollapsedStagesTypesSen" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalSendingAssignmentCollapsedStagesTypesSenDto)" />
+        <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
         <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalSigningAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="IsCollapsed" Type="Edm.Boolean" />
         <Property Name="IsConfirmSigning" Type="Edm.Boolean" />
         <Property Name="StageNumber" Type="Edm.Int32" />
         <Property Name="DeliveryMethodDescription" Type="Edm.String" />
-        <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
         <NavigationProperty Name="CollapsedStagesTypesSig" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalSigningAssignmentCollapsedStagesTypesSigDto)" />
+        <NavigationProperty Name="Stage" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalStageDto" />
         <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IApprovalSimpleAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="StageSubject" Type="Edm.String" />
@@ -1420,7 +1420,7 @@
       </EntityType>
       <EntityType Name="IFreeApprovalAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="AddresseeDeadline" Type="Edm.DateTimeOffset" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IFreeApprovalFinishAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto" />
       <EntityType Name="IFreeApprovalReworkAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
@@ -1438,32 +1438,32 @@
       </EntityType>
       <EntityType Name="IApprovalTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
         <Property Name="StageNumber" Type="Edm.Int32" />
-        <Property Name="ControlReturnStartDate" Type="Edm.DateTimeOffset" />
         <Property Name="Iteration" Type="Edm.Int32" />
-        <Property Name="AbortingReason" Type="Edm.String" />
-        <Property Name="ResolutionText" Type="Edm.String" />
         <Property Name="ReworkReason" Type="Edm.String" />
         <Property Name="IsStageAssigneeNotFound" Type="Edm.Boolean" />
-        <Property Name="DocumentExternalApprovalState" Type="Edm.String" />
         <Property Name="IsManyAddressees" Type="Edm.Boolean" />
+        <Property Name="ControlReturnStartDate" Type="Edm.DateTimeOffset" />
+        <Property Name="AbortingReason" Type="Edm.String" />
+        <Property Name="ResolutionText" Type="Edm.String" />
+        <Property Name="DocumentExternalApprovalState" Type="Edm.String" />
         <NavigationProperty Name="ReqApprovers" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalTaskReqApproversDto)" />
         <NavigationProperty Name="AddApprovers" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalTaskAddApproversDto)" />
-        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="ApprovalRule" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRuleBaseDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
-        <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
         <NavigationProperty Name="AddApproversExpanded" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalTaskAddApproversExpandedDto)" />
-        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
         <NavigationProperty Name="RevokedDocumentsRights" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalTaskRevokedDocumentsRightsDto)" />
         <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalTaskAddresseesDto)" />
         <NavigationProperty Name="AddedAddenda" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalTaskAddedAddendaDto)" />
         <NavigationProperty Name="RemovedAddenda" Type="Collection(Sungero.IntegrationService.Models.Generated.Docflow.IApprovalTaskRemovedAddendaDto)" />
+        <NavigationProperty Name="Signatory" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="ApprovalRule" Type="Sungero.IntegrationService.Models.Generated.Docflow.IApprovalRuleBaseDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="DeliveryMethod" Type="Sungero.IntegrationService.Models.Generated.Docflow.IMailDeliveryMethodDto" />
+        <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
+        <NavigationProperty Name="ReworkPerformer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="ICheckReturnTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
         <Property Name="Deadline" Type="Edm.DateTimeOffset" />
         <Property Name="AssignmentStartDate" Type="Edm.DateTimeOffset" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="DocumentToReturn" Type="Sungero.IntegrationService.Models.Generated.Content.IElectronicDocumentDto" />
       </EntityType>
       <EntityType Name="IDeadlineExtensionTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
@@ -1490,9 +1490,9 @@
         <Property Name="ValidTill" Type="Edm.DateTimeOffset" />
         <Property Name="IsStandard" Type="Edm.Boolean" />
         <Property Name="CounterpartyRegistrationNumber" Type="Edm.String" />
-        <NavigationProperty Name="Contact" Type="Sungero.IntegrationService.Models.Generated.Parties.IContactDto" />
-        <NavigationProperty Name="ResponsibleEmployee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Milestones" Type="Collection(Sungero.IntegrationService.Models.Generated.Contracts.IContractualDocumentMilestonesDto)" />
+        <NavigationProperty Name="Contact" Type="Sungero.IntegrationService.Models.Generated.Parties.IContactDto" />
+        <NavigationProperty Name="ResponsibleEmployee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IContractBaseDto" BaseType="Sungero.IntegrationService.Models.Generated.Contracts.IContractualDocumentDto">
         <Property Name="IsAutomaticRenewal" Type="Edm.Boolean" />
@@ -1523,7 +1523,7 @@
         <Property Name="IsCompleted" Type="Edm.Boolean" />
         <Property Name="Note" Type="Edm.String" />
         <NavigationProperty Name="ContractualDocument" Type="Sungero.IntegrationService.Models.Generated.Contracts.IContractualDocumentDto" />
-        <NavigationProperty Name="Performer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Performer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Task" Type="Sungero.IntegrationService.Models.Generated.Workflow.ISimpleTaskDto" />
       </EntityType>
       <EntityType Name="IContractBaseStagesDto" BaseType="Sungero.IntegrationService.Models.Generated.Contracts.IContractualDocumentMilestonesDto" />
@@ -1579,9 +1579,9 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="Status" Type="Edm.String" />
-        <Property Name="Name" Type="Edm.String" />
         <NavigationProperty Name="Participants" Type="Collection(Sungero.IntegrationService.Models.Generated.RecordManagement.IAcquaintanceListParticipantsDto)" />
         <NavigationProperty Name="ExcludedParticipants" Type="Collection(Sungero.IntegrationService.Models.Generated.RecordManagement.IAcquaintanceListExcludedParticipantsDto)" />
       </EntityType>
@@ -1590,9 +1590,9 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="TaskId" Type="Edm.Int64" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Employees" Type="Collection(Sungero.IntegrationService.Models.Generated.RecordManagement.IAcquaintanceTaskParticipantEmployeesDto)" />
       </EntityType>
       <EntityType Name="IRecordManagementSettingDto">
@@ -1600,12 +1600,12 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="AllowActionItemsWithIndefiniteDeadline" Type="Edm.Boolean" />
         <Property Name="ControlRelativeDeadlineInDays" Type="Edm.Int32" />
         <Property Name="ControlRelativeDeadlineInHours" Type="Edm.Int32" />
         <Property Name="AllowAcquaintanceBySubstitute" Type="Edm.Boolean" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IIncomingLetterVersionsDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IIncomingDocumentBaseVersionsDto" />
       <EntityType Name="IOrderBaseVersionsDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IInternalDocumentBaseVersionsDto" />
@@ -1655,10 +1655,10 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Hash" Type="Edm.String" />
         <Property Name="Number" Type="Edm.Int32" />
         <Property Name="IsMainDocument" Type="Edm.Boolean" />
         <Property Name="DocumentId" Type="Edm.Int64" />
+        <Property Name="Hash" Type="Edm.String" />
         <NavigationProperty Name="AcquaintanceTask" Type="Sungero.IntegrationService.Models.Generated.RecordManagement.IAcquaintanceTaskDto" />
       </EntityType>
       <EntityType Name="IAcquaintanceTaskExcludedPerformersDto">
@@ -1683,7 +1683,7 @@
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <NavigationProperty Name="AcquaintanceTaskParticipant" Type="Sungero.IntegrationService.Models.Generated.RecordManagement.IAcquaintanceTaskParticipantDto" />
-        <NavigationProperty Name="Employee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Employee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IActionItemExecutionTaskActionItemObserversDto">
         <Key>
@@ -1698,17 +1698,17 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
+        <Property Name="Number" Type="Edm.Int32" />
+        <Property Name="AssignmentCreated" Type="Edm.Boolean" />
+        <Property Name="PartGuid" Type="Edm.String" />
         <Property Name="ActionItemPart" Type="Edm.String" />
         <Property Name="CoAssignees" Type="Edm.String" />
         <Property Name="Deadline" Type="Edm.DateTimeOffset" />
-        <Property Name="Number" Type="Edm.Int32" />
-        <Property Name="AssignmentCreated" Type="Edm.Boolean" />
         <Property Name="CoAssigneesDeadline" Type="Edm.DateTimeOffset" />
-        <Property Name="PartGuid" Type="Edm.String" />
         <NavigationProperty Name="ActionItemExecutionTask" Type="Sungero.IntegrationService.Models.Generated.RecordManagement.IActionItemExecutionTaskDto" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="ActionItemPartExecutionTask" Type="Sungero.IntegrationService.Models.Generated.RecordManagement.IActionItemExecutionTaskDto" />
-        <NavigationProperty Name="Supervisor" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Supervisor" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IActionItemExecutionTaskAddedAddendaDto">
         <Key>
@@ -1725,7 +1725,7 @@
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <Property Name="AssignmentCreated" Type="Edm.Boolean" />
         <NavigationProperty Name="ActionItemExecutionTask" Type="Sungero.IntegrationService.Models.Generated.RecordManagement.IActionItemExecutionTaskDto" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IActionItemExecutionTaskPartsCoAssigneesDto">
         <Key>
@@ -1734,7 +1734,7 @@
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <Property Name="PartGuid" Type="Edm.String" />
         <NavigationProperty Name="ActionItemExecutionTask" Type="Sungero.IntegrationService.Models.Generated.RecordManagement.IActionItemExecutionTaskDto" />
-        <NavigationProperty Name="CoAssignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="CoAssignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IActionItemExecutionTaskRemovedAddendaDto">
         <Key>
@@ -1759,7 +1759,7 @@
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <Property Name="TaskCreated" Type="Edm.Boolean" />
         <NavigationProperty Name="DocumentReviewTask" Type="Sungero.IntegrationService.Models.Generated.RecordManagement.IDocumentReviewTaskDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IDocumentReviewTaskRemovedAddendaDto">
         <Key>
@@ -1788,21 +1788,21 @@
         <Property Name="ActionItem" Type="Edm.String" />
         <Property Name="NeedAbortChildActionItems" Type="Edm.Boolean" />
         <Property Name="ScheduledDate" Type="Edm.DateTimeOffset" />
-        <NavigationProperty Name="AssignedBy" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="AssignedBy" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IActionItemSupervisorAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="ActionItem" Type="Edm.String" />
         <Property Name="ScheduledDate" Type="Edm.DateTimeOffset" />
         <Property Name="NewDeadline" Type="Edm.DateTimeOffset" />
-        <NavigationProperty Name="AssignedBy" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="AssignedBy" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IDocumentReviewAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IPreparingDraftResolutionAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="NeedDeleteActionItems" Type="Edm.Boolean" />
         <Property Name="IsRework" Type="Edm.Boolean" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IReportRequestAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="IsRework" Type="Edm.Boolean" />
@@ -1810,17 +1810,17 @@
       <EntityType Name="IReportRequestCheckAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto" />
       <EntityType Name="IReviewDraftResolutionAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="NeedDeleteActionItems" Type="Edm.Boolean" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IReviewManagerAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="ReworkDeadline" Type="Edm.DateTimeOffset" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IReviewResolutionAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="ResolutionText" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IReviewReworkAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IAcquaintanceCompleteNotificationDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.INoticeDto" />
       <EntityType Name="IActionItemExecutionNotificationDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.INoticeDto" />
@@ -1862,9 +1862,9 @@
         <NavigationProperty Name="PartsCoAssignees" Type="Collection(Sungero.IntegrationService.Models.Generated.RecordManagement.IActionItemExecutionTaskPartsCoAssigneesDto)" />
         <NavigationProperty Name="AddedAddenda" Type="Collection(Sungero.IntegrationService.Models.Generated.RecordManagement.IActionItemExecutionTaskAddedAddendaDto)" />
         <NavigationProperty Name="RemovedAddenda" Type="Collection(Sungero.IntegrationService.Models.Generated.RecordManagement.IActionItemExecutionTaskRemovedAddendaDto)" />
-        <NavigationProperty Name="Supervisor" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="AssignedBy" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Supervisor" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="AssignedBy" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IDocumentReviewTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
         <Property Name="NeedDeleteActionItems" Type="Edm.Boolean" />
@@ -1874,13 +1874,13 @@
         <NavigationProperty Name="Addressees" Type="Collection(Sungero.IntegrationService.Models.Generated.RecordManagement.IDocumentReviewTaskAddresseesDto)" />
         <NavigationProperty Name="AddedAddenda" Type="Collection(Sungero.IntegrationService.Models.Generated.RecordManagement.IDocumentReviewTaskAddedAddendaDto)" />
         <NavigationProperty Name="RemovedAddenda" Type="Collection(Sungero.IntegrationService.Models.Generated.RecordManagement.IDocumentReviewTaskRemovedAddendaDto)" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IStatusReportRequestTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
         <Property Name="Report" Type="Edm.String" />
         <Property Name="ActionItem" Type="Edm.String" />
         <Property Name="ReportNote" Type="Edm.String" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
     </Schema>
     <Schema Namespace="Sungero.IntegrationService.Models.Generated.Meetings" xmlns="http://docs.oasis-open.org/odata/ns/edm">
@@ -1895,16 +1895,16 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
-        <Property Name="DateTime" Type="Edm.DateTimeOffset" />
         <Property Name="Location" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="DisplayName" Type="Edm.String" />
         <Property Name="Duration" Type="Edm.Double" />
-        <NavigationProperty Name="Secretary" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="President" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="DateTime" Type="Edm.DateTimeOffset" />
         <NavigationProperty Name="Members" Type="Collection(Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto)" />
+        <NavigationProperty Name="Secretary" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="President" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IMinutesVersionsDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IMinutesBaseVersionsDto" />
       <EntityType Name="IAgendaVersionsDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IInternalDocumentBaseVersionsDto" />
@@ -1936,11 +1936,11 @@
         <NavigationProperty Name="TeamMembers" Type="Collection(Sungero.IntegrationService.Models.Generated.Projects.IProjectCoreTeamMembersDto)" />
         <NavigationProperty Name="Classifier" Type="Collection(Sungero.IntegrationService.Models.Generated.Projects.IProjectCoreClassifierDto)" />
         <NavigationProperty Name="ProjectKind" Type="Sungero.IntegrationService.Models.Generated.Projects.IProjectKindDto" />
-        <NavigationProperty Name="InternalCustomer" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="InternalCustomer" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="ExternalCustomer" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
-        <NavigationProperty Name="Manager" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Manager" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="LeadingProject" Type="Sungero.IntegrationService.Models.Generated.Projects.IProjectCoreDto" />
-        <NavigationProperty Name="Administrator" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Administrator" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IProjectDto" BaseType="Sungero.IntegrationService.Models.Generated.Projects.IProjectCoreDto" />
       <EntityType Name="IProjectQueueItemBaseDto" BaseType="Sungero.IntegrationService.Models.Generated.ExchangeCore.IQueueItemBaseDto">
@@ -1958,9 +1958,9 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IProjectDocumentVersionsDto" BaseType="Sungero.IntegrationService.Models.Generated.Docflow.IInternalDocumentBaseVersionsDto" />
       <EntityType Name="IProjectTeamRecipientLinksDto" BaseType="Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto" />
@@ -2337,9 +2337,9 @@
         <NavigationProperty Name="Region" Type="Sungero.IntegrationService.Models.Generated.Commons.IRegionDto" />
         <NavigationProperty Name="HeadCompany" Type="Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto" />
         <NavigationProperty Name="Company" Type="Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto" />
-        <NavigationProperty Name="CEO" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="CEO" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Bank" Type="Sungero.IntegrationService.Models.Generated.Parties.IBankDto" />
-        <NavigationProperty Name="CAO" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="CAO" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IDepartmentDto" BaseType="Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto">
         <Property Name="Phone" Type="Edm.String" />
@@ -2347,7 +2347,7 @@
         <Property Name="Note" Type="Edm.String" />
         <Property Name="Code" Type="Edm.String" />
         <Property Name="ExternalId" Type="Edm.String" />
-        <NavigationProperty Name="Manager" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Manager" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="HeadOffice" Type="Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto" />
         <NavigationProperty Name="BusinessUnit" Type="Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto" />
       </EntityType>
@@ -2356,9 +2356,9 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="ExternalId" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Department" Type="Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto" />
       </EntityType>
       <EntityType Name="IManagersAssistantDto">
@@ -2366,22 +2366,22 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="PreparesResolution" Type="Edm.Boolean" />
         <Property Name="IsAssistant" Type="Edm.Boolean" />
         <Property Name="PreparesAssignmentCompletion" Type="Edm.Boolean" />
         <Property Name="SendActionItems" Type="Edm.Boolean" />
-        <NavigationProperty Name="Manager" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="Assistant" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <Property Name="Status" Type="Edm.String" />
+        <NavigationProperty Name="Manager" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assistant" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IVisibilityRuleDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Recipients" Type="Collection(Sungero.IntegrationService.Models.Generated.Company.IVisibilityRuleRecipientsDto)" />
         <NavigationProperty Name="VisibleMembers" Type="Collection(Sungero.IntegrationService.Models.Generated.Company.IVisibilityRuleVisibleMembersDto)" />
         <NavigationProperty Name="ExcludedMembers" Type="Collection(Sungero.IntegrationService.Models.Generated.Company.IVisibilityRuleExcludedMembersDto)" />
@@ -2391,10 +2391,10 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="NeedRestrictVisibilityDescription" Type="Edm.String" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="NeedRestrictVisibility" Type="Edm.Boolean" />
+        <Property Name="NeedRestrictVisibilityDescription" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="UnrestrictedRecipients" Type="Collection(Sungero.IntegrationService.Models.Generated.Company.IVisibilitySettingUnrestrictedRecipientsDto)" />
         <NavigationProperty Name="HiddenRecipients" Type="Collection(Sungero.IntegrationService.Models.Generated.Company.IVisibilitySettingHiddenRecipientsDto)" />
       </EntityType>
@@ -2430,7 +2430,7 @@
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <NavigationProperty Name="VisibilitySetting" Type="Sungero.IntegrationService.Models.Generated.Company.IVisibilitySettingDto" />
-        <NavigationProperty Name="Recipient" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Recipient" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IVisibilitySettingUnrestrictedRecipientsDto">
         <Key>
@@ -2441,7 +2441,7 @@
         <NavigationProperty Name="Recipient" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto" />
       </EntityType>
     </Schema>
-    <Schema Namespace="Sungero.IntegrationService.Models.Generated.DreamSolution" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+    <Schema Namespace="Sungero.IntegrationService.Models.Generated.NewDreamSolution" xmlns="http://docs.oasis-open.org/odata/ns/edm">
       <EntityType Name="IEmployeeDto" BaseType="Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto">
         <Property Name="Phone" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
@@ -2454,62 +2454,27 @@
         <NavigationProperty Name="Person" Type="Sungero.IntegrationService.Models.Generated.Parties.IPersonDto" />
         <NavigationProperty Name="Department" Type="Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto" />
         <NavigationProperty Name="JobTitle" Type="Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto" />
-        <NavigationProperty Name="MutationsStudent" Type="Collection(Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto)" />
       </EntityType>
-      <EntityType Name="IEmployeeMutationsStudentDto">
+    </Schema>
+    <Schema Namespace="Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityType Name="IEmployeeMutationKindDto">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int64" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="IEmployeeMutationsLogDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <Property Name="AppliedDate" Type="Edm.DateTimeOffset" />
         <Property Name="Note" Type="Edm.String" />
-        <NavigationProperty Name="Employee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="Kind" Type="Sungero.IntegrationService.Models.Generated.EmployeeModule.IEmployeeMutationKindDto" />
-      </EntityType>
-    </Schema>
-    <Schema Namespace="Sungero.IntegrationService.Models.Generated.EmployeeModule" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-      <EntityType Name="IEmployeeMutationKindDto">
-        <Key>
-          <PropertyRef Name="Id" />
-        </Key>
-        <Property Name="Id" Type="Edm.Int64" Nullable="false" />
         <Property Name="Status" Type="Edm.String" />
-        <Property Name="Name" Type="Edm.String" />
-      </EntityType>
-    </Schema>
-    <Schema Namespace="Sungero.IntegrationService.Models.Generated.HelpDesk" xmlns="http://docs.oasis-open.org/odata/ns/edm">
-      <EntityType Name="IRequestKindDto">
-        <Key>
-          <PropertyRef Name="Id" />
-        </Key>
-        <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
-        <Property Name="Name" Type="Edm.String" />
-        <Property Name="Note" Type="Edm.String" />
-      </EntityType>
-      <EntityType Name="IRequestDto">
-        <Key>
-          <PropertyRef Name="Id" />
-        </Key>
-        <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Result" Type="Edm.String" />
-        <Property Name="Communication" Type="Edm.String" />
-        <Property Name="Status" Type="Edm.String" />
-        <Property Name="Name" Type="Edm.String" />
-        <Property Name="Description" Type="Edm.String" />
-        <Property Name="CreatedDate" Type="Edm.DateTimeOffset" />
-        <Property Name="ClosedDate" Type="Edm.DateTimeOffset" />
-        <Property Name="LifeCycle" Type="Edm.String" />
-        <Property Name="Number" Type="Edm.Int64" />
-        <NavigationProperty Name="RequestKind" Type="Sungero.IntegrationService.Models.Generated.HelpDesk.IRequestKindDto" />
-        <NavigationProperty Name="Responsible" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-      </EntityType>
-      <EntityType Name="IExternalRequestDto" BaseType="Sungero.IntegrationService.Models.Generated.HelpDesk.IRequestDto">
-        <NavigationProperty Name="Company" Type="Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto" />
-        <NavigationProperty Name="Contact" Type="Sungero.IntegrationService.Models.Generated.Parties.IContactDto" />
-      </EntityType>
-      <EntityType Name="IInternalRequestDto" BaseType="Sungero.IntegrationService.Models.Generated.HelpDesk.IRequestDto">
-        <NavigationProperty Name="Author" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Employee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Mutation" Type="Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto" />
       </EntityType>
     </Schema>
     <Schema Namespace="Sungero.IntegrationService.Models.Generated.Commons" xmlns="http://docs.oasis-open.org/odata/ns/edm">
@@ -2518,8 +2483,8 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Region" Type="Sungero.IntegrationService.Models.Generated.Commons.IRegionDto" />
         <NavigationProperty Name="Country" Type="Sungero.IntegrationService.Models.Generated.Commons.ICountryDto" />
       </EntityType>
@@ -2528,50 +2493,50 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="ClassifierId" Type="Edm.Int32" />
         <Property Name="OldModelId" Type="Edm.Int32" />
         <Property Name="FMeasure" Type="Edm.String" />
         <Property Name="ArioTaskId" Type="Edm.Int32" />
-        <Property Name="TrainingStatus" Type="Edm.String" />
         <Property Name="NewModelId" Type="Edm.Int32" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="TrainingStatus" Type="Edm.String" />
       </EntityType>
       <EntityType Name="ICountryDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Code" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="ICurrencyDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="AlphaCode" Type="Edm.String" />
         <Property Name="ShortName" Type="Edm.String" />
         <Property Name="FractionName" Type="Edm.String" />
         <Property Name="IsDefault" Type="Edm.Boolean" />
         <Property Name="NumericCode" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IEntityRecognitionInfoDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="RecognizedClass" Type="Edm.String" />
         <Property Name="ClassProbability" Type="Edm.Double" />
         <Property Name="EntityId" Type="Edm.Int64" />
         <Property Name="EntityType" Type="Edm.String" />
-        <Property Name="ClassifierTrainingStatus" Type="Edm.String" />
         <Property Name="VerifiedClass" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="ClassifierTrainingStatus" Type="Edm.String" />
         <Property Name="Created" Type="Edm.DateTimeOffset" />
         <Property Name="Verified" Type="Edm.DateTimeOffset" />
         <NavigationProperty Name="Facts" Type="Collection(Sungero.IntegrationService.Models.Generated.Commons.IEntityRecognitionInfoFactsDto)" />
@@ -2583,24 +2548,24 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="EntityType" Type="Edm.String" />
         <Property Name="EntityId" Type="Edm.Int64" />
         <Property Name="ExtEntityType" Type="Edm.String" />
         <Property Name="ExtEntityId" Type="Edm.String" />
         <Property Name="ExtSystemId" Type="Edm.String" />
-        <Property Name="SyncDate" Type="Edm.DateTimeOffset" />
         <Property Name="IsDeleted" Type="Edm.Boolean" />
         <Property Name="Name" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="SyncDate" Type="Edm.DateTimeOffset" />
       </EntityType>
       <EntityType Name="IRegionDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Code" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Country" Type="Sungero.IntegrationService.Models.Generated.Commons.ICountryDto" />
       </EntityType>
       <EntityType Name="IVatRateDto">
@@ -2608,10 +2573,10 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Rate" Type="Edm.Int32" />
         <Property Name="Sid" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IEntityRecognitionInfoAdditionalClassifiersDto">
         <Key>
@@ -2628,7 +2593,6 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Position" Type="Edm.String" />
         <Property Name="FactId" Type="Edm.Int32" />
         <Property Name="FieldId" Type="Edm.Int32" />
         <Property Name="PropertyName" Type="Edm.String" />
@@ -2642,6 +2606,7 @@
         <Property Name="CollectionRecordId" Type="Edm.Int64" />
         <Property Name="Probability" Type="Edm.Double" />
         <Property Name="FieldConfidence" Type="Edm.Double" />
+        <Property Name="Position" Type="Edm.String" />
         <Property Name="Filled" Type="Edm.String" />
         <NavigationProperty Name="EntityRecognitionInfo" Type="Sungero.IntegrationService.Models.Generated.Commons.IEntityRecognitionInfoDto" />
       </EntityType>
@@ -2652,12 +2617,17 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="ServiceDocumentId" Type="Edm.String" />
         <Property Name="VersionId" Type="Edm.Int64" />
         <Property Name="ServiceMessageId" Type="Edm.String" />
         <Property Name="NeedSign" Type="Edm.Boolean" />
+        <Property Name="ServiceCounterpartyId" Type="Edm.String" />
+        <Property Name="ReceiverSignId" Type="Edm.Int64" />
+        <Property Name="SenderSignId" Type="Edm.Int64" />
+        <Property Name="StageId" Type="Edm.String" />
+        <Property Name="ExternalBuyerTitleId" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <Property Name="MessageType" Type="Edm.String" />
         <Property Name="MessageDate" Type="Edm.DateTimeOffset" />
         <Property Name="RevocationStatus" Type="Edm.String" />
@@ -2665,19 +2635,14 @@
         <Property Name="ExchangeState" Type="Edm.String" />
         <Property Name="InvoiceState" Type="Edm.String" />
         <Property Name="DeliveryConfirmationStatus" Type="Edm.String" />
-        <Property Name="ServiceCounterpartyId" Type="Edm.String" />
-        <Property Name="ReceiverSignId" Type="Edm.Int64" />
-        <Property Name="SenderSignId" Type="Edm.Int64" />
-        <Property Name="StageId" Type="Edm.String" />
-        <Property Name="ExternalBuyerTitleId" Type="Edm.String" />
         <Property Name="BuyerAcceptanceStatus" Type="Edm.String" />
         <Property Name="BuyerDeliveryConfirmationStatus" Type="Edm.String" />
+        <NavigationProperty Name="ServiceDocuments" Type="Collection(Sungero.IntegrationService.Models.Generated.Exchange.IExchangeDocumentInfoServiceDocumentsDto)" />
         <NavigationProperty Name="Document" Type="Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentDto" />
         <NavigationProperty Name="Box" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto" />
         <NavigationProperty Name="Counterparty" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
         <NavigationProperty Name="RevocationTask" Type="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto" />
         <NavigationProperty Name="RootBox" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
-        <NavigationProperty Name="ServiceDocuments" Type="Collection(Sungero.IntegrationService.Models.Generated.Exchange.IExchangeDocumentInfoServiceDocumentsDto)" />
         <NavigationProperty Name="DownloadSession" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IHistoricalMessagesDownloadSessionDto" />
         <NavigationProperty Name="CounterpartyDepartmentBox" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.ICounterpartyDepartmentBoxDto" />
       </EntityType>
@@ -2688,15 +2653,15 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="DocumentType" Type="Edm.String" />
         <Property Name="DocumentId" Type="Edm.String" />
         <Property Name="CounterpartyId" Type="Edm.String" />
-        <Property Name="Date" Type="Edm.DateTimeOffset" />
         <Property Name="ParentDocumentId" Type="Edm.String" />
         <Property Name="GeneratedName" Type="Edm.String" />
         <Property Name="StageId" Type="Edm.String" />
         <Property Name="FormalizedPoAUnifiedRegNo" Type="Edm.String" />
         <Property Name="SecondFormalizedPoAUnifiedRegNo" Type="Edm.String" />
+        <Property Name="DocumentType" Type="Edm.String" />
+        <Property Name="Date" Type="Edm.DateTimeOffset" />
         <NavigationProperty Name="Body" Type="Sungero.IntegrationService.Generator.IBinaryObjectDto" ContainsTarget="true" />
         <NavigationProperty Name="Sign" Type="Sungero.IntegrationService.Generator.IBinaryObjectDto" ContainsTarget="true" />
         <NavigationProperty Name="SecondSign" Type="Sungero.IntegrationService.Generator.IBinaryObjectDto" ContainsTarget="true" />
@@ -2708,29 +2673,29 @@
         <NavigationProperty Name="Counterparty" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
         <NavigationProperty Name="Box" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="BusinessUnitBox" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
         <NavigationProperty Name="CounterpartyDepartmentBox" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.ICounterpartyDepartmentBoxDto" />
       </EntityType>
       <EntityType Name="IReceiptNotificationSendingAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="NewDeadline" Type="Edm.DateTimeOffset" />
         <NavigationProperty Name="Box" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IExchangeDocumentProcessingTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
+        <Property Name="IsIncoming" Type="Edm.Boolean" />
         <Property Name="Deadline" Type="Edm.DateTimeOffset" />
         <Property Name="IncomeDate" Type="Edm.DateTimeOffset" />
-        <Property Name="IsIncoming" Type="Edm.Boolean" />
         <NavigationProperty Name="Box" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto" />
         <NavigationProperty Name="Counterparty" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="CounterpartyDepartmentBox" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.ICounterpartyDepartmentBoxDto" />
       </EntityType>
       <EntityType Name="IReceiptNotificationSendingTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
         <NavigationProperty Name="Box" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
     </Schema>
     <Schema Namespace="Sungero.IntegrationService.Models.Generated.ExchangeCore" xmlns="http://docs.oasis-open.org/odata/ns/edm">
@@ -2739,26 +2704,26 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
-        <Property Name="ConnectionStatus" Type="Edm.String" />
-        <Property Name="Routing" Type="Edm.String" />
         <Property Name="DeadlineInDays" Type="Edm.Int32" />
         <Property Name="DeadlineInHours" Type="Edm.Int32" />
-        <NavigationProperty Name="Responsible" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="ConnectionStatus" Type="Edm.String" />
+        <Property Name="Routing" Type="Edm.String" />
+        <NavigationProperty Name="Responsible" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IBusinessUnitBoxDto" BaseType="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto">
         <Property Name="Login" Type="Edm.String" />
-        <Property Name="Password" Type="Edm.String" />
         <Property Name="OrganizationId" Type="Edm.String" />
         <Property Name="HasExchangeServiceCertificates" Type="Edm.Boolean" />
         <Property Name="FtsId" Type="Edm.String" />
+        <Property Name="Password" Type="Edm.String" />
+        <NavigationProperty Name="ExchangeServiceCertificates" Type="Collection(Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto)" />
+        <NavigationProperty Name="FormalizedPoAInfos" Type="Collection(Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto)" />
         <NavigationProperty Name="BusinessUnit" Type="Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto" />
         <NavigationProperty Name="ExchangeService" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto" />
-        <NavigationProperty Name="ExchangeServiceCertificates" Type="Collection(Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto)" />
         <NavigationProperty Name="CertificateReceiptNotifications" Type="Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto" />
-        <NavigationProperty Name="FormalizedPoAInfos" Type="Collection(Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto)" />
       </EntityType>
       <EntityType Name="IDepartmentBoxDto" BaseType="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto">
         <Property Name="ServiceId" Type="Edm.String" />
@@ -2773,7 +2738,6 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="DepartmentId" Type="Edm.String" />
         <Property Name="FtsId" Type="Edm.String" />
@@ -2781,6 +2745,7 @@
         <Property Name="Note" Type="Edm.String" />
         <Property Name="Address" Type="Edm.String" />
         <Property Name="ParentBranchId" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Counterparty" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
         <NavigationProperty Name="Box" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
       </EntityType>
@@ -2789,26 +2754,26 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Uri" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
-        <Property Name="ExchangeProvider" Type="Edm.String" />
         <Property Name="LogonUrl" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="ExchangeProvider" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IHistoricalMessagesDownloadSessionDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="PeriodBegin" Type="Edm.DateTimeOffset" />
         <Property Name="PeriodEnd" Type="Edm.DateTimeOffset" />
-        <Property Name="LastMessageDate" Type="Edm.DateTimeOffset" />
-        <Property Name="DownloadingState" Type="Edm.String" />
         <Property Name="LastIncomingMessageId" Type="Edm.String" />
         <Property Name="LastOutgoingMessageId" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="LastMessageDate" Type="Edm.DateTimeOffset" />
+        <Property Name="DownloadingState" Type="Edm.String" />
         <NavigationProperty Name="BusinessUnitBox" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
       </EntityType>
       <EntityType Name="IQueueItemBaseDto">
@@ -2816,14 +2781,14 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="ExternalId" Type="Edm.String" />
         <Property Name="Retries" Type="Edm.Int32" />
         <Property Name="Note" Type="Edm.String" />
+        <Property Name="AsyncHandlerId" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <Property Name="ProcessingStatus" Type="Edm.String" />
         <Property Name="LastUpdate" Type="Edm.DateTimeOffset" />
-        <Property Name="AsyncHandlerId" Type="Edm.String" />
         <NavigationProperty Name="Box" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto" />
         <NavigationProperty Name="RootBox" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
       </EntityType>
@@ -2833,19 +2798,19 @@
         <NavigationProperty Name="Document" Type="Sungero.IntegrationService.Models.Generated.Docflow.IOfficialDocumentDto" />
       </EntityType>
       <EntityType Name="ICounterpartyQueueItemDto" BaseType="Sungero.IntegrationService.Models.Generated.ExchangeCore.IQueueItemBaseDto">
-        <Property Name="SyncResult" Type="Edm.String" />
         <Property Name="CounterpartyBranchId" Type="Edm.String" />
+        <Property Name="SyncResult" Type="Edm.String" />
         <NavigationProperty Name="MatchingTask" Type="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto" />
         <NavigationProperty Name="Counterparty" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
       </EntityType>
       <EntityType Name="IMessageQueueItemDto" BaseType="Sungero.IntegrationService.Models.Generated.ExchangeCore.IQueueItemBaseDto">
-        <Property Name="Created" Type="Edm.DateTimeOffset" />
         <Property Name="CounterpartyExternalId" Type="Edm.String" />
         <Property Name="RootMessageId" Type="Edm.String" />
         <Property Name="IsRootMessage" Type="Edm.Boolean" />
         <Property Name="IsManualRestart" Type="Edm.Boolean" />
-        <NavigationProperty Name="NoticeTask" Type="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto" />
+        <Property Name="Created" Type="Edm.DateTimeOffset" />
         <NavigationProperty Name="Documents" Type="Collection(Sungero.IntegrationService.Models.Generated.ExchangeCore.IMessageQueueItemDocumentsDto)" />
+        <NavigationProperty Name="NoticeTask" Type="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto" />
         <NavigationProperty Name="DownloadSession" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IHistoricalMessagesDownloadSessionDto" />
       </EntityType>
       <EntityType Name="ICounterpartyConflictProcessingTaskObserversDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskObserversDto" />
@@ -2885,13 +2850,13 @@
       <EntityType Name="ICounterpartyConflictProcessingTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
         <Property Name="CounterpartyOrganizationId" Type="Edm.String" />
         <Property Name="CounterpartyBranchId" Type="Edm.String" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IIncomingInvitationTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
         <Property Name="OrganizationId" Type="Edm.String" />
         <NavigationProperty Name="Box" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
         <NavigationProperty Name="Counterparty" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
     </Schema>
     <Schema Namespace="Sungero.IntegrationService.Models.Generated.Parties" xmlns="http://docs.oasis-open.org/odata/ns/edm">
@@ -2900,8 +2865,6 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Note" Type="Edm.String" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Department" Type="Edm.String" />
         <Property Name="JobTitle" Type="Edm.String" />
@@ -2910,6 +2873,8 @@
         <Property Name="Email" Type="Edm.String" />
         <Property Name="Homepage" Type="Edm.String" />
         <Property Name="SigningReason" Type="Edm.String" />
+        <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Person" Type="Sungero.IntegrationService.Models.Generated.Parties.IPersonDto" />
         <NavigationProperty Name="Company" Type="Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto" />
       </EntityType>
@@ -2918,17 +2883,16 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Note" Type="Edm.String" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Sid" Type="Edm.String" />
+        <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="ICounterpartyDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="TIN" Type="Edm.String" />
         <Property Name="LegalAddress" Type="Edm.String" />
@@ -2945,11 +2909,12 @@
         <Property Name="CanExchange" Type="Edm.Boolean" />
         <Property Name="Code" Type="Edm.String" />
         <Property Name="ExternalId" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <NavigationProperty Name="ExchangeBoxes" Type="Collection(Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto)" />
         <NavigationProperty Name="City" Type="Sungero.IntegrationService.Models.Generated.Commons.ICityDto" />
         <NavigationProperty Name="Region" Type="Sungero.IntegrationService.Models.Generated.Commons.IRegionDto" />
         <NavigationProperty Name="Bank" Type="Sungero.IntegrationService.Models.Generated.Parties.IBankDto" />
-        <NavigationProperty Name="ExchangeBoxes" Type="Collection(Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto)" />
-        <NavigationProperty Name="Responsible" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Responsible" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
         <NavigationProperty Name="Kind" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDto" />
       </EntityType>
       <EntityType Name="ICompanyBaseDto" BaseType="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto">
@@ -2981,21 +2946,20 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Note" Type="Edm.String" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Url" Type="Edm.String" />
         <Property Name="UrlForSelfEmployed" Type="Edm.String" />
         <Property Name="IsDefault" Type="Edm.Boolean" />
         <Property Name="IsSystem" Type="Edm.Boolean" />
         <Property Name="HomeUrl" Type="Edm.String" />
+        <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="ICounterpartyExchangeBoxesDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="OrganizationId" Type="Edm.String" />
         <Property Name="InvitationText" Type="Edm.String" />
         <Property Name="IsDefault" Type="Edm.Boolean" />
@@ -3004,6 +2968,7 @@
         <Property Name="FtsId" Type="Edm.String" />
         <Property Name="CounterpartyBranchId" Type="Edm.String" />
         <Property Name="CounterpartyParentBranchId" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
         <NavigationProperty Name="Counterparty" Type="Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto" />
         <NavigationProperty Name="Box" Type="Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto" />
       </EntityType>
@@ -3018,22 +2983,22 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Note" Type="Edm.String" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="Uri" Type="Edm.String" />
         <Property Name="APIKey" Type="Edm.String" />
+        <Property Name="Note" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
       </EntityType>
       <EntityType Name="IPowerOfAttorneyServiceConnectionDto">
         <Key>
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
+        <Property Name="OrganizationId" Type="Edm.String" />
+        <Property Name="Name" Type="Edm.String" />
         <Property Name="Note" Type="Edm.String" />
         <Property Name="Status" Type="Edm.String" />
-        <Property Name="OrganizationId" Type="Edm.String" />
         <Property Name="ConnectionStatus" Type="Edm.String" />
-        <Property Name="Name" Type="Edm.String" />
         <NavigationProperty Name="BusinessUnit" Type="Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto" />
         <NavigationProperty Name="ServiceApp" Type="Sungero.IntegrationService.Models.Generated.PowerOfAttorneyCore.IPowerOfAttorneyServiceAppDto" />
       </EntityType>
@@ -3044,20 +3009,20 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="PackageFolderPath" Type="Edm.String" />
         <Property Name="SenderLine" Type="Edm.String" />
-        <Property Name="SourceType" Type="Edm.String" />
         <Property Name="FromName" Type="Edm.String" />
         <Property Name="FromAddress" Type="Edm.String" />
         <Property Name="Subject" Type="Edm.String" />
-        <Property Name="ProcessState" Type="Edm.String" />
         <Property Name="PackageId" Type="Edm.String" />
         <Property Name="SourceName" Type="Edm.String" />
-        <Property Name="DcsProcessingBeginDate" Type="Edm.DateTimeOffset" />
         <Property Name="MessageId" Type="Edm.String" />
         <Property Name="Priority" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="SourceType" Type="Edm.String" />
+        <Property Name="ProcessState" Type="Edm.String" />
+        <Property Name="DcsProcessingBeginDate" Type="Edm.DateTimeOffset" />
         <Property Name="SendDate" Type="Edm.DateTimeOffset" />
         <NavigationProperty Name="Blobs" Type="Collection(Sungero.IntegrationService.Models.Generated.SmartProcessing.IBlobPackageBlobsDto)" />
         <NavigationProperty Name="To" Type="Collection(Sungero.IntegrationService.Models.Generated.SmartProcessing.IBlobPackageToDto)" />
@@ -3069,16 +3034,16 @@
           <PropertyRef Name="Id" />
         </Key>
         <Property Name="Id" Type="Edm.Int64" Nullable="false" />
-        <Property Name="ArioResultJson" Type="Edm.String" />
-        <Property Name="Status" Type="Edm.String" />
         <Property Name="Name" Type="Edm.String" />
         <Property Name="FilePath" Type="Edm.String" />
         <Property Name="OriginalFileName" Type="Edm.String" />
-        <Property Name="Created" Type="Edm.DateTimeOffset" />
-        <Property Name="Modified" Type="Edm.DateTimeOffset" />
         <Property Name="FileSize" Type="Edm.String" />
         <Property Name="PageCount" Type="Edm.Int32" />
         <Property Name="ArioTaskId" Type="Edm.Int32" />
+        <Property Name="ArioResultJson" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="Created" Type="Edm.DateTimeOffset" />
+        <Property Name="Modified" Type="Edm.DateTimeOffset" />
         <Property Name="ArioTaskStatus" Type="Edm.String" />
         <NavigationProperty Name="Body" Type="Sungero.IntegrationService.Generator.IBinaryDataDto" ContainsTarget="true" />
       </EntityType>
@@ -3111,13 +3076,13 @@
       </EntityType>
       <EntityType Name="IVerificationAssignmentDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.IAssignmentDto">
         <Property Name="NewDeadline" Type="Edm.DateTimeOffset" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <EntityType Name="IVerificationTaskDto" BaseType="Sungero.IntegrationService.Models.Generated.Workflow.ITaskDto">
         <Property Name="LeadingDocumentName" Type="Edm.String" />
         <Property Name="Deadline" Type="Edm.DateTimeOffset" />
-        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
-        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Assignee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
+        <NavigationProperty Name="Addressee" Type="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto" />
       </EntityType>
       <ComplexType Name="IDcsPackageDto">
         <Property Name="SenderLine" Type="Edm.String" />
@@ -4869,10 +4834,9 @@
           <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto/Login" Target="ILogins" />
           <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.Docflow.IRegistrationGroupDto/Departments" Target="IRegistrationGroupDepartmentss" />
           <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.Docflow.IRegistrationGroupDto/ResponsibleEmployee" Target="IEmployees" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto/Department" Target="IDepartments" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto/JobTitle" Target="IJobTitles" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto/MutationsStudent" Target="IEmployeeMutationsStudents" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto/Person" Target="IPersons" />
+          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto/Department" Target="IDepartments" />
+          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto/JobTitle" Target="IJobTitles" />
+          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto/Person" Target="IPersons" />
         </EntitySet>
         <EntitySet Name="IGroups" EntityType="Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto">
           <NavigationPropertyBinding Path="Parent" Target="IGroups" />
@@ -4924,16 +4888,14 @@
         </EntitySet>
         <EntitySet Name="IUsers" EntityType="Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto">
           <NavigationPropertyBinding Path="Login" Target="ILogins" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto/Department" Target="IDepartments" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto/JobTitle" Target="IJobTitles" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto/MutationsStudent" Target="IEmployeeMutationsStudents" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto/Person" Target="IPersons" />
+          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto/Department" Target="IDepartments" />
+          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto/JobTitle" Target="IJobTitles" />
+          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto/Person" Target="IPersons" />
         </EntitySet>
-        <EntitySet Name="IEmployees" EntityType="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto">
+        <EntitySet Name="IEmployees" EntityType="Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto">
           <NavigationPropertyBinding Path="Department" Target="IDepartments" />
           <NavigationPropertyBinding Path="JobTitle" Target="IJobTitles" />
           <NavigationPropertyBinding Path="Login" Target="ILogins" />
-          <NavigationPropertyBinding Path="MutationsStudent" Target="IEmployeeMutationsStudents" />
           <NavigationPropertyBinding Path="Person" Target="IPersons" />
         </EntitySet>
         <EntitySet Name="ILogins" EntityType="Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDto" />
@@ -4956,25 +4918,10 @@
           <NavigationPropertyBinding Path="Day" Target="IWorkingTimeCalendarDaies" />
           <NavigationPropertyBinding Path="Recipients" Target="IPrivateWorkingTimeCalendarRecipientss" />
         </EntitySet>
-        <EntitySet Name="IEmployeeMutationKinds" EntityType="Sungero.IntegrationService.Models.Generated.EmployeeModule.IEmployeeMutationKindDto" />
-        <EntitySet Name="IHelpDeskRequestKinds" EntityType="Sungero.IntegrationService.Models.Generated.HelpDesk.IRequestKindDto" />
-        <EntitySet Name="IHelpDeskRequests" EntityType="Sungero.IntegrationService.Models.Generated.HelpDesk.IRequestDto">
-          <NavigationPropertyBinding Path="RequestKind" Target="IHelpDeskRequestKinds" />
-          <NavigationPropertyBinding Path="Responsible" Target="IEmployees" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.HelpDesk.IExternalRequestDto/Company" Target="ICompanyBases" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.HelpDesk.IExternalRequestDto/Contact" Target="IContacts" />
-          <NavigationPropertyBinding Path="Sungero.IntegrationService.Models.Generated.HelpDesk.IInternalRequestDto/Author" Target="IEmployees" />
-        </EntitySet>
-        <EntitySet Name="IHelpDeskExternalRequests" EntityType="Sungero.IntegrationService.Models.Generated.HelpDesk.IExternalRequestDto">
-          <NavigationPropertyBinding Path="Company" Target="ICompanyBases" />
-          <NavigationPropertyBinding Path="Contact" Target="IContacts" />
-          <NavigationPropertyBinding Path="RequestKind" Target="IHelpDeskRequestKinds" />
-          <NavigationPropertyBinding Path="Responsible" Target="IEmployees" />
-        </EntitySet>
-        <EntitySet Name="IHelpDeskInternalRequests" EntityType="Sungero.IntegrationService.Models.Generated.HelpDesk.IInternalRequestDto">
-          <NavigationPropertyBinding Path="Author" Target="IEmployees" />
-          <NavigationPropertyBinding Path="RequestKind" Target="IHelpDeskRequestKinds" />
-          <NavigationPropertyBinding Path="Responsible" Target="IEmployees" />
+        <EntitySet Name="IEmployeeMutationsModuleEmployeeMutationKinds" EntityType="Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto" />
+        <EntitySet Name="IEmployeeMutationsModuleEmployeeMutationsLogs" EntityType="Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDto">
+          <NavigationPropertyBinding Path="Employee" Target="IEmployees" />
+          <NavigationPropertyBinding Path="Mutation" Target="IEmployeeMutationsModuleEmployeeMutationKinds" />
         </EntitySet>
         <EntitySet Name="ICities" EntityType="Sungero.IntegrationService.Models.Generated.Commons.ICityDto">
           <NavigationPropertyBinding Path="Country" Target="ICountries" />
@@ -5778,10 +5725,6 @@
         <EntitySet Name="IVerificationTaskObserverss" EntityType="Sungero.IntegrationService.Models.Generated.SmartProcessing.IVerificationTaskObserversDto">
           <NavigationPropertyBinding Path="Observer" Target="IRecipients" />
           <NavigationPropertyBinding Path="Task" Target="ITasks" />
-        </EntitySet>
-        <EntitySet Name="IEmployeeMutationsStudents" EntityType="Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto">
-          <NavigationPropertyBinding Path="Employee" Target="IEmployees" />
-          <NavigationPropertyBinding Path="Kind" Target="IEmployeeMutationKinds" />
         </EntitySet>
         <EntitySet Name="IEntityRecognitionInfoAdditionalClassifierss" EntityType="Sungero.IntegrationService.Models.Generated.Commons.IEntityRecognitionInfoAdditionalClassifiersDto">
           <NavigationPropertyBinding Path="EntityRecognitionInfo" Target="IEntityRecognitionInfos" />

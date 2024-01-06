@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
+// Generation date: 05.01.2024 23:02:18
 namespace Sungero.IntegrationService.Models.Generated.Parties
 {
     /// <summary>
@@ -126,30 +126,6 @@ namespace Sungero.IntegrationService.Models.Generated.Parties
         private long _Id;
         partial void OnIdChanging(long value);
         partial void OnIdChanged();
-        /// <summary>
-        /// There are no comments for Property Status in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
-        public virtual string Status
-        {
-            get
-            {
-                return this._Status;
-            }
-            set
-            {
-                this.OnStatusChanging(value);
-                this._Status = value;
-                this.OnStatusChanged();
-                this.OnPropertyChanged("Status");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _Status;
-        partial void OnStatusChanging(string value);
-        partial void OnStatusChanged();
         /// <summary>
         /// There are no comments for Property OrganizationId in the schema.
         /// </summary>
@@ -342,6 +318,30 @@ namespace Sungero.IntegrationService.Models.Generated.Parties
         private string _CounterpartyParentBranchId;
         partial void OnCounterpartyParentBranchIdChanging(string value);
         partial void OnCounterpartyParentBranchIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
         /// <summary>
         /// There are no comments for Property Counterparty in the schema.
         /// </summary>

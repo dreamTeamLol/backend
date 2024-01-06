@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
+// Generation date: 05.01.2024 23:02:18
 namespace Sungero.IntegrationService.Models.Generated.Parties
 {
     /// <summary>
@@ -57,6 +57,28 @@ namespace Sungero.IntegrationService.Models.Generated.Parties
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle _HeadCompany;
+        /// <summary>
+        /// There are no comments for ExchangeBoxes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeBoxes")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> ExchangeBoxes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeBoxes == null))
+                {
+                    this._ExchangeBoxes = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto>(GetPath("ExchangeBoxes"));
+                }
+                return this._ExchangeBoxes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _ExchangeBoxes;
         /// <summary>
         /// There are no comments for City in the schema.
         /// </summary>
@@ -124,33 +146,11 @@ namespace Sungero.IntegrationService.Models.Generated.Parties
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle _Bank;
         /// <summary>
-        /// There are no comments for ExchangeBoxes in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeBoxes")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> ExchangeBoxes
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ExchangeBoxes == null))
-                {
-                    this._ExchangeBoxes = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto>(GetPath("ExchangeBoxes"));
-                }
-                return this._ExchangeBoxes;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _ExchangeBoxes;
-        /// <summary>
         /// There are no comments for Responsible in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle Responsible
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
         {
             get
             {
@@ -160,13 +160,13 @@ namespace Sungero.IntegrationService.Models.Generated.Parties
                 }
                 if ((this._Responsible == null))
                 {
-                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
                 }
                 return this._Responsible;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle _Responsible;
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
         /// <summary>
         /// There are no comments for Kind in the schema.
         /// </summary>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
+// Generation date: 05.01.2024 23:02:18
 namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
 {
     /// <summary>
@@ -83,30 +83,6 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         partial void OnIdChanging(long value);
         partial void OnIdChanged();
         /// <summary>
-        /// There are no comments for Property Status in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
-        public virtual string Status
-        {
-            get
-            {
-                return this._Status;
-            }
-            set
-            {
-                this.OnStatusChanging(value);
-                this._Status = value;
-                this.OnStatusChanged();
-                this.OnPropertyChanged("Status");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _Status;
-        partial void OnStatusChanging(string value);
-        partial void OnStatusChanged();
-        /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -179,30 +155,6 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         partial void OnNoteChanging(string value);
         partial void OnNoteChanged();
         /// <summary>
-        /// There are no comments for Property ExchangeProvider in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeProvider")]
-        public virtual string ExchangeProvider
-        {
-            get
-            {
-                return this._ExchangeProvider;
-            }
-            set
-            {
-                this.OnExchangeProviderChanging(value);
-                this._ExchangeProvider = value;
-                this.OnExchangeProviderChanged();
-                this.OnPropertyChanged("ExchangeProvider");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _ExchangeProvider;
-        partial void OnExchangeProviderChanging(string value);
-        partial void OnExchangeProviderChanged();
-        /// <summary>
         /// There are no comments for Property LogonUrl in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -226,6 +178,54 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         private string _LogonUrl;
         partial void OnLogonUrlChanging(string value);
         partial void OnLogonUrlChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property ExchangeProvider in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeProvider")]
+        public virtual string ExchangeProvider
+        {
+            get
+            {
+                return this._ExchangeProvider;
+            }
+            set
+            {
+                this.OnExchangeProviderChanging(value);
+                this._ExchangeProvider = value;
+                this.OnExchangeProviderChanged();
+                this.OnPropertyChanged("ExchangeProvider");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ExchangeProvider;
+        partial void OnExchangeProviderChanging(string value);
+        partial void OnExchangeProviderChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed
         /// </summary>

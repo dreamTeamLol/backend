@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
+// Generation date: 05.01.2024 23:02:18
 namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
 {
     /// <summary>
@@ -40,7 +40,7 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle Responsible
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
         {
             get
             {
@@ -50,13 +50,13 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
                 }
                 if ((this._Responsible == null))
                 {
-                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
                 }
                 return this._Responsible;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle _Responsible;
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
     }
     /// <summary>
     /// There are no comments for IBoxBaseDto in the schema.
@@ -104,30 +104,6 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         private long _Id;
         partial void OnIdChanging(long value);
         partial void OnIdChanged();
-        /// <summary>
-        /// There are no comments for Property Status in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
-        public virtual string Status
-        {
-            get
-            {
-                return this._Status;
-            }
-            set
-            {
-                this.OnStatusChanging(value);
-                this._Status = value;
-                this.OnStatusChanged();
-                this.OnPropertyChanged("Status");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _Status;
-        partial void OnStatusChanging(string value);
-        partial void OnStatusChanged();
         /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
@@ -177,54 +153,6 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         partial void OnNoteChanging(string value);
         partial void OnNoteChanged();
         /// <summary>
-        /// There are no comments for Property ConnectionStatus in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ConnectionStatus")]
-        public virtual string ConnectionStatus
-        {
-            get
-            {
-                return this._ConnectionStatus;
-            }
-            set
-            {
-                this.OnConnectionStatusChanging(value);
-                this._ConnectionStatus = value;
-                this.OnConnectionStatusChanged();
-                this.OnPropertyChanged("ConnectionStatus");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _ConnectionStatus;
-        partial void OnConnectionStatusChanging(string value);
-        partial void OnConnectionStatusChanged();
-        /// <summary>
-        /// There are no comments for Property Routing in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Routing")]
-        public virtual string Routing
-        {
-            get
-            {
-                return this._Routing;
-            }
-            set
-            {
-                this.OnRoutingChanging(value);
-                this._Routing = value;
-                this.OnRoutingChanged();
-                this.OnPropertyChanged("Routing");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _Routing;
-        partial void OnRoutingChanging(string value);
-        partial void OnRoutingChanged();
-        /// <summary>
         /// There are no comments for Property DeadlineInDays in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -273,12 +201,84 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         partial void OnDeadlineInHoursChanging(global::System.Nullable<int> value);
         partial void OnDeadlineInHoursChanged();
         /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property ConnectionStatus in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ConnectionStatus")]
+        public virtual string ConnectionStatus
+        {
+            get
+            {
+                return this._ConnectionStatus;
+            }
+            set
+            {
+                this.OnConnectionStatusChanging(value);
+                this._ConnectionStatus = value;
+                this.OnConnectionStatusChanged();
+                this.OnPropertyChanged("ConnectionStatus");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ConnectionStatus;
+        partial void OnConnectionStatusChanging(string value);
+        partial void OnConnectionStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Routing in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Routing")]
+        public virtual string Routing
+        {
+            get
+            {
+                return this._Routing;
+            }
+            set
+            {
+                this.OnRoutingChanging(value);
+                this._Routing = value;
+                this.OnRoutingChanged();
+                this.OnPropertyChanged("Routing");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Routing;
+        partial void OnRoutingChanging(string value);
+        partial void OnRoutingChanged();
+        /// <summary>
         /// There are no comments for Property Responsible in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
 
         [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto Responsible
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto Responsible
         {
             get
             {
@@ -293,8 +293,8 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto _Responsible;
-        partial void OnResponsibleChanging(global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto value);
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _Responsible;
+        partial void OnResponsibleChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
         partial void OnResponsibleChanged();
         /// <summary>
         /// This event is raised when the value of the property is changed

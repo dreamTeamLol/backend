@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
+// Generation date: 05.01.2024 23:02:18
 namespace Sungero.IntegrationService.Models.Generated.Company
 {
     /// <summary>
@@ -128,7 +128,7 @@ namespace Sungero.IntegrationService.Models.Generated.Company
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("CEO")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle CEO
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle CEO
         {
             get
             {
@@ -138,13 +138,13 @@ namespace Sungero.IntegrationService.Models.Generated.Company
                 }
                 if ((this._CEO == null))
                 {
-                    this._CEO = new global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle(this.Context, GetPath("CEO"));
+                    this._CEO = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("CEO"));
                 }
                 return this._CEO;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle _CEO;
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _CEO;
         /// <summary>
         /// There are no comments for Bank in the schema.
         /// </summary>
@@ -172,7 +172,7 @@ namespace Sungero.IntegrationService.Models.Generated.Company
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("CAO")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle CAO
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle CAO
         {
             get
             {
@@ -182,13 +182,13 @@ namespace Sungero.IntegrationService.Models.Generated.Company
                 }
                 if ((this._CAO == null))
                 {
-                    this._CAO = new global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle(this.Context, GetPath("CAO"));
+                    this._CAO = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("CAO"));
                 }
                 return this._CAO;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle _CAO;
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _CAO;
         /// <summary>
         /// There are no comments for RecipientLinks in the schema.
         /// </summary>
@@ -741,7 +741,7 @@ namespace Sungero.IntegrationService.Models.Generated.Company
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
 
         [global::Microsoft.OData.Client.OriginalNameAttribute("CEO")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto CEO
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto CEO
         {
             get
             {
@@ -756,8 +756,8 @@ namespace Sungero.IntegrationService.Models.Generated.Company
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto _CEO;
-        partial void OnCEOChanging(global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto value);
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _CEO;
+        partial void OnCEOChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
         partial void OnCEOChanged();
         /// <summary>
         /// There are no comments for Property Bank in the schema.
@@ -789,7 +789,7 @@ namespace Sungero.IntegrationService.Models.Generated.Company
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
 
         [global::Microsoft.OData.Client.OriginalNameAttribute("CAO")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto CAO
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto CAO
         {
             get
             {
@@ -804,8 +804,8 @@ namespace Sungero.IntegrationService.Models.Generated.Company
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto _CAO;
-        partial void OnCAOChanging(global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDto value);
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _CAO;
+        partial void OnCAOChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
         partial void OnCAOChanged();
     }
 }

@@ -8,8 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
-namespace Sungero.IntegrationService.Models.Generated.DreamSolution
+// Generation date: 05.01.2024 23:02:18
+namespace Sungero.IntegrationService.Models.Generated.NewDreamSolution
 {
     /// <summary>
     /// There are no comments for IEmployeeDtoSingle in the schema.
@@ -101,28 +101,6 @@ namespace Sungero.IntegrationService.Models.Generated.DreamSolution
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle _JobTitle;
-        /// <summary>
-        /// There are no comments for MutationsStudent in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MutationsStudent")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto> MutationsStudent
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._MutationsStudent == null))
-                {
-                    this._MutationsStudent = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto>(GetPath("MutationsStudent"));
-                }
-                return this._MutationsStudent;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto> _MutationsStudent;
         /// <summary>
         /// There are no comments for Login in the schema.
         /// </summary>
@@ -453,29 +431,5 @@ namespace Sungero.IntegrationService.Models.Generated.DreamSolution
         private global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto _JobTitle;
         partial void OnJobTitleChanging(global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto value);
         partial void OnJobTitleChanged();
-        /// <summary>
-        /// There are no comments for Property MutationsStudent in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("MutationsStudent")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto> MutationsStudent
-        {
-            get
-            {
-                return this._MutationsStudent;
-            }
-            set
-            {
-                this.OnMutationsStudentChanging(value);
-                this._MutationsStudent = value;
-                this.OnMutationsStudentChanged();
-                this.OnPropertyChanged("MutationsStudent");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto> _MutationsStudent = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnMutationsStudentChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeMutationsStudentDto> value);
-        partial void OnMutationsStudentChanged();
     }
 }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 26.11.2023 2:59:27
+// Generation date: 05.01.2024 23:02:18
 namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
 {
     /// <summary>
@@ -35,6 +35,50 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         public IBusinessUnitBoxDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IBusinessUnitBoxDto> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for ExchangeServiceCertificates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeServiceCertificates")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> ExchangeServiceCertificates
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeServiceCertificates == null))
+                {
+                    this._ExchangeServiceCertificates = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto>(GetPath("ExchangeServiceCertificates"));
+                }
+                return this._ExchangeServiceCertificates;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> _ExchangeServiceCertificates;
+        /// <summary>
+        /// There are no comments for FormalizedPoAInfos in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FormalizedPoAInfos")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> FormalizedPoAInfos
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FormalizedPoAInfos == null))
+                {
+                    this._FormalizedPoAInfos = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto>(GetPath("FormalizedPoAInfos"));
+                }
+                return this._FormalizedPoAInfos;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> _FormalizedPoAInfos;
         /// <summary>
         /// There are no comments for BusinessUnit in the schema.
         /// </summary>
@@ -80,28 +124,6 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle _ExchangeService;
         /// <summary>
-        /// There are no comments for ExchangeServiceCertificates in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeServiceCertificates")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> ExchangeServiceCertificates
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._ExchangeServiceCertificates == null))
-                {
-                    this._ExchangeServiceCertificates = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto>(GetPath("ExchangeServiceCertificates"));
-                }
-                return this._ExchangeServiceCertificates;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> _ExchangeServiceCertificates;
-        /// <summary>
         /// There are no comments for CertificateReceiptNotifications in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -124,33 +146,11 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle _CertificateReceiptNotifications;
         /// <summary>
-        /// There are no comments for FormalizedPoAInfos in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("FormalizedPoAInfos")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> FormalizedPoAInfos
-        {
-            get
-            {
-                if (!this.IsComposable)
-                {
-                    throw new global::System.NotSupportedException("The previous function is not composable.");
-                }
-                if ((this._FormalizedPoAInfos == null))
-                {
-                    this._FormalizedPoAInfos = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto>(GetPath("FormalizedPoAInfos"));
-                }
-                return this._FormalizedPoAInfos;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> _FormalizedPoAInfos;
-        /// <summary>
         /// There are no comments for Responsible in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle Responsible
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
         {
             get
             {
@@ -160,13 +160,13 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
                 }
                 if ((this._Responsible == null))
                 {
-                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
                 }
                 return this._Responsible;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.DreamSolution.IEmployeeDtoSingle _Responsible;
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
     }
     /// <summary>
     /// There are no comments for IBusinessUnitBoxDto in the schema.
@@ -213,30 +213,6 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         private string _Login;
         partial void OnLoginChanging(string value);
         partial void OnLoginChanged();
-        /// <summary>
-        /// There are no comments for Property Password in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Password")]
-        public virtual string Password
-        {
-            get
-            {
-                return this._Password;
-            }
-            set
-            {
-                this.OnPasswordChanging(value);
-                this._Password = value;
-                this.OnPasswordChanged();
-                this.OnPropertyChanged("Password");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private string _Password;
-        partial void OnPasswordChanging(string value);
-        partial void OnPasswordChanged();
         /// <summary>
         /// There are no comments for Property OrganizationId in the schema.
         /// </summary>
@@ -310,6 +286,78 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         partial void OnFtsIdChanging(string value);
         partial void OnFtsIdChanged();
         /// <summary>
+        /// There are no comments for Property Password in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Password")]
+        public virtual string Password
+        {
+            get
+            {
+                return this._Password;
+            }
+            set
+            {
+                this.OnPasswordChanging(value);
+                this._Password = value;
+                this.OnPasswordChanged();
+                this.OnPropertyChanged("Password");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Password;
+        partial void OnPasswordChanging(string value);
+        partial void OnPasswordChanged();
+        /// <summary>
+        /// There are no comments for Property ExchangeServiceCertificates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeServiceCertificates")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> ExchangeServiceCertificates
+        {
+            get
+            {
+                return this._ExchangeServiceCertificates;
+            }
+            set
+            {
+                this.OnExchangeServiceCertificatesChanging(value);
+                this._ExchangeServiceCertificates = value;
+                this.OnExchangeServiceCertificatesChanged();
+                this.OnPropertyChanged("ExchangeServiceCertificates");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> _ExchangeServiceCertificates = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnExchangeServiceCertificatesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> value);
+        partial void OnExchangeServiceCertificatesChanged();
+        /// <summary>
+        /// There are no comments for Property FormalizedPoAInfos in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FormalizedPoAInfos")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> FormalizedPoAInfos
+        {
+            get
+            {
+                return this._FormalizedPoAInfos;
+            }
+            set
+            {
+                this.OnFormalizedPoAInfosChanging(value);
+                this._FormalizedPoAInfos = value;
+                this.OnFormalizedPoAInfosChanged();
+                this.OnPropertyChanged("FormalizedPoAInfos");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> _FormalizedPoAInfos = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFormalizedPoAInfosChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> value);
+        partial void OnFormalizedPoAInfosChanged();
+        /// <summary>
         /// There are no comments for Property BusinessUnit in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -358,30 +406,6 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         partial void OnExchangeServiceChanging(global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto value);
         partial void OnExchangeServiceChanged();
         /// <summary>
-        /// There are no comments for Property ExchangeServiceCertificates in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeServiceCertificates")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> ExchangeServiceCertificates
-        {
-            get
-            {
-                return this._ExchangeServiceCertificates;
-            }
-            set
-            {
-                this.OnExchangeServiceCertificatesChanging(value);
-                this._ExchangeServiceCertificates = value;
-                this.OnExchangeServiceCertificatesChanged();
-                this.OnPropertyChanged("ExchangeServiceCertificates");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> _ExchangeServiceCertificates = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnExchangeServiceCertificatesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> value);
-        partial void OnExchangeServiceCertificatesChanged();
-        /// <summary>
         /// There are no comments for Property CertificateReceiptNotifications in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -405,29 +429,5 @@ namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
         private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto _CertificateReceiptNotifications;
         partial void OnCertificateReceiptNotificationsChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto value);
         partial void OnCertificateReceiptNotificationsChanged();
-        /// <summary>
-        /// There are no comments for Property FormalizedPoAInfos in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("FormalizedPoAInfos")]
-        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> FormalizedPoAInfos
-        {
-            get
-            {
-                return this._FormalizedPoAInfos;
-            }
-            set
-            {
-                this.OnFormalizedPoAInfosChanging(value);
-                this._FormalizedPoAInfos = value;
-                this.OnFormalizedPoAInfosChanged();
-                this.OnPropertyChanged("FormalizedPoAInfos");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> _FormalizedPoAInfos = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
-        partial void OnFormalizedPoAInfosChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> value);
-        partial void OnFormalizedPoAInfosChanged();
     }
 }

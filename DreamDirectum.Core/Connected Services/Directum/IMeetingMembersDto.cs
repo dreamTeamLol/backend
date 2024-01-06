@@ -9,38 +9,38 @@
 //------------------------------------------------------------------------------
 
 // Generation date: 05.01.2024 23:02:18
-namespace Sungero.IntegrationService.Models.Generated.CoreEntities
+namespace Sungero.IntegrationService.Models.Generated.Meetings
 {
     /// <summary>
-    /// There are no comments for IGroupRecipientLinksDtoSingle in the schema.
+    /// There are no comments for IMeetingMembersDtoSingle in the schema.
     /// </summary>
-    [global::Microsoft.OData.Client.OriginalNameAttribute("IGroupRecipientLinksDtoSingle")]
-    public partial class IGroupRecipientLinksDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IGroupRecipientLinksDto>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IMeetingMembersDtoSingle")]
+    public partial class IMeetingMembersDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IMeetingMembersDto>
     {
         /// <summary>
-        /// Initialize a new IGroupRecipientLinksDtoSingle object.
+        /// Initialize a new IMeetingMembersDtoSingle object.
         /// </summary>
-        public IGroupRecipientLinksDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+        public IMeetingMembersDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
             : base(context, path) {}
 
         /// <summary>
-        /// Initialize a new IGroupRecipientLinksDtoSingle object.
+        /// Initialize a new IMeetingMembersDtoSingle object.
         /// </summary>
-        public IGroupRecipientLinksDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+        public IMeetingMembersDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
             : base(context, path, isComposable) {}
 
         /// <summary>
-        /// Initialize a new IGroupRecipientLinksDtoSingle object.
+        /// Initialize a new IMeetingMembersDtoSingle object.
         /// </summary>
-        public IGroupRecipientLinksDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IGroupRecipientLinksDto> query)
+        public IMeetingMembersDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IMeetingMembersDto> query)
             : base(query) {}
 
         /// <summary>
-        /// There are no comments for Group in the schema.
+        /// There are no comments for Meeting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Group")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle Group
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Meeting")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle Meeting
         {
             get
             {
@@ -48,15 +48,15 @@ namespace Sungero.IntegrationService.Models.Generated.CoreEntities
                 {
                     throw new global::System.NotSupportedException("The previous function is not composable.");
                 }
-                if ((this._Group == null))
+                if ((this._Meeting == null))
                 {
-                    this._Group = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle(this.Context, GetPath("Group"));
+                    this._Meeting = new global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle(this.Context, GetPath("Meeting"));
                 }
-                return this._Group;
+                return this._Meeting;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle _Group;
+        private global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle _Meeting;
         /// <summary>
         /// There are no comments for Member in the schema.
         /// </summary>
@@ -81,25 +81,25 @@ namespace Sungero.IntegrationService.Models.Generated.CoreEntities
         private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle _Member;
     }
     /// <summary>
-    /// There are no comments for IGroupRecipientLinksDto in the schema.
+    /// There are no comments for IMeetingMembersDto in the schema.
     /// </summary>
     /// <KeyProperties>
     /// Id
     /// </KeyProperties>
     [global::Microsoft.OData.Client.Key("Id")]
-    [global::Microsoft.OData.Client.OriginalNameAttribute("IGroupRecipientLinksDto")]
-    public partial class IGroupRecipientLinksDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IMeetingMembersDto")]
+    public partial class IMeetingMembersDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
     {
         /// <summary>
-        /// Create a new IGroupRecipientLinksDto object.
+        /// Create a new IMeetingMembersDto object.
         /// </summary>
         /// <param name="ID">Initial value of Id.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public static IGroupRecipientLinksDto CreateIGroupRecipientLinksDto(long ID)
+        public static IMeetingMembersDto CreateIMeetingMembersDto(long ID)
         {
-            IGroupRecipientLinksDto iGroupRecipientLinksDto = new IGroupRecipientLinksDto();
-            iGroupRecipientLinksDto.Id = ID;
-            return iGroupRecipientLinksDto;
+            IMeetingMembersDto iMeetingMembersDto = new IMeetingMembersDto();
+            iMeetingMembersDto.Id = ID;
+            return iMeetingMembersDto;
         }
         /// <summary>
         /// There are no comments for Property Id in the schema.
@@ -127,53 +127,29 @@ namespace Sungero.IntegrationService.Models.Generated.CoreEntities
         partial void OnIdChanging(long value);
         partial void OnIdChanged();
         /// <summary>
-        /// There are no comments for Property Sid in the schema.
+        /// There are no comments for Property Meeting in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
 
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Sid")]
-        public virtual global::System.Nullable<global::System.Guid> Sid
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Meeting")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto Meeting
         {
             get
             {
-                return this._Sid;
+                return this._Meeting;
             }
             set
             {
-                this.OnSidChanging(value);
-                this._Sid = value;
-                this.OnSidChanged();
-                this.OnPropertyChanged("Sid");
+                this.OnMeetingChanging(value);
+                this._Meeting = value;
+                this.OnMeetingChanged();
+                this.OnPropertyChanged("Meeting");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::System.Nullable<global::System.Guid> _Sid;
-        partial void OnSidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnSidChanged();
-        /// <summary>
-        /// There are no comments for Property Group in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-
-        [global::Microsoft.OData.Client.OriginalNameAttribute("Group")]
-        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto Group
-        {
-            get
-            {
-                return this._Group;
-            }
-            set
-            {
-                this.OnGroupChanging(value);
-                this._Group = value;
-                this.OnGroupChanged();
-                this.OnPropertyChanged("Group");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto _Group;
-        partial void OnGroupChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto value);
-        partial void OnGroupChanged();
+        private global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto _Meeting;
+        partial void OnMeetingChanging(global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto value);
+        partial void OnMeetingChanged();
         /// <summary>
         /// There are no comments for Property Member in the schema.
         /// </summary>
