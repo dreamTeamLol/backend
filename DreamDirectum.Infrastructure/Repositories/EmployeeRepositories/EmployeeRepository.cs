@@ -2,10 +2,10 @@
 using Sungero.IntegrationService;
 using Sungero.IntegrationService.Models.Generated.NewDreamSolution;
 
-namespace DreamDirectum.Infrastructure.Repositories
+namespace DreamDirectum.Infrastructure.Repositories.EmployeeRepositories
 {
-    public class EmployeeRepository 
-        : AbstractRepository, 
+    public class EmployeeRepository
+        : AbstractRepository,
         IReadOnlyPaginalRepository<IEmployeeDto, long>,
         IReadOnlyRepository<IEmployeeDto, long>,
         IReadOnlySinglePageRepository<IEmployeeDto, long>
@@ -32,7 +32,7 @@ namespace DreamDirectum.Infrastructure.Repositories
                 .AddQueryOption("$top", limit)
                 .AddQueryOption("$skip", offset);
 
-            foreach(var option in options)
+            foreach (var option in options)
             {
                 result = result.AddQueryOption(option.key, option.value);
             }

@@ -2,7 +2,7 @@
 using Sungero.IntegrationService;
 using Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule;
 
-namespace DreamDirectum.Infrastructure.Repositories
+namespace DreamDirectum.Infrastructure.Repositories.EmployeeRepositories
 {
     public class EmployeeMutationLogRepository
         : AbstractRepository,
