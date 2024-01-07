@@ -7,7 +7,80 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Connected Services\Directum\DirectumCsdl.xml" />
+    <Compile Remove="Connected Services\Directum\**" />
+    <EmbeddedResource Remove="Connected Services\Directum\**" />
+    <None Remove="Connected Services\Directum\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Connected Services\Directum\Company.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Content.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\CoreEntities.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Docflow.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Exchange.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\ExchangeCore.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\IBankDto.cs" />
+    <Compile Include="Connected Services\Directum\IBinaryObjectDto.cs" />
+    <Compile Include="Connected Services\Directum\IBoxBaseDto.cs" />
+    <Compile Include="Connected Services\Directum\IBusinessUnitBoxDto.cs" />
+    <Compile Include="Connected Services\Directum\IBusinessUnitBoxExchangeServiceCertificatesDto.cs" />
+    <Compile Include="Connected Services\Directum\IBusinessUnitBoxFormalizedPoAInfosDto.cs" />
+    <Compile Include="Connected Services\Directum\IBusinessUnitDto.cs" />
+    <Compile Include="Connected Services\Directum\ICertificateDto.cs" />
+    <Compile Include="Connected Services\Directum\ICertificateParameterDto.cs" />
+    <Compile Include="Connected Services\Directum\ICityDto.cs" />
+    <Compile Include="Connected Services\Directum\ICompanyBaseDto.cs" />
+    <Compile Include="Connected Services\Directum\ICompanyDto.cs" />
+    <Compile Include="Connected Services\Directum\ICounterpartyDto.cs" />
+    <Compile Include="Connected Services\Directum\ICounterpartyExchangeBoxesDto.cs" />
+    <Compile Include="Connected Services\Directum\ICounterpartyKindDto.cs" />
+    <Compile Include="Connected Services\Directum\ICountryDto.cs" />
+    <Compile Include="Connected Services\Directum\IDepartmentDto.cs" />
+    <Compile Include="Connected Services\Directum\IEmployeeDto.cs" />
+    <Compile Include="Connected Services\Directum\IEmployeeMutationKindDto.cs" />
+    <Compile Include="Connected Services\Directum\IEmployeeMutationsLogDto.cs" />
+    <Compile Include="Connected Services\Directum\IExchangeServiceDto.cs" />
+    <Compile Include="Connected Services\Directum\IGroupDto.cs" />
+    <Compile Include="Connected Services\Directum\IGroupRecipientLinksDto.cs" />
+    <Compile Include="Connected Services\Directum\IJobTitleDto.cs" />
+    <Compile Include="Connected Services\Directum\ILoginDto.cs" />
+    <Compile Include="Connected Services\Directum\IMeetingDto.cs" />
+    <Compile Include="Connected Services\Directum\IMeetingMembersDto.cs" />
+    <Compile Include="Connected Services\Directum\IPersonDto.cs" />
+    <Compile Include="Connected Services\Directum\IRecipientDto.cs" />
+    <Compile Include="Connected Services\Directum\IRegionDto.cs" />
+    <Compile Include="Connected Services\Directum\ISubstitutionDto.cs" />
+    <Compile Include="Connected Services\Directum\IUserDto.cs" />
+    <Compile Include="Connected Services\Directum\Parties.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Projects.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\RecordManagement.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Reference.cs" />
+    <Compile Include="Connected Services\Directum\Shell.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\SmartProcessing.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Controllers.Generated.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Generator.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Commons.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Company.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Content.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Contracts.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.CoreEntities.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Docflow.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Exchange.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.ExchangeCore.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.FinancialArchive.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Meetings.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.NewDreamSolution.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Parties.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.PowerOfAttorneyCore.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Projects.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.RecordManagement.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.SmartProcessing.ExtensionMethods.cs" />
+    <Compile Include="Connected Services\Directum\Sungero.IntegrationService.Models.Generated.Workflow.ExtensionMethods.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Connected Services\Directum\ConnectedService.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,8 +92,14 @@
     <PackageReference Include="Microsoft.OData.Core" Version="7.18.0" />
     <PackageReference Include="Microsoft.OData.Edm" Version="7.18.0" />
     <PackageReference Include="Microsoft.Spatial" Version="7.18.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\ResponseModels\" />
   </ItemGroup>
 
 </Project>

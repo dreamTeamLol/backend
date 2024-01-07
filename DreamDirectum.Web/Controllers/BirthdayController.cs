@@ -1,6 +1,6 @@
 ﻿using DreamDirectum.Core.Interfaces;
 using DreamDirectum.Core.Models.RequestModels;
-using DreamDirectum.UseCases.Queries.MockEmployeeQueries;
+using DreamDirectum.UseCases.Queries.EmployeeQueries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,11 +17,11 @@ namespace DreamDirectum.Web.Controllers
         [HttpGet("")]
         public async Task<IActionResult> GetAll([FromQuery] DateOffsetParameters dateOffsetParameters)
         {
-            //await SetAuthTokenToService();
-            return Ok(await mediator.Send(new GetMockEmployeesBirthdaysInRangeQuery 
+            await SetAuthTokenToService();
+            return Ok(await mediator.Send(new GetEmployeesBirthdaysInRangeQuery
             { 
                 DaysBefore = dateOffsetParameters.DaysBefore, 
-                DaysAfter = dateOffsetParameters.DaysAfter 
+                DaysAfter = dateOffsetParameters.DaysAfter,
             }));
         }
     }
