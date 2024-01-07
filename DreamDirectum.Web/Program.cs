@@ -4,7 +4,7 @@ using DreamDirectum.Core.Interfaces;
 using DreamDirectum.Core.Models.Configuration;
 using DreamDirectum.Core.Models.MappingProfiles;
 using DreamDirectum.Core.Services;
-using DreamDirectum.Infrastructure.Repositories;
+using DreamDirectum.Infrastructure.Repositories.EmployeeRepositories;
 using DreamDirectum.UseCases;
 using Sungero.IntegrationService;
 using Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule;
@@ -24,7 +24,20 @@ namespace DreamDirectum.Web
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy(name: "AllowAll",
+                                  builder =>
+                                  {
+                                      builder.AllowAnyOrigin()
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader()
+                                      .AllowAnyHeader();
+                                  });
+            });
+
+
             builder.Services.AddSingleton(provider => new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new EmployeeProfile());
@@ -52,6 +65,8 @@ namespace DreamDirectum.Web
                 app.UseSwagger();
                 app.UseSwaggerUI();
             //}
+
+            app.UseCors("AllowAll");
 
             app.UseHttpsRedirection();
 
