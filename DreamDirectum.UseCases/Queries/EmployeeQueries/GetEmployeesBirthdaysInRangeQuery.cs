@@ -15,20 +15,17 @@ namespace DreamDirectum.UseCases.Queries.EmployeeQueries
         public int DaysAfter { get; set; }
     }
 
-    public class GetEmployeesBirthdaysInRangeQueryHandler : IRequestHandler<GetEmployeesBirthdaysInRangeQuery, EmployeeDto[]>
+    public class GetEmployeesBirthdaysInRangeQueryHandler : AbstractHandler, IRequestHandler<GetEmployeesBirthdaysInRangeQuery, EmployeeDto[]>
     {
         private readonly IReadOnlySinglePageRepository<IEmployeeDto, long> employeeRespository;
-        private readonly IUserAuthTokenService userAuthToken;
-        private readonly IMapper mapper;
-
+        
         public GetEmployeesBirthdaysInRangeQueryHandler
-            (IReadOnlySinglePageRepository<IEmployeeDto, long> employeeRespository,
-            IUserAuthTokenService userAuthToken,
-            IMapper mapper)
+            (IUserAuthTokenService userAuthToken, 
+            IMapper mapper,
+            IReadOnlySinglePageRepository<IEmployeeDto, long> employeeRespository) 
+            : base(userAuthToken, mapper)
         {
             this.employeeRespository = employeeRespository;
-            this.userAuthToken = userAuthToken;
-            this.mapper = mapper;
         }
 
         public async Task<EmployeeDto[]> Handle(GetEmployeesBirthdaysInRangeQuery request, CancellationToken cancellationToken)
