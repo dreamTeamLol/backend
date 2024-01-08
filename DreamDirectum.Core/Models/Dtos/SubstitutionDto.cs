@@ -2,6 +2,7 @@
 {
     public record SubstitutionDto
     {
+        public int Id { get; set; }
         public EmployeeDto User { get; set; }
         public EmployeeDto Substitue { get; set; }
         public DateTime StartDate { get; set; }
