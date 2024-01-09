@@ -5,9 +5,13 @@ using DreamDirectum.Core.Models.Configuration;
 using DreamDirectum.Core.Models.MappingProfiles;
 using DreamDirectum.Core.Services;
 using DreamDirectum.Infrastructure.Repositories.EmployeeRepositories;
+using DreamDirectum.Infrastructure.Repositories.MeetingRepositories;
+using DreamDirectum.Infrastructure.Repositories.SubstitutionRepositories;
 using DreamDirectum.UseCases;
 using Sungero.IntegrationService;
+using Sungero.IntegrationService.Models.Generated.CoreEntities;
 using Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule;
+using Sungero.IntegrationService.Models.Generated.Meetings;
 using Sungero.IntegrationService.Models.Generated.NewDreamSolution;
 
 namespace DreamDirectum.Web
@@ -42,6 +46,8 @@ namespace DreamDirectum.Web
             {
                 cfg.AddProfile(new EmployeeProfile());
                 cfg.AddProfile(new MutationRecordProfile());
+                cfg.AddProfile(new SubstitutionProfile());
+                cfg.AddProfile(new MeetingProfile());
             }).CreateMapper());
 
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<MediatrPing>());
@@ -54,7 +60,13 @@ namespace DreamDirectum.Web
 
             builder.Services.AddScoped<IReadOnlyPaginalRepository<IEmployeeMutationsLogDto, long>, EmployeeMutationLogRepository>();
             builder.Services.AddScoped<IReadOnlyRepository<IEmployeeMutationsLogDto, long>, EmployeeMutationLogRepository>();
-            
+
+            builder.Services.AddScoped<IReadOnlyPaginalRepository<ISubstitutionDto, long>, SubstitutionRepository>();
+            builder.Services.AddScoped<IReadOnlyRepository<ISubstitutionDto, long>, SubstitutionRepository>();
+
+            builder.Services.AddScoped<IReadOnlyPaginalRepository<IMeetingDto, long>, MeetingRepository>();
+            builder.Services.AddScoped<IReadOnlyRepository<IMeetingDto, long>, MeetingRepository>();
+
             builder.Services.AddScoped((sp) => new Container(new Uri("https://drim-student.starkovgrp.ru/Integration/odata/")));
 
             var app = builder.Build();

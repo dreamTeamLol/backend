@@ -8,9 +8,9 @@ namespace DreamDirectum.Web.Controllers
 {
     [Route("/api/v1/[controller]")]
     [ApiController]
-    public class BirthdayController : AbstractController
+    public class EmployeeController : AbstractController
     {
-        public BirthdayController(IUserAuthTokenService userAuthTokenService, IMediator mediator) 
+        public EmployeeController(IUserAuthTokenService userAuthTokenService, IMediator mediator) 
             : base(userAuthTokenService, mediator)
         { }
 
@@ -20,8 +20,8 @@ namespace DreamDirectum.Web.Controllers
             await SetAuthTokenToService();
             return Ok(await mediator.Send(new GetEmployeesBirthdaysInRangeQuery
             { 
-                DaysBefore = dateOffsetParameters.DaysBefore, 
-                DaysAfter = dateOffsetParameters.DaysAfter,
+                DaysBefore = dateOffsetParameters.BirthdayRangeLeftBorder, 
+                DaysAfter = dateOffsetParameters.BirthdayRangeRightBorder,
             }));
         }
     }

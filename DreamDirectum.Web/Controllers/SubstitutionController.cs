@@ -1,6 +1,7 @@
 ﻿using DreamDirectum.Core.Interfaces;
 using DreamDirectum.Core.Models.RequestModels;
 using DreamDirectum.UseCases.Queries.MockSubstitutionQueries;
+using DreamDirectum.UseCases.Queries.SubstitutionQueries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +22,8 @@ namespace DreamDirectum.Web.Controllers
                 return BadRequest(ModelState);
             }
 
-            return Ok(await mediator.Send(new GetMockSubstitutionsQuery 
+            await SetAuthTokenToService();
+            return Ok(await mediator.Send(new GetSubstitutionsQuery
             { 
                 Limit = paginationParameters.Limit, 
                 Offset = paginationParameters.Offset 

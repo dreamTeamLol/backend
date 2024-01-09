@@ -13,20 +13,17 @@ namespace DreamDirectum.UseCases.Queries.EmployeeQueries
         public int Offset { get; set; }
     }
 
-    public class GetEmployeeMutationsLogQueryHandler : IRequestHandler<GetEmployeeMutationsLogQuery, MutationRecordDto[]>
+    public class GetEmployeeMutationsLogQueryHandler : AbstractHandler, IRequestHandler<GetEmployeeMutationsLogQuery, MutationRecordDto[]>
     {
         private readonly IReadOnlyPaginalRepository<IEmployeeMutationsLogDto, long> mutationLogRepository;
-        private readonly IUserAuthTokenService userAuthToken;
-        private readonly IMapper mapper;
 
         public GetEmployeeMutationsLogQueryHandler
-            (IReadOnlyPaginalRepository<IEmployeeMutationsLogDto, long> mutationLogRepository,
-            IUserAuthTokenService userAuthToken,
-            IMapper mapper)
+            (IUserAuthTokenService userAuthToken, 
+            IMapper mapper,
+            IReadOnlyPaginalRepository<IEmployeeMutationsLogDto, long> mutationLogRepository) 
+            : base(userAuthToken, mapper)
         {
             this.mutationLogRepository = mutationLogRepository;
-            this.userAuthToken = userAuthToken;
-            this.mapper = mapper;
         }
 
         public async Task<MutationRecordDto[]> Handle(GetEmployeeMutationsLogQuery request, CancellationToken cancellationToken)
