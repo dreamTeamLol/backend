@@ -11,7 +11,7 @@ namespace DreamDirectum.Core.Models.MappingProfiles
         {
             CreateMap<ISubstitutionDto, SubstitutionDto>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
-                .ForMember(dest => dest.User, opt => opt.MapFrom(src => new EmployeeDto
+                .ForMember(dest => dest.Employee, opt => opt.MapFrom(src => new EmployeeDto
                 {
                     Id = src.User.Id,
                     FullName = src.User.Name,

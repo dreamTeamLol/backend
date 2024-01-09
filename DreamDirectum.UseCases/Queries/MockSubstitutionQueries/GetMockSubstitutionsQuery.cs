@@ -15,7 +15,7 @@ namespace DreamDirectum.UseCases.Queries.MockSubstitutionQueries
         {
             new SubstitutionDto
             {
-                User = new EmployeeDto { FullName = "Иванов Сергей Петрович", JobTitle = "Начальник отдела КРУ" },
+                Employee = new EmployeeDto { FullName = "Иванов Сергей Петрович", JobTitle = "Начальник отдела КРУ" },
                 Substitue = new EmployeeDto { FullName = "Сидоров Семен Васильевич", JobTitle = "Главный специалист КРУ" },
                 StartDate = new DateTime(2023, 2, 1),
                 EndDate = new DateTime(2023, 2, 23),
