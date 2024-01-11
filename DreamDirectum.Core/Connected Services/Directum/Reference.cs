@@ -8,102 +8,10265 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 05.01.2024 23:02:18
+// Generation date: 09.01.2024 22:02:16
 namespace Sungero.IntegrationService.Models.Generated.Content
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Docflow
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Contracts
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.FinancialArchive
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.RecordManagement
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Meetings
 {
+    /// <summary>
+    /// There are no comments for IMeetingDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IMeetingDtoSingle")]
+    public partial class IMeetingDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IMeetingDto>
+    {
+        /// <summary>
+        /// Initialize a new IMeetingDtoSingle object.
+        /// </summary>
+        public IMeetingDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IMeetingDtoSingle object.
+        /// </summary>
+        public IMeetingDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IMeetingDtoSingle object.
+        /// </summary>
+        public IMeetingDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IMeetingDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Secretary in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Secretary")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Secretary
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Secretary == null))
+                {
+                    this._Secretary = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Secretary"));
+                }
+                return this._Secretary;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Secretary;
+        /// <summary>
+        /// There are no comments for President in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("President")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle President
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._President == null))
+                {
+                    this._President = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("President"));
+                }
+                return this._President;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _President;
+        /// <summary>
+        /// There are no comments for Members in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Members")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto> Members
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Members == null))
+                {
+                    this._Members = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto>(GetPath("Members"));
+                }
+                return this._Members;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto> _Members;
+    }
+    /// <summary>
+    /// There are no comments for IMeetingDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IMeetingDto")]
+    public partial class IMeetingDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IMeetingDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IMeetingDto CreateIMeetingDto(long ID)
+        {
+            IMeetingDto iMeetingDto = new IMeetingDto();
+            iMeetingDto.Id = ID;
+            return iMeetingDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property DateTime in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DateTime")]
+        public virtual global::System.Nullable<global::System.DateTimeOffset> DateTime
+        {
+            get
+            {
+                return this._DateTime;
+            }
+            set
+            {
+                this.OnDateTimeChanging(value);
+                this._DateTime = value;
+                this.OnDateTimeChanged();
+                this.OnPropertyChanged("DateTime");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.DateTimeOffset> _DateTime;
+        partial void OnDateTimeChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnDateTimeChanged();
+        /// <summary>
+        /// There are no comments for Property Location in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Location")]
+        public virtual string Location
+        {
+            get
+            {
+                return this._Location;
+            }
+            set
+            {
+                this.OnLocationChanging(value);
+                this._Location = value;
+                this.OnLocationChanged();
+                this.OnPropertyChanged("Location");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Location;
+        partial void OnLocationChanging(string value);
+        partial void OnLocationChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Note")]
+        public virtual string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this._Note = value;
+                this.OnNoteChanged();
+                this.OnPropertyChanged("Note");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property DisplayName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DisplayName")]
+        public virtual string DisplayName
+        {
+            get
+            {
+                return this._DisplayName;
+            }
+            set
+            {
+                this.OnDisplayNameChanging(value);
+                this._DisplayName = value;
+                this.OnDisplayNameChanged();
+                this.OnPropertyChanged("DisplayName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _DisplayName;
+        partial void OnDisplayNameChanging(string value);
+        partial void OnDisplayNameChanged();
+        /// <summary>
+        /// There are no comments for Property Duration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Duration")]
+        public virtual global::System.Nullable<double> Duration
+        {
+            get
+            {
+                return this._Duration;
+            }
+            set
+            {
+                this.OnDurationChanging(value);
+                this._Duration = value;
+                this.OnDurationChanged();
+                this.OnPropertyChanged("Duration");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<double> _Duration;
+        partial void OnDurationChanging(global::System.Nullable<double> value);
+        partial void OnDurationChanged();
+        /// <summary>
+        /// There are no comments for Property Secretary in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Secretary")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto Secretary
+        {
+            get
+            {
+                return this._Secretary;
+            }
+            set
+            {
+                this.OnSecretaryChanging(value);
+                this._Secretary = value;
+                this.OnSecretaryChanged();
+                this.OnPropertyChanged("Secretary");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _Secretary;
+        partial void OnSecretaryChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
+        partial void OnSecretaryChanged();
+        /// <summary>
+        /// There are no comments for Property President in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("President")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto President
+        {
+            get
+            {
+                return this._President;
+            }
+            set
+            {
+                this.OnPresidentChanging(value);
+                this._President = value;
+                this.OnPresidentChanged();
+                this.OnPropertyChanged("President");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _President;
+        partial void OnPresidentChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
+        partial void OnPresidentChanged();
+        /// <summary>
+        /// There are no comments for Property Members in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Members")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto> Members
+        {
+            get
+            {
+                return this._Members;
+            }
+            set
+            {
+                this.OnMembersChanging(value);
+                this._Members = value;
+                this.OnMembersChanged();
+                this.OnPropertyChanged("Members");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto> _Members = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnMembersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto> value);
+        partial void OnMembersChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for IMeetingMembersDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IMeetingMembersDtoSingle")]
+    public partial class IMeetingMembersDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IMeetingMembersDto>
+    {
+        /// <summary>
+        /// Initialize a new IMeetingMembersDtoSingle object.
+        /// </summary>
+        public IMeetingMembersDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IMeetingMembersDtoSingle object.
+        /// </summary>
+        public IMeetingMembersDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IMeetingMembersDtoSingle object.
+        /// </summary>
+        public IMeetingMembersDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IMeetingMembersDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Meeting in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Meeting")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle Meeting
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Meeting == null))
+                {
+                    this._Meeting = new global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle(this.Context, GetPath("Meeting"));
+                }
+                return this._Meeting;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle _Meeting;
+        /// <summary>
+        /// There are no comments for Member in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Member")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle Member
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Member == null))
+                {
+                    this._Member = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle(this.Context, GetPath("Member"));
+                }
+                return this._Member;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle _Member;
+    }
+    /// <summary>
+    /// There are no comments for IMeetingMembersDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IMeetingMembersDto")]
+    public partial class IMeetingMembersDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IMeetingMembersDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IMeetingMembersDto CreateIMeetingMembersDto(long ID)
+        {
+            IMeetingMembersDto iMeetingMembersDto = new IMeetingMembersDto();
+            iMeetingMembersDto.Id = ID;
+            return iMeetingMembersDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Meeting in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Meeting")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto Meeting
+        {
+            get
+            {
+                return this._Meeting;
+            }
+            set
+            {
+                this.OnMeetingChanging(value);
+                this._Meeting = value;
+                this.OnMeetingChanged();
+                this.OnPropertyChanged("Meeting");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto _Meeting;
+        partial void OnMeetingChanging(global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto value);
+        partial void OnMeetingChanged();
+        /// <summary>
+        /// There are no comments for Property Member in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Member")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto Member
+        {
+            get
+            {
+                return this._Member;
+            }
+            set
+            {
+                this.OnMemberChanging(value);
+                this._Member = value;
+                this.OnMemberChanged();
+                this.OnPropertyChanged("Member");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto _Member;
+        partial void OnMemberChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto value);
+        partial void OnMemberChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto as global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto as global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto as global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto as global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Meetings.IMeetingMembersDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Projects
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.CoreEntities
 {
+    /// <summary>
+    /// There are no comments for IRecipientDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IRecipientDtoSingle")]
+    public partial class IRecipientDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IRecipientDto>
+    {
+        /// <summary>
+        /// Initialize a new IRecipientDtoSingle object.
+        /// </summary>
+        public IRecipientDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IRecipientDtoSingle object.
+        /// </summary>
+        public IRecipientDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IRecipientDtoSingle object.
+        /// </summary>
+        public IRecipientDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IRecipientDto> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for IRecipientDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IRecipientDto")]
+    public partial class IRecipientDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IRecipientDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IRecipientDto CreateIRecipientDto(long ID)
+        {
+            IRecipientDto iRecipientDto = new IRecipientDto();
+            iRecipientDto.Id = ID;
+            return iRecipientDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Sid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Sid")]
+        public virtual global::System.Nullable<global::System.Guid> Sid
+        {
+            get
+            {
+                return this._Sid;
+            }
+            set
+            {
+                this.OnSidChanging(value);
+                this._Sid = value;
+                this.OnSidChanged();
+                this.OnPropertyChanged("Sid");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.Guid> _Sid;
+        partial void OnSidChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnSidChanged();
+        /// <summary>
+        /// There are no comments for Property IsSystem in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IsSystem")]
+        public virtual global::System.Nullable<bool> IsSystem
+        {
+            get
+            {
+                return this._IsSystem;
+            }
+            set
+            {
+                this.OnIsSystemChanging(value);
+                this._IsSystem = value;
+                this.OnIsSystemChanged();
+                this.OnPropertyChanged("IsSystem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _IsSystem;
+        partial void OnIsSystemChanging(global::System.Nullable<bool> value);
+        partial void OnIsSystemChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Description")]
+        public virtual string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this._Description = value;
+                this.OnDescriptionChanged();
+                this.OnPropertyChanged("Description");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for IGroupDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IGroupDtoSingle")]
+    public partial class IGroupDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IGroupDto>
+    {
+        /// <summary>
+        /// Initialize a new IGroupDtoSingle object.
+        /// </summary>
+        public IGroupDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IGroupDtoSingle object.
+        /// </summary>
+        public IGroupDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IGroupDtoSingle object.
+        /// </summary>
+        public IGroupDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IGroupDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for RecipientLinks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("RecipientLinks")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> RecipientLinks
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RecipientLinks == null))
+                {
+                    this._RecipientLinks = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto>(GetPath("RecipientLinks"));
+                }
+                return this._RecipientLinks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> _RecipientLinks;
+        /// <summary>
+        /// There are no comments for Parent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Parent")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle Parent
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Parent == null))
+                {
+                    this._Parent = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle(this.Context, GetPath("Parent"));
+                }
+                return this._Parent;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle _Parent;
+    }
+    /// <summary>
+    /// There are no comments for IGroupDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IGroupDto")]
+    public partial class IGroupDto : IRecipientDto
+    {
+        /// <summary>
+        /// Create a new IGroupDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IGroupDto CreateIGroupDto(long ID)
+        {
+            IGroupDto iGroupDto = new IGroupDto();
+            iGroupDto.Id = ID;
+            return iGroupDto;
+        }
+        /// <summary>
+        /// There are no comments for Property RecipientLinks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("RecipientLinks")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> RecipientLinks
+        {
+            get
+            {
+                return this._RecipientLinks;
+            }
+            set
+            {
+                this.OnRecipientLinksChanging(value);
+                this._RecipientLinks = value;
+                this.OnRecipientLinksChanged();
+                this.OnPropertyChanged("RecipientLinks");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> _RecipientLinks = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnRecipientLinksChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> value);
+        partial void OnRecipientLinksChanged();
+        /// <summary>
+        /// There are no comments for Property Parent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Parent")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto Parent
+        {
+            get
+            {
+                return this._Parent;
+            }
+            set
+            {
+                this.OnParentChanging(value);
+                this._Parent = value;
+                this.OnParentChanged();
+                this.OnPropertyChanged("Parent");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto _Parent;
+        partial void OnParentChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto value);
+        partial void OnParentChanged();
+    }
+    /// <summary>
+    /// There are no comments for IUserDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IUserDtoSingle")]
+    public partial class IUserDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IUserDto>
+    {
+        /// <summary>
+        /// Initialize a new IUserDtoSingle object.
+        /// </summary>
+        public IUserDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IUserDtoSingle object.
+        /// </summary>
+        public IUserDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IUserDtoSingle object.
+        /// </summary>
+        public IUserDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IUserDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Login in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Login")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle Login
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Login == null))
+                {
+                    this._Login = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle(this.Context, GetPath("Login"));
+                }
+                return this._Login;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle _Login;
+        /// <summary>
+        /// There are no comments for PersonalPhoto in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PersonalPhoto")]
+        public virtual global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle PersonalPhoto
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PersonalPhoto == null))
+                {
+                    this._PersonalPhoto = new global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle(this.Context, GetPath("PersonalPhoto"));
+                }
+                return this._PersonalPhoto;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle _PersonalPhoto;
+    }
+    /// <summary>
+    /// There are no comments for IUserDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IUserDto")]
+    public partial class IUserDto : IRecipientDto
+    {
+        /// <summary>
+        /// Create a new IUserDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IUserDto CreateIUserDto(long ID)
+        {
+            IUserDto iUserDto = new IUserDto();
+            iUserDto.Id = ID;
+            return iUserDto;
+        }
+        /// <summary>
+        /// There are no comments for Property PersonalPhotoHash in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PersonalPhotoHash")]
+        public virtual string PersonalPhotoHash
+        {
+            get
+            {
+                return this._PersonalPhotoHash;
+            }
+            set
+            {
+                this.OnPersonalPhotoHashChanging(value);
+                this._PersonalPhotoHash = value;
+                this.OnPersonalPhotoHashChanged();
+                this.OnPropertyChanged("PersonalPhotoHash");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _PersonalPhotoHash;
+        partial void OnPersonalPhotoHashChanging(string value);
+        partial void OnPersonalPhotoHashChanged();
+        /// <summary>
+        /// There are no comments for Property Login in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Login")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDto Login
+        {
+            get
+            {
+                return this._Login;
+            }
+            set
+            {
+                this.OnLoginChanging(value);
+                this._Login = value;
+                this.OnLoginChanged();
+                this.OnPropertyChanged("Login");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDto _Login;
+        partial void OnLoginChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDto value);
+        partial void OnLoginChanged();
+        /// <summary>
+        /// There are no comments for Property PersonalPhoto in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PersonalPhoto")]
+        public virtual global::Sungero.IntegrationService.Generator.IBinaryObjectDto PersonalPhoto
+        {
+            get
+            {
+                return this._PersonalPhoto;
+            }
+            set
+            {
+                this.OnPersonalPhotoChanging(value);
+                this._PersonalPhoto = value;
+                this.OnPersonalPhotoChanged();
+                this.OnPropertyChanged("PersonalPhoto");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Generator.IBinaryObjectDto _PersonalPhoto;
+        partial void OnPersonalPhotoChanging(global::Sungero.IntegrationService.Generator.IBinaryObjectDto value);
+        partial void OnPersonalPhotoChanged();
+    }
+    /// <summary>
+    /// There are no comments for ILoginDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ILoginDtoSingle")]
+    public partial class ILoginDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ILoginDto>
+    {
+        /// <summary>
+        /// Initialize a new ILoginDtoSingle object.
+        /// </summary>
+        public ILoginDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ILoginDtoSingle object.
+        /// </summary>
+        public ILoginDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ILoginDtoSingle object.
+        /// </summary>
+        public ILoginDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ILoginDto> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for ILoginDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ILoginDto")]
+    public partial class ILoginDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new ILoginDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ILoginDto CreateILoginDto(long ID)
+        {
+            ILoginDto iLoginDto = new ILoginDto();
+            iLoginDto.Id = ID;
+            return iLoginDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property NeedChangePassword in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NeedChangePassword")]
+        public virtual global::System.Nullable<bool> NeedChangePassword
+        {
+            get
+            {
+                return this._NeedChangePassword;
+            }
+            set
+            {
+                this.OnNeedChangePasswordChanging(value);
+                this._NeedChangePassword = value;
+                this.OnNeedChangePasswordChanged();
+                this.OnPropertyChanged("NeedChangePassword");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _NeedChangePassword;
+        partial void OnNeedChangePasswordChanging(global::System.Nullable<bool> value);
+        partial void OnNeedChangePasswordChanged();
+        /// <summary>
+        /// There are no comments for Property LoginName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LoginName")]
+        public virtual string LoginName
+        {
+            get
+            {
+                return this._LoginName;
+            }
+            set
+            {
+                this.OnLoginNameChanging(value);
+                this._LoginName = value;
+                this.OnLoginNameChanged();
+                this.OnPropertyChanged("LoginName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _LoginName;
+        partial void OnLoginNameChanging(string value);
+        partial void OnLoginNameChanged();
+        /// <summary>
+        /// There are no comments for Property TypeAuthentication in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TypeAuthentication")]
+        public virtual string TypeAuthentication
+        {
+            get
+            {
+                return this._TypeAuthentication;
+            }
+            set
+            {
+                this.OnTypeAuthenticationChanging(value);
+                this._TypeAuthentication = value;
+                this.OnTypeAuthenticationChanged();
+                this.OnPropertyChanged("TypeAuthentication");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _TypeAuthentication;
+        partial void OnTypeAuthenticationChanging(string value);
+        partial void OnTypeAuthenticationChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property PasswordLastChangeDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PasswordLastChangeDate")]
+        public virtual global::System.Nullable<global::System.DateTimeOffset> PasswordLastChangeDate
+        {
+            get
+            {
+                return this._PasswordLastChangeDate;
+            }
+            set
+            {
+                this.OnPasswordLastChangeDateChanging(value);
+                this._PasswordLastChangeDate = value;
+                this.OnPasswordLastChangeDateChanged();
+                this.OnPropertyChanged("PasswordLastChangeDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.DateTimeOffset> _PasswordLastChangeDate;
+        partial void OnPasswordLastChangeDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnPasswordLastChangeDateChanged();
+        /// <summary>
+        /// There are no comments for Property LockoutEndDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LockoutEndDate")]
+        public virtual global::System.Nullable<global::System.DateTimeOffset> LockoutEndDate
+        {
+            get
+            {
+                return this._LockoutEndDate;
+            }
+            set
+            {
+                this.OnLockoutEndDateChanging(value);
+                this._LockoutEndDate = value;
+                this.OnLockoutEndDateChanged();
+                this.OnPropertyChanged("LockoutEndDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.DateTimeOffset> _LockoutEndDate;
+        partial void OnLockoutEndDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnLockoutEndDateChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for ICertificateDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICertificateDtoSingle")]
+    public partial class ICertificateDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ICertificateDto>
+    {
+        /// <summary>
+        /// Initialize a new ICertificateDtoSingle object.
+        /// </summary>
+        public ICertificateDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ICertificateDtoSingle object.
+        /// </summary>
+        public ICertificateDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ICertificateDtoSingle object.
+        /// </summary>
+        public ICertificateDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ICertificateDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Parameters in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Parameters")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto> Parameters
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Parameters == null))
+                {
+                    this._Parameters = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto>(GetPath("Parameters"));
+                }
+                return this._Parameters;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto> _Parameters;
+        /// <summary>
+        /// There are no comments for X509Certificate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("X509Certificate")]
+        public virtual global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle X509Certificate
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._X509Certificate == null))
+                {
+                    this._X509Certificate = new global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle(this.Context, GetPath("X509Certificate"));
+                }
+                return this._X509Certificate;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle _X509Certificate;
+        /// <summary>
+        /// There are no comments for Owner in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Owner")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle Owner
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Owner == null))
+                {
+                    this._Owner = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle(this.Context, GetPath("Owner"));
+                }
+                return this._Owner;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle _Owner;
+    }
+    /// <summary>
+    /// There are no comments for ICertificateDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICertificateDto")]
+    public partial class ICertificateDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new ICertificateDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ICertificateDto CreateICertificateDto(long ID)
+        {
+            ICertificateDto iCertificateDto = new ICertificateDto();
+            iCertificateDto.Id = ID;
+            return iCertificateDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Description")]
+        public virtual string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this._Description = value;
+                this.OnDescriptionChanged();
+                this.OnPropertyChanged("Description");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Property Enabled in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Enabled")]
+        public virtual global::System.Nullable<bool> Enabled
+        {
+            get
+            {
+                return this._Enabled;
+            }
+            set
+            {
+                this.OnEnabledChanging(value);
+                this._Enabled = value;
+                this.OnEnabledChanged();
+                this.OnPropertyChanged("Enabled");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _Enabled;
+        partial void OnEnabledChanging(global::System.Nullable<bool> value);
+        partial void OnEnabledChanged();
+        /// <summary>
+        /// There are no comments for Property PluginId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PluginId")]
+        public virtual string PluginId
+        {
+            get
+            {
+                return this._PluginId;
+            }
+            set
+            {
+                this.OnPluginIdChanging(value);
+                this._PluginId = value;
+                this.OnPluginIdChanged();
+                this.OnPropertyChanged("PluginId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _PluginId;
+        partial void OnPluginIdChanging(string value);
+        partial void OnPluginIdChanged();
+        /// <summary>
+        /// There are no comments for Property Thumbprint in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Thumbprint")]
+        public virtual string Thumbprint
+        {
+            get
+            {
+                return this._Thumbprint;
+            }
+            set
+            {
+                this.OnThumbprintChanging(value);
+                this._Thumbprint = value;
+                this.OnThumbprintChanged();
+                this.OnPropertyChanged("Thumbprint");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Thumbprint;
+        partial void OnThumbprintChanging(string value);
+        partial void OnThumbprintChanged();
+        /// <summary>
+        /// There are no comments for Property Issuer in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Issuer")]
+        public virtual string Issuer
+        {
+            get
+            {
+                return this._Issuer;
+            }
+            set
+            {
+                this.OnIssuerChanging(value);
+                this._Issuer = value;
+                this.OnIssuerChanged();
+                this.OnPropertyChanged("Issuer");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Issuer;
+        partial void OnIssuerChanging(string value);
+        partial void OnIssuerChanged();
+        /// <summary>
+        /// There are no comments for Property Subject in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Subject")]
+        public virtual string Subject
+        {
+            get
+            {
+                return this._Subject;
+            }
+            set
+            {
+                this.OnSubjectChanging(value);
+                this._Subject = value;
+                this.OnSubjectChanged();
+                this.OnPropertyChanged("Subject");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Subject;
+        partial void OnSubjectChanging(string value);
+        partial void OnSubjectChanged();
+        /// <summary>
+        /// There are no comments for Property NotAfter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NotAfter")]
+        public virtual global::System.Nullable<global::System.DateTimeOffset> NotAfter
+        {
+            get
+            {
+                return this._NotAfter;
+            }
+            set
+            {
+                this.OnNotAfterChanging(value);
+                this._NotAfter = value;
+                this.OnNotAfterChanged();
+                this.OnPropertyChanged("NotAfter");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.DateTimeOffset> _NotAfter;
+        partial void OnNotAfterChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnNotAfterChanged();
+        /// <summary>
+        /// There are no comments for Property NotBefore in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NotBefore")]
+        public virtual global::System.Nullable<global::System.DateTimeOffset> NotBefore
+        {
+            get
+            {
+                return this._NotBefore;
+            }
+            set
+            {
+                this.OnNotBeforeChanging(value);
+                this._NotBefore = value;
+                this.OnNotBeforeChanged();
+                this.OnPropertyChanged("NotBefore");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.DateTimeOffset> _NotBefore;
+        partial void OnNotBeforeChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnNotBeforeChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Parameters in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Parameters")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto> Parameters
+        {
+            get
+            {
+                return this._Parameters;
+            }
+            set
+            {
+                this.OnParametersChanging(value);
+                this._Parameters = value;
+                this.OnParametersChanged();
+                this.OnPropertyChanged("Parameters");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto> _Parameters = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnParametersChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto> value);
+        partial void OnParametersChanged();
+        /// <summary>
+        /// There are no comments for Property X509Certificate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("X509Certificate")]
+        public virtual global::Sungero.IntegrationService.Generator.IBinaryObjectDto X509Certificate
+        {
+            get
+            {
+                return this._X509Certificate;
+            }
+            set
+            {
+                this.OnX509CertificateChanging(value);
+                this._X509Certificate = value;
+                this.OnX509CertificateChanged();
+                this.OnPropertyChanged("X509Certificate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Generator.IBinaryObjectDto _X509Certificate;
+        partial void OnX509CertificateChanging(global::Sungero.IntegrationService.Generator.IBinaryObjectDto value);
+        partial void OnX509CertificateChanged();
+        /// <summary>
+        /// There are no comments for Property Owner in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Owner")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto Owner
+        {
+            get
+            {
+                return this._Owner;
+            }
+            set
+            {
+                this.OnOwnerChanging(value);
+                this._Owner = value;
+                this.OnOwnerChanged();
+                this.OnPropertyChanged("Owner");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto _Owner;
+        partial void OnOwnerChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto value);
+        partial void OnOwnerChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for ISubstitutionDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ISubstitutionDtoSingle")]
+    public partial class ISubstitutionDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ISubstitutionDto>
+    {
+        /// <summary>
+        /// Initialize a new ISubstitutionDtoSingle object.
+        /// </summary>
+        public ISubstitutionDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ISubstitutionDtoSingle object.
+        /// </summary>
+        public ISubstitutionDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ISubstitutionDtoSingle object.
+        /// </summary>
+        public ISubstitutionDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ISubstitutionDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for User in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("User")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle User
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._User == null))
+                {
+                    this._User = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle(this.Context, GetPath("User"));
+                }
+                return this._User;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle _User;
+        /// <summary>
+        /// There are no comments for Substitute in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Substitute")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle Substitute
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Substitute == null))
+                {
+                    this._Substitute = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle(this.Context, GetPath("Substitute"));
+                }
+                return this._Substitute;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle _Substitute;
+    }
+    /// <summary>
+    /// There are no comments for ISubstitutionDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ISubstitutionDto")]
+    public partial class ISubstitutionDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new ISubstitutionDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        /// <param name="delegateStrictRights">Initial value of DelegateStrictRights.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ISubstitutionDto CreateISubstitutionDto(long ID, bool delegateStrictRights)
+        {
+            ISubstitutionDto iSubstitutionDto = new ISubstitutionDto();
+            iSubstitutionDto.Id = ID;
+            iSubstitutionDto.DelegateStrictRights = delegateStrictRights;
+            return iSubstitutionDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property StartDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("StartDate")]
+        public virtual global::System.Nullable<global::System.DateTimeOffset> StartDate
+        {
+            get
+            {
+                return this._StartDate;
+            }
+            set
+            {
+                this.OnStartDateChanging(value);
+                this._StartDate = value;
+                this.OnStartDateChanged();
+                this.OnPropertyChanged("StartDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.DateTimeOffset> _StartDate;
+        partial void OnStartDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnStartDateChanged();
+        /// <summary>
+        /// There are no comments for Property EndDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("EndDate")]
+        public virtual global::System.Nullable<global::System.DateTimeOffset> EndDate
+        {
+            get
+            {
+                return this._EndDate;
+            }
+            set
+            {
+                this.OnEndDateChanging(value);
+                this._EndDate = value;
+                this.OnEndDateChanged();
+                this.OnPropertyChanged("EndDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.DateTimeOffset> _EndDate;
+        partial void OnEndDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnEndDateChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property IsSystem in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IsSystem")]
+        public virtual global::System.Nullable<bool> IsSystem
+        {
+            get
+            {
+                return this._IsSystem;
+            }
+            set
+            {
+                this.OnIsSystemChanging(value);
+                this._IsSystem = value;
+                this.OnIsSystemChanged();
+                this.OnPropertyChanged("IsSystem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _IsSystem;
+        partial void OnIsSystemChanging(global::System.Nullable<bool> value);
+        partial void OnIsSystemChanged();
+        /// <summary>
+        /// There are no comments for Property DelegateStrictRights in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DelegateStrictRights")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "DelegateStrictRights is required.")]
+        public virtual bool DelegateStrictRights
+        {
+            get
+            {
+                return this._DelegateStrictRights;
+            }
+            set
+            {
+                this.OnDelegateStrictRightsChanging(value);
+                this._DelegateStrictRights = value;
+                this.OnDelegateStrictRightsChanged();
+                this.OnPropertyChanged("DelegateStrictRights");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private bool _DelegateStrictRights;
+        partial void OnDelegateStrictRightsChanging(bool value);
+        partial void OnDelegateStrictRightsChanged();
+        /// <summary>
+        /// There are no comments for Property Comment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Comment")]
+        public virtual string Comment
+        {
+            get
+            {
+                return this._Comment;
+            }
+            set
+            {
+                this.OnCommentChanging(value);
+                this._Comment = value;
+                this.OnCommentChanged();
+                this.OnPropertyChanged("Comment");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Comment;
+        partial void OnCommentChanging(string value);
+        partial void OnCommentChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property User in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("User")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto User
+        {
+            get
+            {
+                return this._User;
+            }
+            set
+            {
+                this.OnUserChanging(value);
+                this._User = value;
+                this.OnUserChanged();
+                this.OnPropertyChanged("User");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto _User;
+        partial void OnUserChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto value);
+        partial void OnUserChanged();
+        /// <summary>
+        /// There are no comments for Property Substitute in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Substitute")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto Substitute
+        {
+            get
+            {
+                return this._Substitute;
+            }
+            set
+            {
+                this.OnSubstituteChanging(value);
+                this._Substitute = value;
+                this.OnSubstituteChanged();
+                this.OnPropertyChanged("Substitute");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto _Substitute;
+        partial void OnSubstituteChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto value);
+        partial void OnSubstituteChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for ICertificateParameterDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICertificateParameterDtoSingle")]
+    public partial class ICertificateParameterDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ICertificateParameterDto>
+    {
+        /// <summary>
+        /// Initialize a new ICertificateParameterDtoSingle object.
+        /// </summary>
+        public ICertificateParameterDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ICertificateParameterDtoSingle object.
+        /// </summary>
+        public ICertificateParameterDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ICertificateParameterDtoSingle object.
+        /// </summary>
+        public ICertificateParameterDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ICertificateParameterDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Certificate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Certificate")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle Certificate
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Certificate == null))
+                {
+                    this._Certificate = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle(this.Context, GetPath("Certificate"));
+                }
+                return this._Certificate;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle _Certificate;
+    }
+    /// <summary>
+    /// There are no comments for ICertificateParameterDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICertificateParameterDto")]
+    public partial class ICertificateParameterDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new ICertificateParameterDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ICertificateParameterDto CreateICertificateParameterDto(long ID)
+        {
+            ICertificateParameterDto iCertificateParameterDto = new ICertificateParameterDto();
+            iCertificateParameterDto.Id = ID;
+            return iCertificateParameterDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Key in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Key")]
+        public virtual string Key
+        {
+            get
+            {
+                return this._Key;
+            }
+            set
+            {
+                this.OnKeyChanging(value);
+                this._Key = value;
+                this.OnKeyChanged();
+                this.OnPropertyChanged("Key");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Key;
+        partial void OnKeyChanging(string value);
+        partial void OnKeyChanged();
+        /// <summary>
+        /// There are no comments for Property Value in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Value")]
+        public virtual string Value
+        {
+            get
+            {
+                return this._Value;
+            }
+            set
+            {
+                this.OnValueChanging(value);
+                this._Value = value;
+                this.OnValueChanged();
+                this.OnPropertyChanged("Value");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Value;
+        partial void OnValueChanging(string value);
+        partial void OnValueChanged();
+        /// <summary>
+        /// There are no comments for Property Certificate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Certificate")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto Certificate
+        {
+            get
+            {
+                return this._Certificate;
+            }
+            set
+            {
+                this.OnCertificateChanging(value);
+                this._Certificate = value;
+                this.OnCertificateChanged();
+                this.OnPropertyChanged("Certificate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto _Certificate;
+        partial void OnCertificateChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto value);
+        partial void OnCertificateChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for IGroupRecipientLinksDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IGroupRecipientLinksDtoSingle")]
+    public partial class IGroupRecipientLinksDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IGroupRecipientLinksDto>
+    {
+        /// <summary>
+        /// Initialize a new IGroupRecipientLinksDtoSingle object.
+        /// </summary>
+        public IGroupRecipientLinksDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IGroupRecipientLinksDtoSingle object.
+        /// </summary>
+        public IGroupRecipientLinksDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IGroupRecipientLinksDtoSingle object.
+        /// </summary>
+        public IGroupRecipientLinksDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IGroupRecipientLinksDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Group in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Group")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle Group
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Group == null))
+                {
+                    this._Group = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle(this.Context, GetPath("Group"));
+                }
+                return this._Group;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle _Group;
+        /// <summary>
+        /// There are no comments for Member in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Member")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle Member
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Member == null))
+                {
+                    this._Member = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle(this.Context, GetPath("Member"));
+                }
+                return this._Member;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle _Member;
+    }
+    /// <summary>
+    /// There are no comments for IGroupRecipientLinksDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IGroupRecipientLinksDto")]
+    public partial class IGroupRecipientLinksDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IGroupRecipientLinksDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IGroupRecipientLinksDto CreateIGroupRecipientLinksDto(long ID)
+        {
+            IGroupRecipientLinksDto iGroupRecipientLinksDto = new IGroupRecipientLinksDto();
+            iGroupRecipientLinksDto.Id = ID;
+            return iGroupRecipientLinksDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Sid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Sid")]
+        public virtual global::System.Nullable<global::System.Guid> Sid
+        {
+            get
+            {
+                return this._Sid;
+            }
+            set
+            {
+                this.OnSidChanging(value);
+                this._Sid = value;
+                this.OnSidChanged();
+                this.OnPropertyChanged("Sid");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.Guid> _Sid;
+        partial void OnSidChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnSidChanged();
+        /// <summary>
+        /// There are no comments for Property Group in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Group")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto Group
+        {
+            get
+            {
+                return this._Group;
+            }
+            set
+            {
+                this.OnGroupChanging(value);
+                this._Group = value;
+                this.OnGroupChanged();
+                this.OnPropertyChanged("Group");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto _Group;
+        partial void OnGroupChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto value);
+        partial void OnGroupChanged();
+        /// <summary>
+        /// There are no comments for Property Member in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Member")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto Member
+        {
+            get
+            {
+                return this._Member;
+            }
+            set
+            {
+                this.OnMemberChanging(value);
+                this._Member = value;
+                this.OnMemberChanged();
+                this.OnPropertyChanged("Member");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto _Member;
+        partial void OnMemberChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto value);
+        partial void OnMemberChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto to its derived type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle CastToIGroupDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto to its derived type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle CastToIUserDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateParameterDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto as global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Workflow
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Company
 {
+    /// <summary>
+    /// There are no comments for IBusinessUnitDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBusinessUnitDtoSingle")]
+    public partial class IBusinessUnitDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IBusinessUnitDto>
+    {
+        /// <summary>
+        /// Initialize a new IBusinessUnitDtoSingle object.
+        /// </summary>
+        public IBusinessUnitDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IBusinessUnitDtoSingle object.
+        /// </summary>
+        public IBusinessUnitDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IBusinessUnitDtoSingle object.
+        /// </summary>
+        public IBusinessUnitDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IBusinessUnitDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for City in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("City")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle City
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._City == null))
+                {
+                    this._City = new global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle(this.Context, GetPath("City"));
+                }
+                return this._City;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle _City;
+        /// <summary>
+        /// There are no comments for Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle Region
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Region == null))
+                {
+                    this._Region = new global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle(this.Context, GetPath("Region"));
+                }
+                return this._Region;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle _Region;
+        /// <summary>
+        /// There are no comments for HeadCompany in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HeadCompany")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle HeadCompany
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._HeadCompany == null))
+                {
+                    this._HeadCompany = new global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle(this.Context, GetPath("HeadCompany"));
+                }
+                return this._HeadCompany;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle _HeadCompany;
+        /// <summary>
+        /// There are no comments for Company in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Company")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle Company
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Company == null))
+                {
+                    this._Company = new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle(this.Context, GetPath("Company"));
+                }
+                return this._Company;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle _Company;
+        /// <summary>
+        /// There are no comments for CEO in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CEO")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle CEO
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CEO == null))
+                {
+                    this._CEO = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("CEO"));
+                }
+                return this._CEO;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _CEO;
+        /// <summary>
+        /// There are no comments for Bank in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bank")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle Bank
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Bank == null))
+                {
+                    this._Bank = new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(this.Context, GetPath("Bank"));
+                }
+                return this._Bank;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle _Bank;
+        /// <summary>
+        /// There are no comments for CAO in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CAO")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle CAO
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CAO == null))
+                {
+                    this._CAO = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("CAO"));
+                }
+                return this._CAO;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _CAO;
+        /// <summary>
+        /// There are no comments for RecipientLinks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("RecipientLinks")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> RecipientLinks
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RecipientLinks == null))
+                {
+                    this._RecipientLinks = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto>(GetPath("RecipientLinks"));
+                }
+                return this._RecipientLinks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> _RecipientLinks;
+        /// <summary>
+        /// There are no comments for Parent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Parent")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle Parent
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Parent == null))
+                {
+                    this._Parent = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle(this.Context, GetPath("Parent"));
+                }
+                return this._Parent;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle _Parent;
+    }
+    /// <summary>
+    /// There are no comments for IBusinessUnitDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBusinessUnitDto")]
+    public partial class IBusinessUnitDto : global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto
+    {
+        /// <summary>
+        /// Create a new IBusinessUnitDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IBusinessUnitDto CreateIBusinessUnitDto(long ID)
+        {
+            IBusinessUnitDto iBusinessUnitDto = new IBusinessUnitDto();
+            iBusinessUnitDto.Id = ID;
+            return iBusinessUnitDto;
+        }
+        /// <summary>
+        /// There are no comments for Property TIN in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TIN")]
+        public virtual string TIN
+        {
+            get
+            {
+                return this._TIN;
+            }
+            set
+            {
+                this.OnTINChanging(value);
+                this._TIN = value;
+                this.OnTINChanged();
+                this.OnPropertyChanged("TIN");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _TIN;
+        partial void OnTINChanging(string value);
+        partial void OnTINChanged();
+        /// <summary>
+        /// There are no comments for Property TRRC in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TRRC")]
+        public virtual string TRRC
+        {
+            get
+            {
+                return this._TRRC;
+            }
+            set
+            {
+                this.OnTRRCChanging(value);
+                this._TRRC = value;
+                this.OnTRRCChanged();
+                this.OnPropertyChanged("TRRC");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _TRRC;
+        partial void OnTRRCChanging(string value);
+        partial void OnTRRCChanged();
+        /// <summary>
+        /// There are no comments for Property Phones in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Phones")]
+        public virtual string Phones
+        {
+            get
+            {
+                return this._Phones;
+            }
+            set
+            {
+                this.OnPhonesChanging(value);
+                this._Phones = value;
+                this.OnPhonesChanged();
+                this.OnPropertyChanged("Phones");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Phones;
+        partial void OnPhonesChanging(string value);
+        partial void OnPhonesChanged();
+        /// <summary>
+        /// There are no comments for Property LegalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LegalName")]
+        public virtual string LegalName
+        {
+            get
+            {
+                return this._LegalName;
+            }
+            set
+            {
+                this.OnLegalNameChanging(value);
+                this._LegalName = value;
+                this.OnLegalNameChanged();
+                this.OnPropertyChanged("LegalName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _LegalName;
+        partial void OnLegalNameChanging(string value);
+        partial void OnLegalNameChanged();
+        /// <summary>
+        /// There are no comments for Property LegalAddress in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LegalAddress")]
+        public virtual string LegalAddress
+        {
+            get
+            {
+                return this._LegalAddress;
+            }
+            set
+            {
+                this.OnLegalAddressChanging(value);
+                this._LegalAddress = value;
+                this.OnLegalAddressChanged();
+                this.OnPropertyChanged("LegalAddress");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _LegalAddress;
+        partial void OnLegalAddressChanging(string value);
+        partial void OnLegalAddressChanged();
+        /// <summary>
+        /// There are no comments for Property PostalAddress in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PostalAddress")]
+        public virtual string PostalAddress
+        {
+            get
+            {
+                return this._PostalAddress;
+            }
+            set
+            {
+                this.OnPostalAddressChanging(value);
+                this._PostalAddress = value;
+                this.OnPostalAddressChanged();
+                this.OnPropertyChanged("PostalAddress");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _PostalAddress;
+        partial void OnPostalAddressChanging(string value);
+        partial void OnPostalAddressChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Note")]
+        public virtual string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this._Note = value;
+                this.OnNoteChanged();
+                this.OnPropertyChanged("Note");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property Email in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Email")]
+        public virtual string Email
+        {
+            get
+            {
+                return this._Email;
+            }
+            set
+            {
+                this.OnEmailChanging(value);
+                this._Email = value;
+                this.OnEmailChanged();
+                this.OnPropertyChanged("Email");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Email;
+        partial void OnEmailChanging(string value);
+        partial void OnEmailChanged();
+        /// <summary>
+        /// There are no comments for Property Homepage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Homepage")]
+        public virtual string Homepage
+        {
+            get
+            {
+                return this._Homepage;
+            }
+            set
+            {
+                this.OnHomepageChanging(value);
+                this._Homepage = value;
+                this.OnHomepageChanged();
+                this.OnPropertyChanged("Homepage");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Homepage;
+        partial void OnHomepageChanging(string value);
+        partial void OnHomepageChanged();
+        /// <summary>
+        /// There are no comments for Property PSRN in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PSRN")]
+        public virtual string PSRN
+        {
+            get
+            {
+                return this._PSRN;
+            }
+            set
+            {
+                this.OnPSRNChanging(value);
+                this._PSRN = value;
+                this.OnPSRNChanged();
+                this.OnPropertyChanged("PSRN");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _PSRN;
+        partial void OnPSRNChanging(string value);
+        partial void OnPSRNChanged();
+        /// <summary>
+        /// There are no comments for Property NCEO in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NCEO")]
+        public virtual string NCEO
+        {
+            get
+            {
+                return this._NCEO;
+            }
+            set
+            {
+                this.OnNCEOChanging(value);
+                this._NCEO = value;
+                this.OnNCEOChanged();
+                this.OnPropertyChanged("NCEO");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _NCEO;
+        partial void OnNCEOChanging(string value);
+        partial void OnNCEOChanged();
+        /// <summary>
+        /// There are no comments for Property NCEA in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NCEA")]
+        public virtual string NCEA
+        {
+            get
+            {
+                return this._NCEA;
+            }
+            set
+            {
+                this.OnNCEAChanging(value);
+                this._NCEA = value;
+                this.OnNCEAChanged();
+                this.OnPropertyChanged("NCEA");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _NCEA;
+        partial void OnNCEAChanging(string value);
+        partial void OnNCEAChanged();
+        /// <summary>
+        /// There are no comments for Property Account in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Account")]
+        public virtual string Account
+        {
+            get
+            {
+                return this._Account;
+            }
+            set
+            {
+                this.OnAccountChanging(value);
+                this._Account = value;
+                this.OnAccountChanged();
+                this.OnPropertyChanged("Account");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Account;
+        partial void OnAccountChanging(string value);
+        partial void OnAccountChanged();
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public virtual string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// There are no comments for Property Nonresident in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Nonresident")]
+        public virtual global::System.Nullable<bool> Nonresident
+        {
+            get
+            {
+                return this._Nonresident;
+            }
+            set
+            {
+                this.OnNonresidentChanging(value);
+                this._Nonresident = value;
+                this.OnNonresidentChanged();
+                this.OnPropertyChanged("Nonresident");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _Nonresident;
+        partial void OnNonresidentChanging(global::System.Nullable<bool> value);
+        partial void OnNonresidentChanged();
+        /// <summary>
+        /// There are no comments for Property ExternalId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExternalId")]
+        public virtual string ExternalId
+        {
+            get
+            {
+                return this._ExternalId;
+            }
+            set
+            {
+                this.OnExternalIdChanging(value);
+                this._ExternalId = value;
+                this.OnExternalIdChanged();
+                this.OnPropertyChanged("ExternalId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ExternalId;
+        partial void OnExternalIdChanging(string value);
+        partial void OnExternalIdChanged();
+        /// <summary>
+        /// There are no comments for Property City in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("City")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto City
+        {
+            get
+            {
+                return this._City;
+            }
+            set
+            {
+                this.OnCityChanging(value);
+                this._City = value;
+                this.OnCityChanged();
+                this.OnPropertyChanged("City");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto _City;
+        partial void OnCityChanging(global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto value);
+        partial void OnCityChanged();
+        /// <summary>
+        /// There are no comments for Property Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto Region
+        {
+            get
+            {
+                return this._Region;
+            }
+            set
+            {
+                this.OnRegionChanging(value);
+                this._Region = value;
+                this.OnRegionChanged();
+                this.OnPropertyChanged("Region");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto _Region;
+        partial void OnRegionChanging(global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto value);
+        partial void OnRegionChanged();
+        /// <summary>
+        /// There are no comments for Property HeadCompany in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HeadCompany")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto HeadCompany
+        {
+            get
+            {
+                return this._HeadCompany;
+            }
+            set
+            {
+                this.OnHeadCompanyChanging(value);
+                this._HeadCompany = value;
+                this.OnHeadCompanyChanged();
+                this.OnPropertyChanged("HeadCompany");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto _HeadCompany;
+        partial void OnHeadCompanyChanging(global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto value);
+        partial void OnHeadCompanyChanged();
+        /// <summary>
+        /// There are no comments for Property Company in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Company")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto Company
+        {
+            get
+            {
+                return this._Company;
+            }
+            set
+            {
+                this.OnCompanyChanging(value);
+                this._Company = value;
+                this.OnCompanyChanged();
+                this.OnPropertyChanged("Company");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto _Company;
+        partial void OnCompanyChanging(global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto value);
+        partial void OnCompanyChanged();
+        /// <summary>
+        /// There are no comments for Property CEO in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CEO")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto CEO
+        {
+            get
+            {
+                return this._CEO;
+            }
+            set
+            {
+                this.OnCEOChanging(value);
+                this._CEO = value;
+                this.OnCEOChanged();
+                this.OnPropertyChanged("CEO");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _CEO;
+        partial void OnCEOChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
+        partial void OnCEOChanged();
+        /// <summary>
+        /// There are no comments for Property Bank in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bank")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto Bank
+        {
+            get
+            {
+                return this._Bank;
+            }
+            set
+            {
+                this.OnBankChanging(value);
+                this._Bank = value;
+                this.OnBankChanged();
+                this.OnPropertyChanged("Bank");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto _Bank;
+        partial void OnBankChanging(global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto value);
+        partial void OnBankChanged();
+        /// <summary>
+        /// There are no comments for Property CAO in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CAO")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto CAO
+        {
+            get
+            {
+                return this._CAO;
+            }
+            set
+            {
+                this.OnCAOChanging(value);
+                this._CAO = value;
+                this.OnCAOChanged();
+                this.OnPropertyChanged("CAO");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _CAO;
+        partial void OnCAOChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
+        partial void OnCAOChanged();
+    }
+    /// <summary>
+    /// There are no comments for IDepartmentDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IDepartmentDtoSingle")]
+    public partial class IDepartmentDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IDepartmentDto>
+    {
+        /// <summary>
+        /// Initialize a new IDepartmentDtoSingle object.
+        /// </summary>
+        public IDepartmentDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IDepartmentDtoSingle object.
+        /// </summary>
+        public IDepartmentDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IDepartmentDtoSingle object.
+        /// </summary>
+        public IDepartmentDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IDepartmentDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Manager in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Manager")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Manager
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Manager == null))
+                {
+                    this._Manager = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Manager"));
+                }
+                return this._Manager;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Manager;
+        /// <summary>
+        /// There are no comments for HeadOffice in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HeadOffice")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle HeadOffice
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._HeadOffice == null))
+                {
+                    this._HeadOffice = new global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle(this.Context, GetPath("HeadOffice"));
+                }
+                return this._HeadOffice;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle _HeadOffice;
+        /// <summary>
+        /// There are no comments for BusinessUnit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BusinessUnit")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle BusinessUnit
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BusinessUnit == null))
+                {
+                    this._BusinessUnit = new global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle(this.Context, GetPath("BusinessUnit"));
+                }
+                return this._BusinessUnit;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle _BusinessUnit;
+        /// <summary>
+        /// There are no comments for RecipientLinks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("RecipientLinks")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> RecipientLinks
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._RecipientLinks == null))
+                {
+                    this._RecipientLinks = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto>(GetPath("RecipientLinks"));
+                }
+                return this._RecipientLinks;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupRecipientLinksDto> _RecipientLinks;
+        /// <summary>
+        /// There are no comments for Parent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Parent")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle Parent
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Parent == null))
+                {
+                    this._Parent = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle(this.Context, GetPath("Parent"));
+                }
+                return this._Parent;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDtoSingle _Parent;
+    }
+    /// <summary>
+    /// There are no comments for IDepartmentDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IDepartmentDto")]
+    public partial class IDepartmentDto : global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto
+    {
+        /// <summary>
+        /// Create a new IDepartmentDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IDepartmentDto CreateIDepartmentDto(long ID)
+        {
+            IDepartmentDto iDepartmentDto = new IDepartmentDto();
+            iDepartmentDto.Id = ID;
+            return iDepartmentDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Phone in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Phone")]
+        public virtual string Phone
+        {
+            get
+            {
+                return this._Phone;
+            }
+            set
+            {
+                this.OnPhoneChanging(value);
+                this._Phone = value;
+                this.OnPhoneChanged();
+                this.OnPropertyChanged("Phone");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Phone;
+        partial void OnPhoneChanging(string value);
+        partial void OnPhoneChanged();
+        /// <summary>
+        /// There are no comments for Property ShortName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ShortName")]
+        public virtual string ShortName
+        {
+            get
+            {
+                return this._ShortName;
+            }
+            set
+            {
+                this.OnShortNameChanging(value);
+                this._ShortName = value;
+                this.OnShortNameChanged();
+                this.OnPropertyChanged("ShortName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ShortName;
+        partial void OnShortNameChanging(string value);
+        partial void OnShortNameChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Note")]
+        public virtual string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this._Note = value;
+                this.OnNoteChanged();
+                this.OnPropertyChanged("Note");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public virtual string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// There are no comments for Property ExternalId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExternalId")]
+        public virtual string ExternalId
+        {
+            get
+            {
+                return this._ExternalId;
+            }
+            set
+            {
+                this.OnExternalIdChanging(value);
+                this._ExternalId = value;
+                this.OnExternalIdChanged();
+                this.OnPropertyChanged("ExternalId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ExternalId;
+        partial void OnExternalIdChanging(string value);
+        partial void OnExternalIdChanged();
+        /// <summary>
+        /// There are no comments for Property Manager in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Manager")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto Manager
+        {
+            get
+            {
+                return this._Manager;
+            }
+            set
+            {
+                this.OnManagerChanging(value);
+                this._Manager = value;
+                this.OnManagerChanged();
+                this.OnPropertyChanged("Manager");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _Manager;
+        partial void OnManagerChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
+        partial void OnManagerChanged();
+        /// <summary>
+        /// There are no comments for Property HeadOffice in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HeadOffice")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto HeadOffice
+        {
+            get
+            {
+                return this._HeadOffice;
+            }
+            set
+            {
+                this.OnHeadOfficeChanging(value);
+                this._HeadOffice = value;
+                this.OnHeadOfficeChanged();
+                this.OnPropertyChanged("HeadOffice");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto _HeadOffice;
+        partial void OnHeadOfficeChanging(global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto value);
+        partial void OnHeadOfficeChanged();
+        /// <summary>
+        /// There are no comments for Property BusinessUnit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BusinessUnit")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto BusinessUnit
+        {
+            get
+            {
+                return this._BusinessUnit;
+            }
+            set
+            {
+                this.OnBusinessUnitChanging(value);
+                this._BusinessUnit = value;
+                this.OnBusinessUnitChanged();
+                this.OnPropertyChanged("BusinessUnit");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto _BusinessUnit;
+        partial void OnBusinessUnitChanging(global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto value);
+        partial void OnBusinessUnitChanged();
+    }
+    /// <summary>
+    /// There are no comments for IJobTitleDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IJobTitleDtoSingle")]
+    public partial class IJobTitleDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IJobTitleDto>
+    {
+        /// <summary>
+        /// Initialize a new IJobTitleDtoSingle object.
+        /// </summary>
+        public IJobTitleDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IJobTitleDtoSingle object.
+        /// </summary>
+        public IJobTitleDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IJobTitleDtoSingle object.
+        /// </summary>
+        public IJobTitleDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IJobTitleDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Department in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Department")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle Department
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Department == null))
+                {
+                    this._Department = new global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle(this.Context, GetPath("Department"));
+                }
+                return this._Department;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle _Department;
+    }
+    /// <summary>
+    /// There are no comments for IJobTitleDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IJobTitleDto")]
+    public partial class IJobTitleDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IJobTitleDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IJobTitleDto CreateIJobTitleDto(long ID)
+        {
+            IJobTitleDto iJobTitleDto = new IJobTitleDto();
+            iJobTitleDto.Id = ID;
+            return iJobTitleDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property ExternalId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExternalId")]
+        public virtual string ExternalId
+        {
+            get
+            {
+                return this._ExternalId;
+            }
+            set
+            {
+                this.OnExternalIdChanging(value);
+                this._ExternalId = value;
+                this.OnExternalIdChanged();
+                this.OnPropertyChanged("ExternalId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ExternalId;
+        partial void OnExternalIdChanging(string value);
+        partial void OnExternalIdChanged();
+        /// <summary>
+        /// There are no comments for Property Department in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Department")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto Department
+        {
+            get
+            {
+                return this._Department;
+            }
+            set
+            {
+                this.OnDepartmentChanging(value);
+                this._Department = value;
+                this.OnDepartmentChanged();
+                this.OnPropertyChanged("Department");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto _Department;
+        partial void OnDepartmentChanging(global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto value);
+        partial void OnDepartmentChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto as global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto as global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto to its derived type global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle CastToIBusinessUnitDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto to its derived type global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle CastToIBusinessUnitDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto as global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto as global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto to its derived type global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle CastToIDepartmentDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IGroupDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto to its derived type global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle CastToIDepartmentDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto as global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto as global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.NewDreamSolution
 {
+    /// <summary>
+    /// There are no comments for IEmployeeDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployeeDtoSingle")]
+    public partial class IEmployeeDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IEmployeeDto>
+    {
+        /// <summary>
+        /// Initialize a new IEmployeeDtoSingle object.
+        /// </summary>
+        public IEmployeeDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IEmployeeDtoSingle object.
+        /// </summary>
+        public IEmployeeDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IEmployeeDtoSingle object.
+        /// </summary>
+        public IEmployeeDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IEmployeeDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Person in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Person")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle Person
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Person == null))
+                {
+                    this._Person = new global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle(this.Context, GetPath("Person"));
+                }
+                return this._Person;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle _Person;
+        /// <summary>
+        /// There are no comments for Department in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Department")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle Department
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Department == null))
+                {
+                    this._Department = new global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle(this.Context, GetPath("Department"));
+                }
+                return this._Department;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDtoSingle _Department;
+        /// <summary>
+        /// There are no comments for JobTitle in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("JobTitle")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle JobTitle
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._JobTitle == null))
+                {
+                    this._JobTitle = new global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle(this.Context, GetPath("JobTitle"));
+                }
+                return this._JobTitle;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDtoSingle _JobTitle;
+        /// <summary>
+        /// There are no comments for Login in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Login")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle Login
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Login == null))
+                {
+                    this._Login = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle(this.Context, GetPath("Login"));
+                }
+                return this._Login;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ILoginDtoSingle _Login;
+        /// <summary>
+        /// There are no comments for PersonalPhoto in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PersonalPhoto")]
+        public virtual global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle PersonalPhoto
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PersonalPhoto == null))
+                {
+                    this._PersonalPhoto = new global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle(this.Context, GetPath("PersonalPhoto"));
+                }
+                return this._PersonalPhoto;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle _PersonalPhoto;
+    }
+    /// <summary>
+    /// There are no comments for IEmployeeDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployeeDto")]
+    public partial class IEmployeeDto : global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto
+    {
+        /// <summary>
+        /// Create a new IEmployeeDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IEmployeeDto CreateIEmployeeDto(long ID)
+        {
+            IEmployeeDto iEmployeeDto = new IEmployeeDto();
+            iEmployeeDto.Id = ID;
+            return iEmployeeDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Phone in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Phone")]
+        public virtual string Phone
+        {
+            get
+            {
+                return this._Phone;
+            }
+            set
+            {
+                this.OnPhoneChanging(value);
+                this._Phone = value;
+                this.OnPhoneChanged();
+                this.OnPropertyChanged("Phone");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Phone;
+        partial void OnPhoneChanging(string value);
+        partial void OnPhoneChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Note")]
+        public virtual string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this._Note = value;
+                this.OnNoteChanged();
+                this.OnPropertyChanged("Note");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property Email in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Email")]
+        public virtual string Email
+        {
+            get
+            {
+                return this._Email;
+            }
+            set
+            {
+                this.OnEmailChanging(value);
+                this._Email = value;
+                this.OnEmailChanged();
+                this.OnPropertyChanged("Email");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Email;
+        partial void OnEmailChanging(string value);
+        partial void OnEmailChanged();
+        /// <summary>
+        /// There are no comments for Property NeedNotifyExpiredAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NeedNotifyExpiredAssignments")]
+        public virtual global::System.Nullable<bool> NeedNotifyExpiredAssignments
+        {
+            get
+            {
+                return this._NeedNotifyExpiredAssignments;
+            }
+            set
+            {
+                this.OnNeedNotifyExpiredAssignmentsChanging(value);
+                this._NeedNotifyExpiredAssignments = value;
+                this.OnNeedNotifyExpiredAssignmentsChanged();
+                this.OnPropertyChanged("NeedNotifyExpiredAssignments");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _NeedNotifyExpiredAssignments;
+        partial void OnNeedNotifyExpiredAssignmentsChanging(global::System.Nullable<bool> value);
+        partial void OnNeedNotifyExpiredAssignmentsChanged();
+        /// <summary>
+        /// There are no comments for Property NeedNotifyNewAssignments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NeedNotifyNewAssignments")]
+        public virtual global::System.Nullable<bool> NeedNotifyNewAssignments
+        {
+            get
+            {
+                return this._NeedNotifyNewAssignments;
+            }
+            set
+            {
+                this.OnNeedNotifyNewAssignmentsChanging(value);
+                this._NeedNotifyNewAssignments = value;
+                this.OnNeedNotifyNewAssignmentsChanged();
+                this.OnPropertyChanged("NeedNotifyNewAssignments");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _NeedNotifyNewAssignments;
+        partial void OnNeedNotifyNewAssignmentsChanging(global::System.Nullable<bool> value);
+        partial void OnNeedNotifyNewAssignmentsChanged();
+        /// <summary>
+        /// There are no comments for Property PersonnelNumber in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PersonnelNumber")]
+        public virtual string PersonnelNumber
+        {
+            get
+            {
+                return this._PersonnelNumber;
+            }
+            set
+            {
+                this.OnPersonnelNumberChanging(value);
+                this._PersonnelNumber = value;
+                this.OnPersonnelNumberChanged();
+                this.OnPropertyChanged("PersonnelNumber");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _PersonnelNumber;
+        partial void OnPersonnelNumberChanging(string value);
+        partial void OnPersonnelNumberChanged();
+        /// <summary>
+        /// There are no comments for Property NeedNotifyAssignmentsSummary in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NeedNotifyAssignmentsSummary")]
+        public virtual global::System.Nullable<bool> NeedNotifyAssignmentsSummary
+        {
+            get
+            {
+                return this._NeedNotifyAssignmentsSummary;
+            }
+            set
+            {
+                this.OnNeedNotifyAssignmentsSummaryChanging(value);
+                this._NeedNotifyAssignmentsSummary = value;
+                this.OnNeedNotifyAssignmentsSummaryChanged();
+                this.OnPropertyChanged("NeedNotifyAssignmentsSummary");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _NeedNotifyAssignmentsSummary;
+        partial void OnNeedNotifyAssignmentsSummaryChanging(global::System.Nullable<bool> value);
+        partial void OnNeedNotifyAssignmentsSummaryChanged();
+        /// <summary>
+        /// There are no comments for Property ExternalId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExternalId")]
+        public virtual string ExternalId
+        {
+            get
+            {
+                return this._ExternalId;
+            }
+            set
+            {
+                this.OnExternalIdChanging(value);
+                this._ExternalId = value;
+                this.OnExternalIdChanged();
+                this.OnPropertyChanged("ExternalId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ExternalId;
+        partial void OnExternalIdChanging(string value);
+        partial void OnExternalIdChanged();
+        /// <summary>
+        /// There are no comments for Property Person in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Person")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto Person
+        {
+            get
+            {
+                return this._Person;
+            }
+            set
+            {
+                this.OnPersonChanging(value);
+                this._Person = value;
+                this.OnPersonChanged();
+                this.OnPropertyChanged("Person");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto _Person;
+        partial void OnPersonChanging(global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto value);
+        partial void OnPersonChanged();
+        /// <summary>
+        /// There are no comments for Property Department in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Department")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto Department
+        {
+            get
+            {
+                return this._Department;
+            }
+            set
+            {
+                this.OnDepartmentChanging(value);
+                this._Department = value;
+                this.OnDepartmentChanged();
+                this.OnPropertyChanged("Department");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto _Department;
+        partial void OnDepartmentChanging(global::Sungero.IntegrationService.Models.Generated.Company.IDepartmentDto value);
+        partial void OnDepartmentChanged();
+        /// <summary>
+        /// There are no comments for Property JobTitle in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("JobTitle")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto JobTitle
+        {
+            get
+            {
+                return this._JobTitle;
+            }
+            set
+            {
+                this.OnJobTitleChanging(value);
+                this._JobTitle = value;
+                this.OnJobTitleChanged();
+                this.OnPropertyChanged("JobTitle");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto _JobTitle;
+        partial void OnJobTitleChanging(global::Sungero.IntegrationService.Models.Generated.Company.IJobTitleDto value);
+        partial void OnJobTitleChanged();
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto as global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto as global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto to its derived type global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle CastToIEmployeeDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IUserDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto to its derived type global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle CastToIEmployeeDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.CoreEntities.IRecipientDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(_source.Context, query.GetPath(null));
+        }
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule
 {
+    /// <summary>
+    /// There are no comments for IEmployeeMutationsLogDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployeeMutationsLogDtoSingle")]
+    public partial class IEmployeeMutationsLogDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IEmployeeMutationsLogDto>
+    {
+        /// <summary>
+        /// Initialize a new IEmployeeMutationsLogDtoSingle object.
+        /// </summary>
+        public IEmployeeMutationsLogDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IEmployeeMutationsLogDtoSingle object.
+        /// </summary>
+        public IEmployeeMutationsLogDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IEmployeeMutationsLogDtoSingle object.
+        /// </summary>
+        public IEmployeeMutationsLogDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IEmployeeMutationsLogDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Employee in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Employee")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Employee
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Employee == null))
+                {
+                    this._Employee = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Employee"));
+                }
+                return this._Employee;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Employee;
+    }
+    /// <summary>
+    /// There are no comments for IEmployeeMutationsLogDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployeeMutationsLogDto")]
+    public partial class IEmployeeMutationsLogDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IEmployeeMutationsLogDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IEmployeeMutationsLogDto CreateIEmployeeMutationsLogDto(long ID)
+        {
+            IEmployeeMutationsLogDto iEmployeeMutationsLogDto = new IEmployeeMutationsLogDto();
+            iEmployeeMutationsLogDto.Id = ID;
+            return iEmployeeMutationsLogDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Mutation in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Mutation")]
+        public virtual string Mutation
+        {
+            get
+            {
+                return this._Mutation;
+            }
+            set
+            {
+                this.OnMutationChanging(value);
+                this._Mutation = value;
+                this.OnMutationChanged();
+                this.OnPropertyChanged("Mutation");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Mutation;
+        partial void OnMutationChanging(string value);
+        partial void OnMutationChanged();
+        /// <summary>
+        /// There are no comments for Property AppliedDate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("AppliedDate")]
+        public virtual global::System.Nullable<global::System.DateTimeOffset> AppliedDate
+        {
+            get
+            {
+                return this._AppliedDate;
+            }
+            set
+            {
+                this.OnAppliedDateChanging(value);
+                this._AppliedDate = value;
+                this.OnAppliedDateChanged();
+                this.OnPropertyChanged("AppliedDate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.DateTimeOffset> _AppliedDate;
+        partial void OnAppliedDateChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnAppliedDateChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Note")]
+        public virtual string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this._Note = value;
+                this.OnNoteChanged();
+                this.OnPropertyChanged("Note");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property Employee in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Employee")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto Employee
+        {
+            get
+            {
+                return this._Employee;
+            }
+            set
+            {
+                this.OnEmployeeChanging(value);
+                this._Employee = value;
+                this.OnEmployeeChanged();
+                this.OnPropertyChanged("Employee");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _Employee;
+        partial void OnEmployeeChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
+        partial void OnEmployeeChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDto as global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDto as global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationsLogDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Commons
 {
+    /// <summary>
+    /// There are no comments for ICityDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICityDtoSingle")]
+    public partial class ICityDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ICityDto>
+    {
+        /// <summary>
+        /// Initialize a new ICityDtoSingle object.
+        /// </summary>
+        public ICityDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ICityDtoSingle object.
+        /// </summary>
+        public ICityDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ICityDtoSingle object.
+        /// </summary>
+        public ICityDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ICityDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle Region
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Region == null))
+                {
+                    this._Region = new global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle(this.Context, GetPath("Region"));
+                }
+                return this._Region;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle _Region;
+        /// <summary>
+        /// There are no comments for Country in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Country")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle Country
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Country == null))
+                {
+                    this._Country = new global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle(this.Context, GetPath("Country"));
+                }
+                return this._Country;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle _Country;
+    }
+    /// <summary>
+    /// There are no comments for ICityDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICityDto")]
+    public partial class ICityDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new ICityDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ICityDto CreateICityDto(long ID)
+        {
+            ICityDto iCityDto = new ICityDto();
+            iCityDto.Id = ID;
+            return iCityDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto Region
+        {
+            get
+            {
+                return this._Region;
+            }
+            set
+            {
+                this.OnRegionChanging(value);
+                this._Region = value;
+                this.OnRegionChanged();
+                this.OnPropertyChanged("Region");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto _Region;
+        partial void OnRegionChanging(global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto value);
+        partial void OnRegionChanged();
+        /// <summary>
+        /// There are no comments for Property Country in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Country")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto Country
+        {
+            get
+            {
+                return this._Country;
+            }
+            set
+            {
+                this.OnCountryChanging(value);
+                this._Country = value;
+                this.OnCountryChanged();
+                this.OnPropertyChanged("Country");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto _Country;
+        partial void OnCountryChanging(global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto value);
+        partial void OnCountryChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for ICountryDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICountryDtoSingle")]
+    public partial class ICountryDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ICountryDto>
+    {
+        /// <summary>
+        /// Initialize a new ICountryDtoSingle object.
+        /// </summary>
+        public ICountryDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ICountryDtoSingle object.
+        /// </summary>
+        public ICountryDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ICountryDtoSingle object.
+        /// </summary>
+        public ICountryDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ICountryDto> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for ICountryDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICountryDto")]
+    public partial class ICountryDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new ICountryDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ICountryDto CreateICountryDto(long ID)
+        {
+            ICountryDto iCountryDto = new ICountryDto();
+            iCountryDto.Id = ID;
+            return iCountryDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public virtual string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for IRegionDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IRegionDtoSingle")]
+    public partial class IRegionDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IRegionDto>
+    {
+        /// <summary>
+        /// Initialize a new IRegionDtoSingle object.
+        /// </summary>
+        public IRegionDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IRegionDtoSingle object.
+        /// </summary>
+        public IRegionDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IRegionDtoSingle object.
+        /// </summary>
+        public IRegionDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IRegionDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Country in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Country")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle Country
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Country == null))
+                {
+                    this._Country = new global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle(this.Context, GetPath("Country"));
+                }
+                return this._Country;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle _Country;
+    }
+    /// <summary>
+    /// There are no comments for IRegionDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IRegionDto")]
+    public partial class IRegionDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IRegionDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IRegionDto CreateIRegionDto(long ID)
+        {
+            IRegionDto iRegionDto = new IRegionDto();
+            iRegionDto.Id = ID;
+            return iRegionDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public virtual string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// There are no comments for Property Country in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Country")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto Country
+        {
+            get
+            {
+                return this._Country;
+            }
+            set
+            {
+                this.OnCountryChanging(value);
+                this._Country = value;
+                this.OnCountryChanged();
+                this.OnPropertyChanged("Country");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto _Country;
+        partial void OnCountryChanging(global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto value);
+        partial void OnCountryChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto as global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto as global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto as global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto as global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto as global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto as global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Exchange
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.ExchangeCore
 {
+    /// <summary>
+    /// There are no comments for IBoxBaseDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBoxBaseDtoSingle")]
+    public partial class IBoxBaseDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IBoxBaseDto>
+    {
+        /// <summary>
+        /// Initialize a new IBoxBaseDtoSingle object.
+        /// </summary>
+        public IBoxBaseDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IBoxBaseDtoSingle object.
+        /// </summary>
+        public IBoxBaseDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IBoxBaseDtoSingle object.
+        /// </summary>
+        public IBoxBaseDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IBoxBaseDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Responsible in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Responsible == null))
+                {
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                }
+                return this._Responsible;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
+    }
+    /// <summary>
+    /// There are no comments for IBoxBaseDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBoxBaseDto")]
+    public partial class IBoxBaseDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IBoxBaseDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IBoxBaseDto CreateIBoxBaseDto(long ID)
+        {
+            IBoxBaseDto iBoxBaseDto = new IBoxBaseDto();
+            iBoxBaseDto.Id = ID;
+            return iBoxBaseDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Note")]
+        public virtual string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this._Note = value;
+                this.OnNoteChanged();
+                this.OnPropertyChanged("Note");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property ConnectionStatus in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ConnectionStatus")]
+        public virtual string ConnectionStatus
+        {
+            get
+            {
+                return this._ConnectionStatus;
+            }
+            set
+            {
+                this.OnConnectionStatusChanging(value);
+                this._ConnectionStatus = value;
+                this.OnConnectionStatusChanged();
+                this.OnPropertyChanged("ConnectionStatus");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ConnectionStatus;
+        partial void OnConnectionStatusChanging(string value);
+        partial void OnConnectionStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Routing in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Routing")]
+        public virtual string Routing
+        {
+            get
+            {
+                return this._Routing;
+            }
+            set
+            {
+                this.OnRoutingChanging(value);
+                this._Routing = value;
+                this.OnRoutingChanged();
+                this.OnPropertyChanged("Routing");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Routing;
+        partial void OnRoutingChanging(string value);
+        partial void OnRoutingChanged();
+        /// <summary>
+        /// There are no comments for Property DeadlineInDays in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DeadlineInDays")]
+        public virtual global::System.Nullable<int> DeadlineInDays
+        {
+            get
+            {
+                return this._DeadlineInDays;
+            }
+            set
+            {
+                this.OnDeadlineInDaysChanging(value);
+                this._DeadlineInDays = value;
+                this.OnDeadlineInDaysChanged();
+                this.OnPropertyChanged("DeadlineInDays");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<int> _DeadlineInDays;
+        partial void OnDeadlineInDaysChanging(global::System.Nullable<int> value);
+        partial void OnDeadlineInDaysChanged();
+        /// <summary>
+        /// There are no comments for Property DeadlineInHours in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DeadlineInHours")]
+        public virtual global::System.Nullable<int> DeadlineInHours
+        {
+            get
+            {
+                return this._DeadlineInHours;
+            }
+            set
+            {
+                this.OnDeadlineInHoursChanging(value);
+                this._DeadlineInHours = value;
+                this.OnDeadlineInHoursChanged();
+                this.OnPropertyChanged("DeadlineInHours");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<int> _DeadlineInHours;
+        partial void OnDeadlineInHoursChanging(global::System.Nullable<int> value);
+        partial void OnDeadlineInHoursChanged();
+        /// <summary>
+        /// There are no comments for Property Responsible in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto Responsible
+        {
+            get
+            {
+                return this._Responsible;
+            }
+            set
+            {
+                this.OnResponsibleChanging(value);
+                this._Responsible = value;
+                this.OnResponsibleChanged();
+                this.OnPropertyChanged("Responsible");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _Responsible;
+        partial void OnResponsibleChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
+        partial void OnResponsibleChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for IBusinessUnitBoxDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBusinessUnitBoxDtoSingle")]
+    public partial class IBusinessUnitBoxDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IBusinessUnitBoxDto>
+    {
+        /// <summary>
+        /// Initialize a new IBusinessUnitBoxDtoSingle object.
+        /// </summary>
+        public IBusinessUnitBoxDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IBusinessUnitBoxDtoSingle object.
+        /// </summary>
+        public IBusinessUnitBoxDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IBusinessUnitBoxDtoSingle object.
+        /// </summary>
+        public IBusinessUnitBoxDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IBusinessUnitBoxDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for BusinessUnit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BusinessUnit")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle BusinessUnit
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BusinessUnit == null))
+                {
+                    this._BusinessUnit = new global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle(this.Context, GetPath("BusinessUnit"));
+                }
+                return this._BusinessUnit;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDtoSingle _BusinessUnit;
+        /// <summary>
+        /// There are no comments for ExchangeService in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeService")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle ExchangeService
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeService == null))
+                {
+                    this._ExchangeService = new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle(this.Context, GetPath("ExchangeService"));
+                }
+                return this._ExchangeService;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle _ExchangeService;
+        /// <summary>
+        /// There are no comments for ExchangeServiceCertificates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeServiceCertificates")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> ExchangeServiceCertificates
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeServiceCertificates == null))
+                {
+                    this._ExchangeServiceCertificates = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto>(GetPath("ExchangeServiceCertificates"));
+                }
+                return this._ExchangeServiceCertificates;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> _ExchangeServiceCertificates;
+        /// <summary>
+        /// There are no comments for CertificateReceiptNotifications in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CertificateReceiptNotifications")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle CertificateReceiptNotifications
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._CertificateReceiptNotifications == null))
+                {
+                    this._CertificateReceiptNotifications = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle(this.Context, GetPath("CertificateReceiptNotifications"));
+                }
+                return this._CertificateReceiptNotifications;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle _CertificateReceiptNotifications;
+        /// <summary>
+        /// There are no comments for FormalizedPoAInfos in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FormalizedPoAInfos")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> FormalizedPoAInfos
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._FormalizedPoAInfos == null))
+                {
+                    this._FormalizedPoAInfos = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto>(GetPath("FormalizedPoAInfos"));
+                }
+                return this._FormalizedPoAInfos;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> _FormalizedPoAInfos;
+        /// <summary>
+        /// There are no comments for Responsible in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Responsible == null))
+                {
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                }
+                return this._Responsible;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
+    }
+    /// <summary>
+    /// There are no comments for IBusinessUnitBoxDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBusinessUnitBoxDto")]
+    public partial class IBusinessUnitBoxDto : IBoxBaseDto
+    {
+        /// <summary>
+        /// Create a new IBusinessUnitBoxDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IBusinessUnitBoxDto CreateIBusinessUnitBoxDto(long ID)
+        {
+            IBusinessUnitBoxDto iBusinessUnitBoxDto = new IBusinessUnitBoxDto();
+            iBusinessUnitBoxDto.Id = ID;
+            return iBusinessUnitBoxDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Login in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Login")]
+        public virtual string Login
+        {
+            get
+            {
+                return this._Login;
+            }
+            set
+            {
+                this.OnLoginChanging(value);
+                this._Login = value;
+                this.OnLoginChanged();
+                this.OnPropertyChanged("Login");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Login;
+        partial void OnLoginChanging(string value);
+        partial void OnLoginChanged();
+        /// <summary>
+        /// There are no comments for Property Password in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Password")]
+        public virtual string Password
+        {
+            get
+            {
+                return this._Password;
+            }
+            set
+            {
+                this.OnPasswordChanging(value);
+                this._Password = value;
+                this.OnPasswordChanged();
+                this.OnPropertyChanged("Password");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Password;
+        partial void OnPasswordChanging(string value);
+        partial void OnPasswordChanged();
+        /// <summary>
+        /// There are no comments for Property OrganizationId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("OrganizationId")]
+        public virtual string OrganizationId
+        {
+            get
+            {
+                return this._OrganizationId;
+            }
+            set
+            {
+                this.OnOrganizationIdChanging(value);
+                this._OrganizationId = value;
+                this.OnOrganizationIdChanged();
+                this.OnPropertyChanged("OrganizationId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _OrganizationId;
+        partial void OnOrganizationIdChanging(string value);
+        partial void OnOrganizationIdChanged();
+        /// <summary>
+        /// There are no comments for Property HasExchangeServiceCertificates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HasExchangeServiceCertificates")]
+        public virtual global::System.Nullable<bool> HasExchangeServiceCertificates
+        {
+            get
+            {
+                return this._HasExchangeServiceCertificates;
+            }
+            set
+            {
+                this.OnHasExchangeServiceCertificatesChanging(value);
+                this._HasExchangeServiceCertificates = value;
+                this.OnHasExchangeServiceCertificatesChanged();
+                this.OnPropertyChanged("HasExchangeServiceCertificates");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _HasExchangeServiceCertificates;
+        partial void OnHasExchangeServiceCertificatesChanging(global::System.Nullable<bool> value);
+        partial void OnHasExchangeServiceCertificatesChanged();
+        /// <summary>
+        /// There are no comments for Property FtsId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FtsId")]
+        public virtual string FtsId
+        {
+            get
+            {
+                return this._FtsId;
+            }
+            set
+            {
+                this.OnFtsIdChanging(value);
+                this._FtsId = value;
+                this.OnFtsIdChanged();
+                this.OnPropertyChanged("FtsId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _FtsId;
+        partial void OnFtsIdChanging(string value);
+        partial void OnFtsIdChanged();
+        /// <summary>
+        /// There are no comments for Property BusinessUnit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BusinessUnit")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto BusinessUnit
+        {
+            get
+            {
+                return this._BusinessUnit;
+            }
+            set
+            {
+                this.OnBusinessUnitChanging(value);
+                this._BusinessUnit = value;
+                this.OnBusinessUnitChanged();
+                this.OnPropertyChanged("BusinessUnit");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto _BusinessUnit;
+        partial void OnBusinessUnitChanging(global::Sungero.IntegrationService.Models.Generated.Company.IBusinessUnitDto value);
+        partial void OnBusinessUnitChanged();
+        /// <summary>
+        /// There are no comments for Property ExchangeService in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeService")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto ExchangeService
+        {
+            get
+            {
+                return this._ExchangeService;
+            }
+            set
+            {
+                this.OnExchangeServiceChanging(value);
+                this._ExchangeService = value;
+                this.OnExchangeServiceChanged();
+                this.OnPropertyChanged("ExchangeService");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto _ExchangeService;
+        partial void OnExchangeServiceChanging(global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto value);
+        partial void OnExchangeServiceChanged();
+        /// <summary>
+        /// There are no comments for Property ExchangeServiceCertificates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeServiceCertificates")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> ExchangeServiceCertificates
+        {
+            get
+            {
+                return this._ExchangeServiceCertificates;
+            }
+            set
+            {
+                this.OnExchangeServiceCertificatesChanging(value);
+                this._ExchangeServiceCertificates = value;
+                this.OnExchangeServiceCertificatesChanged();
+                this.OnPropertyChanged("ExchangeServiceCertificates");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> _ExchangeServiceCertificates = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnExchangeServiceCertificatesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> value);
+        partial void OnExchangeServiceCertificatesChanged();
+        /// <summary>
+        /// There are no comments for Property CertificateReceiptNotifications in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CertificateReceiptNotifications")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto CertificateReceiptNotifications
+        {
+            get
+            {
+                return this._CertificateReceiptNotifications;
+            }
+            set
+            {
+                this.OnCertificateReceiptNotificationsChanging(value);
+                this._CertificateReceiptNotifications = value;
+                this.OnCertificateReceiptNotificationsChanged();
+                this.OnPropertyChanged("CertificateReceiptNotifications");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto _CertificateReceiptNotifications;
+        partial void OnCertificateReceiptNotificationsChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto value);
+        partial void OnCertificateReceiptNotificationsChanged();
+        /// <summary>
+        /// There are no comments for Property FormalizedPoAInfos in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FormalizedPoAInfos")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> FormalizedPoAInfos
+        {
+            get
+            {
+                return this._FormalizedPoAInfos;
+            }
+            set
+            {
+                this.OnFormalizedPoAInfosChanging(value);
+                this._FormalizedPoAInfos = value;
+                this.OnFormalizedPoAInfosChanged();
+                this.OnPropertyChanged("FormalizedPoAInfos");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> _FormalizedPoAInfos = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnFormalizedPoAInfosChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> value);
+        partial void OnFormalizedPoAInfosChanged();
+    }
+    /// <summary>
+    /// There are no comments for IExchangeServiceDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IExchangeServiceDtoSingle")]
+    public partial class IExchangeServiceDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IExchangeServiceDto>
+    {
+        /// <summary>
+        /// Initialize a new IExchangeServiceDtoSingle object.
+        /// </summary>
+        public IExchangeServiceDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IExchangeServiceDtoSingle object.
+        /// </summary>
+        public IExchangeServiceDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IExchangeServiceDtoSingle object.
+        /// </summary>
+        public IExchangeServiceDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IExchangeServiceDto> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for IExchangeServiceDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IExchangeServiceDto")]
+    public partial class IExchangeServiceDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IExchangeServiceDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IExchangeServiceDto CreateIExchangeServiceDto(long ID)
+        {
+            IExchangeServiceDto iExchangeServiceDto = new IExchangeServiceDto();
+            iExchangeServiceDto.Id = ID;
+            return iExchangeServiceDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Uri in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Uri")]
+        public virtual string Uri
+        {
+            get
+            {
+                return this._Uri;
+            }
+            set
+            {
+                this.OnUriChanging(value);
+                this._Uri = value;
+                this.OnUriChanged();
+                this.OnPropertyChanged("Uri");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Uri;
+        partial void OnUriChanging(string value);
+        partial void OnUriChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Note")]
+        public virtual string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this._Note = value;
+                this.OnNoteChanged();
+                this.OnPropertyChanged("Note");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property ExchangeProvider in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeProvider")]
+        public virtual string ExchangeProvider
+        {
+            get
+            {
+                return this._ExchangeProvider;
+            }
+            set
+            {
+                this.OnExchangeProviderChanging(value);
+                this._ExchangeProvider = value;
+                this.OnExchangeProviderChanged();
+                this.OnPropertyChanged("ExchangeProvider");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ExchangeProvider;
+        partial void OnExchangeProviderChanging(string value);
+        partial void OnExchangeProviderChanged();
+        /// <summary>
+        /// There are no comments for Property LogonUrl in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LogonUrl")]
+        public virtual string LogonUrl
+        {
+            get
+            {
+                return this._LogonUrl;
+            }
+            set
+            {
+                this.OnLogonUrlChanging(value);
+                this._LogonUrl = value;
+                this.OnLogonUrlChanged();
+                this.OnPropertyChanged("LogonUrl");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _LogonUrl;
+        partial void OnLogonUrlChanging(string value);
+        partial void OnLogonUrlChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for IBusinessUnitBoxExchangeServiceCertificatesDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBusinessUnitBoxExchangeServiceCertificatesDtoSingle")]
+    public partial class IBusinessUnitBoxExchangeServiceCertificatesDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IBusinessUnitBoxExchangeServiceCertificatesDto>
+    {
+        /// <summary>
+        /// Initialize a new IBusinessUnitBoxExchangeServiceCertificatesDtoSingle object.
+        /// </summary>
+        public IBusinessUnitBoxExchangeServiceCertificatesDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IBusinessUnitBoxExchangeServiceCertificatesDtoSingle object.
+        /// </summary>
+        public IBusinessUnitBoxExchangeServiceCertificatesDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IBusinessUnitBoxExchangeServiceCertificatesDtoSingle object.
+        /// </summary>
+        public IBusinessUnitBoxExchangeServiceCertificatesDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IBusinessUnitBoxExchangeServiceCertificatesDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for BusinessUnitBox in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BusinessUnitBox")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle BusinessUnitBox
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BusinessUnitBox == null))
+                {
+                    this._BusinessUnitBox = new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle(this.Context, GetPath("BusinessUnitBox"));
+                }
+                return this._BusinessUnitBox;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle _BusinessUnitBox;
+        /// <summary>
+        /// There are no comments for Certificate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Certificate")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle Certificate
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Certificate == null))
+                {
+                    this._Certificate = new global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle(this.Context, GetPath("Certificate"));
+                }
+                return this._Certificate;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDtoSingle _Certificate;
+    }
+    /// <summary>
+    /// There are no comments for IBusinessUnitBoxExchangeServiceCertificatesDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBusinessUnitBoxExchangeServiceCertificatesDto")]
+    public partial class IBusinessUnitBoxExchangeServiceCertificatesDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IBusinessUnitBoxExchangeServiceCertificatesDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IBusinessUnitBoxExchangeServiceCertificatesDto CreateIBusinessUnitBoxExchangeServiceCertificatesDto(long ID)
+        {
+            IBusinessUnitBoxExchangeServiceCertificatesDto iBusinessUnitBoxExchangeServiceCertificatesDto = new IBusinessUnitBoxExchangeServiceCertificatesDto();
+            iBusinessUnitBoxExchangeServiceCertificatesDto.Id = ID;
+            return iBusinessUnitBoxExchangeServiceCertificatesDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property BusinessUnitBox in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BusinessUnitBox")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto BusinessUnitBox
+        {
+            get
+            {
+                return this._BusinessUnitBox;
+            }
+            set
+            {
+                this.OnBusinessUnitBoxChanging(value);
+                this._BusinessUnitBox = value;
+                this.OnBusinessUnitBoxChanged();
+                this.OnPropertyChanged("BusinessUnitBox");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto _BusinessUnitBox;
+        partial void OnBusinessUnitBoxChanging(global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto value);
+        partial void OnBusinessUnitBoxChanged();
+        /// <summary>
+        /// There are no comments for Property Certificate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Certificate")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto Certificate
+        {
+            get
+            {
+                return this._Certificate;
+            }
+            set
+            {
+                this.OnCertificateChanging(value);
+                this._Certificate = value;
+                this.OnCertificateChanged();
+                this.OnPropertyChanged("Certificate");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto _Certificate;
+        partial void OnCertificateChanging(global::Sungero.IntegrationService.Models.Generated.CoreEntities.ICertificateDto value);
+        partial void OnCertificateChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for IBusinessUnitBoxFormalizedPoAInfosDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBusinessUnitBoxFormalizedPoAInfosDtoSingle")]
+    public partial class IBusinessUnitBoxFormalizedPoAInfosDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IBusinessUnitBoxFormalizedPoAInfosDto>
+    {
+        /// <summary>
+        /// Initialize a new IBusinessUnitBoxFormalizedPoAInfosDtoSingle object.
+        /// </summary>
+        public IBusinessUnitBoxFormalizedPoAInfosDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IBusinessUnitBoxFormalizedPoAInfosDtoSingle object.
+        /// </summary>
+        public IBusinessUnitBoxFormalizedPoAInfosDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IBusinessUnitBoxFormalizedPoAInfosDtoSingle object.
+        /// </summary>
+        public IBusinessUnitBoxFormalizedPoAInfosDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IBusinessUnitBoxFormalizedPoAInfosDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for BusinessUnitBox in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BusinessUnitBox")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle BusinessUnitBox
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._BusinessUnitBox == null))
+                {
+                    this._BusinessUnitBox = new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle(this.Context, GetPath("BusinessUnitBox"));
+                }
+                return this._BusinessUnitBox;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle _BusinessUnitBox;
+    }
+    /// <summary>
+    /// There are no comments for IBusinessUnitBoxFormalizedPoAInfosDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBusinessUnitBoxFormalizedPoAInfosDto")]
+    public partial class IBusinessUnitBoxFormalizedPoAInfosDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IBusinessUnitBoxFormalizedPoAInfosDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IBusinessUnitBoxFormalizedPoAInfosDto CreateIBusinessUnitBoxFormalizedPoAInfosDto(long ID)
+        {
+            IBusinessUnitBoxFormalizedPoAInfosDto iBusinessUnitBoxFormalizedPoAInfosDto = new IBusinessUnitBoxFormalizedPoAInfosDto();
+            iBusinessUnitBoxFormalizedPoAInfosDto.Id = ID;
+            return iBusinessUnitBoxFormalizedPoAInfosDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property UnifiedRegistrationNumber in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("UnifiedRegistrationNumber")]
+        public virtual string UnifiedRegistrationNumber
+        {
+            get
+            {
+                return this._UnifiedRegistrationNumber;
+            }
+            set
+            {
+                this.OnUnifiedRegistrationNumberChanging(value);
+                this._UnifiedRegistrationNumber = value;
+                this.OnUnifiedRegistrationNumberChanged();
+                this.OnPropertyChanged("UnifiedRegistrationNumber");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _UnifiedRegistrationNumber;
+        partial void OnUnifiedRegistrationNumberChanging(string value);
+        partial void OnUnifiedRegistrationNumberChanged();
+        /// <summary>
+        /// There are no comments for Property Url in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Url")]
+        public virtual string Url
+        {
+            get
+            {
+                return this._Url;
+            }
+            set
+            {
+                this.OnUrlChanging(value);
+                this._Url = value;
+                this.OnUrlChanged();
+                this.OnPropertyChanged("Url");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Url;
+        partial void OnUrlChanging(string value);
+        partial void OnUrlChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Description")]
+        public virtual string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this._Description = value;
+                this.OnDescriptionChanged();
+                this.OnPropertyChanged("Description");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Property BusinessUnitBox in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BusinessUnitBox")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto BusinessUnitBox
+        {
+            get
+            {
+                return this._BusinessUnitBox;
+            }
+            set
+            {
+                this.OnBusinessUnitBoxChanging(value);
+                this._BusinessUnitBox = value;
+                this.OnBusinessUnitBoxChanged();
+                this.OnPropertyChanged("BusinessUnitBox");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto _BusinessUnitBox;
+        partial void OnBusinessUnitBoxChanging(global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto value);
+        partial void OnBusinessUnitBoxChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto to its derived type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle CastToIBusinessUnitBoxDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBoxBaseDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IExchangeServiceDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxExchangeServiceCertificatesDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto as global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxFormalizedPoAInfosDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Parties
 {
+    /// <summary>
+    /// There are no comments for ICounterpartyKindDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICounterpartyKindDtoSingle")]
+    public partial class ICounterpartyKindDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ICounterpartyKindDto>
+    {
+        /// <summary>
+        /// Initialize a new ICounterpartyKindDtoSingle object.
+        /// </summary>
+        public ICounterpartyKindDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ICounterpartyKindDtoSingle object.
+        /// </summary>
+        public ICounterpartyKindDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ICounterpartyKindDtoSingle object.
+        /// </summary>
+        public ICounterpartyKindDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ICounterpartyKindDto> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for ICounterpartyKindDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICounterpartyKindDto")]
+    public partial class ICounterpartyKindDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new ICounterpartyKindDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ICounterpartyKindDto CreateICounterpartyKindDto(long ID)
+        {
+            ICounterpartyKindDto iCounterpartyKindDto = new ICounterpartyKindDto();
+            iCounterpartyKindDto.Id = ID;
+            return iCounterpartyKindDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Note")]
+        public virtual string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this._Note = value;
+                this.OnNoteChanged();
+                this.OnPropertyChanged("Note");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Sid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Sid")]
+        public virtual string Sid
+        {
+            get
+            {
+                return this._Sid;
+            }
+            set
+            {
+                this.OnSidChanging(value);
+                this._Sid = value;
+                this.OnSidChanged();
+                this.OnPropertyChanged("Sid");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Sid;
+        partial void OnSidChanging(string value);
+        partial void OnSidChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for ICounterpartyDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICounterpartyDtoSingle")]
+    public partial class ICounterpartyDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ICounterpartyDto>
+    {
+        /// <summary>
+        /// Initialize a new ICounterpartyDtoSingle object.
+        /// </summary>
+        public ICounterpartyDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ICounterpartyDtoSingle object.
+        /// </summary>
+        public ICounterpartyDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ICounterpartyDtoSingle object.
+        /// </summary>
+        public ICounterpartyDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ICounterpartyDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for City in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("City")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle City
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._City == null))
+                {
+                    this._City = new global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle(this.Context, GetPath("City"));
+                }
+                return this._City;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle _City;
+        /// <summary>
+        /// There are no comments for Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle Region
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Region == null))
+                {
+                    this._Region = new global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle(this.Context, GetPath("Region"));
+                }
+                return this._Region;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle _Region;
+        /// <summary>
+        /// There are no comments for Bank in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bank")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle Bank
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Bank == null))
+                {
+                    this._Bank = new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(this.Context, GetPath("Bank"));
+                }
+                return this._Bank;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle _Bank;
+        /// <summary>
+        /// There are no comments for ExchangeBoxes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeBoxes")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> ExchangeBoxes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeBoxes == null))
+                {
+                    this._ExchangeBoxes = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto>(GetPath("ExchangeBoxes"));
+                }
+                return this._ExchangeBoxes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _ExchangeBoxes;
+        /// <summary>
+        /// There are no comments for Responsible in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Responsible == null))
+                {
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                }
+                return this._Responsible;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
+        /// <summary>
+        /// There are no comments for Kind in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Kind")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle Kind
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Kind == null))
+                {
+                    this._Kind = new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle(this.Context, GetPath("Kind"));
+                }
+                return this._Kind;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle _Kind;
+    }
+    /// <summary>
+    /// There are no comments for ICounterpartyDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICounterpartyDto")]
+    public partial class ICounterpartyDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new ICounterpartyDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ICounterpartyDto CreateICounterpartyDto(long ID)
+        {
+            ICounterpartyDto iCounterpartyDto = new ICounterpartyDto();
+            iCounterpartyDto.Id = ID;
+            return iCounterpartyDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Name")]
+        public virtual string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property TIN in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TIN")]
+        public virtual string TIN
+        {
+            get
+            {
+                return this._TIN;
+            }
+            set
+            {
+                this.OnTINChanging(value);
+                this._TIN = value;
+                this.OnTINChanged();
+                this.OnPropertyChanged("TIN");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _TIN;
+        partial void OnTINChanging(string value);
+        partial void OnTINChanged();
+        /// <summary>
+        /// There are no comments for Property LegalAddress in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LegalAddress")]
+        public virtual string LegalAddress
+        {
+            get
+            {
+                return this._LegalAddress;
+            }
+            set
+            {
+                this.OnLegalAddressChanging(value);
+                this._LegalAddress = value;
+                this.OnLegalAddressChanged();
+                this.OnPropertyChanged("LegalAddress");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _LegalAddress;
+        partial void OnLegalAddressChanging(string value);
+        partial void OnLegalAddressChanged();
+        /// <summary>
+        /// There are no comments for Property PostalAddress in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PostalAddress")]
+        public virtual string PostalAddress
+        {
+            get
+            {
+                return this._PostalAddress;
+            }
+            set
+            {
+                this.OnPostalAddressChanging(value);
+                this._PostalAddress = value;
+                this.OnPostalAddressChanged();
+                this.OnPropertyChanged("PostalAddress");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _PostalAddress;
+        partial void OnPostalAddressChanging(string value);
+        partial void OnPostalAddressChanged();
+        /// <summary>
+        /// There are no comments for Property Phones in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Phones")]
+        public virtual string Phones
+        {
+            get
+            {
+                return this._Phones;
+            }
+            set
+            {
+                this.OnPhonesChanging(value);
+                this._Phones = value;
+                this.OnPhonesChanged();
+                this.OnPropertyChanged("Phones");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Phones;
+        partial void OnPhonesChanging(string value);
+        partial void OnPhonesChanged();
+        /// <summary>
+        /// There are no comments for Property Email in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Email")]
+        public virtual string Email
+        {
+            get
+            {
+                return this._Email;
+            }
+            set
+            {
+                this.OnEmailChanging(value);
+                this._Email = value;
+                this.OnEmailChanged();
+                this.OnPropertyChanged("Email");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Email;
+        partial void OnEmailChanging(string value);
+        partial void OnEmailChanged();
+        /// <summary>
+        /// There are no comments for Property Homepage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Homepage")]
+        public virtual string Homepage
+        {
+            get
+            {
+                return this._Homepage;
+            }
+            set
+            {
+                this.OnHomepageChanging(value);
+                this._Homepage = value;
+                this.OnHomepageChanged();
+                this.OnPropertyChanged("Homepage");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Homepage;
+        partial void OnHomepageChanging(string value);
+        partial void OnHomepageChanged();
+        /// <summary>
+        /// There are no comments for Property Note in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Note")]
+        public virtual string Note
+        {
+            get
+            {
+                return this._Note;
+            }
+            set
+            {
+                this.OnNoteChanging(value);
+                this._Note = value;
+                this.OnNoteChanged();
+                this.OnPropertyChanged("Note");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Note;
+        partial void OnNoteChanging(string value);
+        partial void OnNoteChanged();
+        /// <summary>
+        /// There are no comments for Property Nonresident in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Nonresident")]
+        public virtual global::System.Nullable<bool> Nonresident
+        {
+            get
+            {
+                return this._Nonresident;
+            }
+            set
+            {
+                this.OnNonresidentChanging(value);
+                this._Nonresident = value;
+                this.OnNonresidentChanged();
+                this.OnPropertyChanged("Nonresident");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _Nonresident;
+        partial void OnNonresidentChanging(global::System.Nullable<bool> value);
+        partial void OnNonresidentChanged();
+        /// <summary>
+        /// There are no comments for Property PSRN in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("PSRN")]
+        public virtual string PSRN
+        {
+            get
+            {
+                return this._PSRN;
+            }
+            set
+            {
+                this.OnPSRNChanging(value);
+                this._PSRN = value;
+                this.OnPSRNChanged();
+                this.OnPropertyChanged("PSRN");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _PSRN;
+        partial void OnPSRNChanging(string value);
+        partial void OnPSRNChanged();
+        /// <summary>
+        /// There are no comments for Property NCEO in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NCEO")]
+        public virtual string NCEO
+        {
+            get
+            {
+                return this._NCEO;
+            }
+            set
+            {
+                this.OnNCEOChanging(value);
+                this._NCEO = value;
+                this.OnNCEOChanged();
+                this.OnPropertyChanged("NCEO");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _NCEO;
+        partial void OnNCEOChanging(string value);
+        partial void OnNCEOChanged();
+        /// <summary>
+        /// There are no comments for Property NCEA in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("NCEA")]
+        public virtual string NCEA
+        {
+            get
+            {
+                return this._NCEA;
+            }
+            set
+            {
+                this.OnNCEAChanging(value);
+                this._NCEA = value;
+                this.OnNCEAChanged();
+                this.OnPropertyChanged("NCEA");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _NCEA;
+        partial void OnNCEAChanging(string value);
+        partial void OnNCEAChanged();
+        /// <summary>
+        /// There are no comments for Property Account in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Account")]
+        public virtual string Account
+        {
+            get
+            {
+                return this._Account;
+            }
+            set
+            {
+                this.OnAccountChanging(value);
+                this._Account = value;
+                this.OnAccountChanged();
+                this.OnPropertyChanged("Account");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Account;
+        partial void OnAccountChanging(string value);
+        partial void OnAccountChanged();
+        /// <summary>
+        /// There are no comments for Property CanExchange in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CanExchange")]
+        public virtual global::System.Nullable<bool> CanExchange
+        {
+            get
+            {
+                return this._CanExchange;
+            }
+            set
+            {
+                this.OnCanExchangeChanging(value);
+                this._CanExchange = value;
+                this.OnCanExchangeChanged();
+                this.OnPropertyChanged("CanExchange");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _CanExchange;
+        partial void OnCanExchangeChanging(global::System.Nullable<bool> value);
+        partial void OnCanExchangeChanged();
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Code")]
+        public virtual string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+                this.OnPropertyChanged("Code");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// There are no comments for Property ExternalId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExternalId")]
+        public virtual string ExternalId
+        {
+            get
+            {
+                return this._ExternalId;
+            }
+            set
+            {
+                this.OnExternalIdChanging(value);
+                this._ExternalId = value;
+                this.OnExternalIdChanged();
+                this.OnPropertyChanged("ExternalId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ExternalId;
+        partial void OnExternalIdChanging(string value);
+        partial void OnExternalIdChanged();
+        /// <summary>
+        /// There are no comments for Property City in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("City")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto City
+        {
+            get
+            {
+                return this._City;
+            }
+            set
+            {
+                this.OnCityChanging(value);
+                this._City = value;
+                this.OnCityChanged();
+                this.OnPropertyChanged("City");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto _City;
+        partial void OnCityChanging(global::Sungero.IntegrationService.Models.Generated.Commons.ICityDto value);
+        partial void OnCityChanged();
+        /// <summary>
+        /// There are no comments for Property Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto Region
+        {
+            get
+            {
+                return this._Region;
+            }
+            set
+            {
+                this.OnRegionChanging(value);
+                this._Region = value;
+                this.OnRegionChanged();
+                this.OnPropertyChanged("Region");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto _Region;
+        partial void OnRegionChanging(global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDto value);
+        partial void OnRegionChanged();
+        /// <summary>
+        /// There are no comments for Property Bank in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bank")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto Bank
+        {
+            get
+            {
+                return this._Bank;
+            }
+            set
+            {
+                this.OnBankChanging(value);
+                this._Bank = value;
+                this.OnBankChanged();
+                this.OnPropertyChanged("Bank");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto _Bank;
+        partial void OnBankChanging(global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto value);
+        partial void OnBankChanged();
+        /// <summary>
+        /// There are no comments for Property ExchangeBoxes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeBoxes")]
+        public virtual global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> ExchangeBoxes
+        {
+            get
+            {
+                return this._ExchangeBoxes;
+            }
+            set
+            {
+                this.OnExchangeBoxesChanging(value);
+                this._ExchangeBoxes = value;
+                this.OnExchangeBoxesChanged();
+                this.OnPropertyChanged("ExchangeBoxes");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _ExchangeBoxes = new global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto>(null, global::Microsoft.OData.Client.TrackingMode.None);
+        partial void OnExchangeBoxesChanging(global::Microsoft.OData.Client.DataServiceCollection<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> value);
+        partial void OnExchangeBoxesChanged();
+        /// <summary>
+        /// There are no comments for Property Responsible in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto Responsible
+        {
+            get
+            {
+                return this._Responsible;
+            }
+            set
+            {
+                this.OnResponsibleChanging(value);
+                this._Responsible = value;
+                this.OnResponsibleChanged();
+                this.OnPropertyChanged("Responsible");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto _Responsible;
+        partial void OnResponsibleChanging(global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDto value);
+        partial void OnResponsibleChanged();
+        /// <summary>
+        /// There are no comments for Property Kind in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Kind")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDto Kind
+        {
+            get
+            {
+                return this._Kind;
+            }
+            set
+            {
+                this.OnKindChanging(value);
+                this._Kind = value;
+                this.OnKindChanged();
+                this.OnPropertyChanged("Kind");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDto _Kind;
+        partial void OnKindChanging(global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDto value);
+        partial void OnKindChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for ICompanyBaseDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICompanyBaseDtoSingle")]
+    public partial class ICompanyBaseDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ICompanyBaseDto>
+    {
+        /// <summary>
+        /// Initialize a new ICompanyBaseDtoSingle object.
+        /// </summary>
+        public ICompanyBaseDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ICompanyBaseDtoSingle object.
+        /// </summary>
+        public ICompanyBaseDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ICompanyBaseDtoSingle object.
+        /// </summary>
+        public ICompanyBaseDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ICompanyBaseDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for HeadCompany in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HeadCompany")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle HeadCompany
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._HeadCompany == null))
+                {
+                    this._HeadCompany = new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle(this.Context, GetPath("HeadCompany"));
+                }
+                return this._HeadCompany;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle _HeadCompany;
+        /// <summary>
+        /// There are no comments for City in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("City")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle City
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._City == null))
+                {
+                    this._City = new global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle(this.Context, GetPath("City"));
+                }
+                return this._City;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle _City;
+        /// <summary>
+        /// There are no comments for Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle Region
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Region == null))
+                {
+                    this._Region = new global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle(this.Context, GetPath("Region"));
+                }
+                return this._Region;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle _Region;
+        /// <summary>
+        /// There are no comments for Bank in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bank")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle Bank
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Bank == null))
+                {
+                    this._Bank = new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(this.Context, GetPath("Bank"));
+                }
+                return this._Bank;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle _Bank;
+        /// <summary>
+        /// There are no comments for ExchangeBoxes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeBoxes")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> ExchangeBoxes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeBoxes == null))
+                {
+                    this._ExchangeBoxes = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto>(GetPath("ExchangeBoxes"));
+                }
+                return this._ExchangeBoxes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _ExchangeBoxes;
+        /// <summary>
+        /// There are no comments for Responsible in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Responsible == null))
+                {
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                }
+                return this._Responsible;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
+        /// <summary>
+        /// There are no comments for Kind in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Kind")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle Kind
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Kind == null))
+                {
+                    this._Kind = new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle(this.Context, GetPath("Kind"));
+                }
+                return this._Kind;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle _Kind;
+    }
+    /// <summary>
+    /// There are no comments for ICompanyBaseDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICompanyBaseDto")]
+    public partial class ICompanyBaseDto : ICounterpartyDto
+    {
+        /// <summary>
+        /// Create a new ICompanyBaseDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ICompanyBaseDto CreateICompanyBaseDto(long ID)
+        {
+            ICompanyBaseDto iCompanyBaseDto = new ICompanyBaseDto();
+            iCompanyBaseDto.Id = ID;
+            return iCompanyBaseDto;
+        }
+        /// <summary>
+        /// There are no comments for Property TRRC in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("TRRC")]
+        public virtual string TRRC
+        {
+            get
+            {
+                return this._TRRC;
+            }
+            set
+            {
+                this.OnTRRCChanging(value);
+                this._TRRC = value;
+                this.OnTRRCChanged();
+                this.OnPropertyChanged("TRRC");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _TRRC;
+        partial void OnTRRCChanging(string value);
+        partial void OnTRRCChanged();
+        /// <summary>
+        /// There are no comments for Property IsCardReadOnly in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IsCardReadOnly")]
+        public virtual global::System.Nullable<bool> IsCardReadOnly
+        {
+            get
+            {
+                return this._IsCardReadOnly;
+            }
+            set
+            {
+                this.OnIsCardReadOnlyChanging(value);
+                this._IsCardReadOnly = value;
+                this.OnIsCardReadOnlyChanged();
+                this.OnPropertyChanged("IsCardReadOnly");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _IsCardReadOnly;
+        partial void OnIsCardReadOnlyChanging(global::System.Nullable<bool> value);
+        partial void OnIsCardReadOnlyChanged();
+        /// <summary>
+        /// There are no comments for Property LegalName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LegalName")]
+        public virtual string LegalName
+        {
+            get
+            {
+                return this._LegalName;
+            }
+            set
+            {
+                this.OnLegalNameChanging(value);
+                this._LegalName = value;
+                this.OnLegalNameChanged();
+                this.OnPropertyChanged("LegalName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _LegalName;
+        partial void OnLegalNameChanging(string value);
+        partial void OnLegalNameChanged();
+        /// <summary>
+        /// There are no comments for Property Reliability in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Reliability")]
+        public virtual string Reliability
+        {
+            get
+            {
+                return this._Reliability;
+            }
+            set
+            {
+                this.OnReliabilityChanging(value);
+                this._Reliability = value;
+                this.OnReliabilityChanged();
+                this.OnPropertyChanged("Reliability");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Reliability;
+        partial void OnReliabilityChanging(string value);
+        partial void OnReliabilityChanged();
+        /// <summary>
+        /// There are no comments for Property HeadCompany in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HeadCompany")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto HeadCompany
+        {
+            get
+            {
+                return this._HeadCompany;
+            }
+            set
+            {
+                this.OnHeadCompanyChanging(value);
+                this._HeadCompany = value;
+                this.OnHeadCompanyChanged();
+                this.OnPropertyChanged("HeadCompany");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto _HeadCompany;
+        partial void OnHeadCompanyChanging(global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto value);
+        partial void OnHeadCompanyChanged();
+    }
+    /// <summary>
+    /// There are no comments for IBankDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBankDtoSingle")]
+    public partial class IBankDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IBankDto>
+    {
+        /// <summary>
+        /// Initialize a new IBankDtoSingle object.
+        /// </summary>
+        public IBankDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IBankDtoSingle object.
+        /// </summary>
+        public IBankDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IBankDtoSingle object.
+        /// </summary>
+        public IBankDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IBankDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for HeadCompany in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HeadCompany")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle HeadCompany
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._HeadCompany == null))
+                {
+                    this._HeadCompany = new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle(this.Context, GetPath("HeadCompany"));
+                }
+                return this._HeadCompany;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle _HeadCompany;
+        /// <summary>
+        /// There are no comments for City in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("City")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle City
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._City == null))
+                {
+                    this._City = new global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle(this.Context, GetPath("City"));
+                }
+                return this._City;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle _City;
+        /// <summary>
+        /// There are no comments for Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle Region
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Region == null))
+                {
+                    this._Region = new global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle(this.Context, GetPath("Region"));
+                }
+                return this._Region;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle _Region;
+        /// <summary>
+        /// There are no comments for Bank in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bank")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle Bank
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Bank == null))
+                {
+                    this._Bank = new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(this.Context, GetPath("Bank"));
+                }
+                return this._Bank;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle _Bank;
+        /// <summary>
+        /// There are no comments for ExchangeBoxes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeBoxes")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> ExchangeBoxes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeBoxes == null))
+                {
+                    this._ExchangeBoxes = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto>(GetPath("ExchangeBoxes"));
+                }
+                return this._ExchangeBoxes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _ExchangeBoxes;
+        /// <summary>
+        /// There are no comments for Responsible in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Responsible == null))
+                {
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                }
+                return this._Responsible;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
+        /// <summary>
+        /// There are no comments for Kind in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Kind")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle Kind
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Kind == null))
+                {
+                    this._Kind = new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle(this.Context, GetPath("Kind"));
+                }
+                return this._Kind;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle _Kind;
+    }
+    /// <summary>
+    /// There are no comments for IBankDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBankDto")]
+    public partial class IBankDto : ICompanyBaseDto
+    {
+        /// <summary>
+        /// Create a new IBankDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IBankDto CreateIBankDto(long ID)
+        {
+            IBankDto iBankDto = new IBankDto();
+            iBankDto.Id = ID;
+            return iBankDto;
+        }
+        /// <summary>
+        /// There are no comments for Property BIC in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("BIC")]
+        public virtual string BIC
+        {
+            get
+            {
+                return this._BIC;
+            }
+            set
+            {
+                this.OnBICChanging(value);
+                this._BIC = value;
+                this.OnBICChanged();
+                this.OnPropertyChanged("BIC");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _BIC;
+        partial void OnBICChanging(string value);
+        partial void OnBICChanged();
+        /// <summary>
+        /// There are no comments for Property CorrespondentAccount in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CorrespondentAccount")]
+        public virtual string CorrespondentAccount
+        {
+            get
+            {
+                return this._CorrespondentAccount;
+            }
+            set
+            {
+                this.OnCorrespondentAccountChanging(value);
+                this._CorrespondentAccount = value;
+                this.OnCorrespondentAccountChanged();
+                this.OnPropertyChanged("CorrespondentAccount");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _CorrespondentAccount;
+        partial void OnCorrespondentAccountChanging(string value);
+        partial void OnCorrespondentAccountChanged();
+        /// <summary>
+        /// There are no comments for Property IsSystem in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IsSystem")]
+        public virtual global::System.Nullable<bool> IsSystem
+        {
+            get
+            {
+                return this._IsSystem;
+            }
+            set
+            {
+                this.OnIsSystemChanging(value);
+                this._IsSystem = value;
+                this.OnIsSystemChanged();
+                this.OnPropertyChanged("IsSystem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _IsSystem;
+        partial void OnIsSystemChanging(global::System.Nullable<bool> value);
+        partial void OnIsSystemChanged();
+        /// <summary>
+        /// There are no comments for Property SWIFT in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("SWIFT")]
+        public virtual string SWIFT
+        {
+            get
+            {
+                return this._SWIFT;
+            }
+            set
+            {
+                this.OnSWIFTChanging(value);
+                this._SWIFT = value;
+                this.OnSWIFTChanged();
+                this.OnPropertyChanged("SWIFT");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _SWIFT;
+        partial void OnSWIFTChanging(string value);
+        partial void OnSWIFTChanged();
+    }
+    /// <summary>
+    /// There are no comments for ICompanyDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICompanyDtoSingle")]
+    public partial class ICompanyDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ICompanyDto>
+    {
+        /// <summary>
+        /// Initialize a new ICompanyDtoSingle object.
+        /// </summary>
+        public ICompanyDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ICompanyDtoSingle object.
+        /// </summary>
+        public ICompanyDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ICompanyDtoSingle object.
+        /// </summary>
+        public ICompanyDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ICompanyDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for HeadCompany in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("HeadCompany")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle HeadCompany
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._HeadCompany == null))
+                {
+                    this._HeadCompany = new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle(this.Context, GetPath("HeadCompany"));
+                }
+                return this._HeadCompany;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle _HeadCompany;
+        /// <summary>
+        /// There are no comments for City in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("City")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle City
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._City == null))
+                {
+                    this._City = new global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle(this.Context, GetPath("City"));
+                }
+                return this._City;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle _City;
+        /// <summary>
+        /// There are no comments for Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle Region
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Region == null))
+                {
+                    this._Region = new global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle(this.Context, GetPath("Region"));
+                }
+                return this._Region;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle _Region;
+        /// <summary>
+        /// There are no comments for Bank in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bank")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle Bank
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Bank == null))
+                {
+                    this._Bank = new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(this.Context, GetPath("Bank"));
+                }
+                return this._Bank;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle _Bank;
+        /// <summary>
+        /// There are no comments for ExchangeBoxes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeBoxes")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> ExchangeBoxes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeBoxes == null))
+                {
+                    this._ExchangeBoxes = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto>(GetPath("ExchangeBoxes"));
+                }
+                return this._ExchangeBoxes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _ExchangeBoxes;
+        /// <summary>
+        /// There are no comments for Responsible in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Responsible == null))
+                {
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                }
+                return this._Responsible;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
+        /// <summary>
+        /// There are no comments for Kind in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Kind")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle Kind
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Kind == null))
+                {
+                    this._Kind = new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle(this.Context, GetPath("Kind"));
+                }
+                return this._Kind;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle _Kind;
+    }
+    /// <summary>
+    /// There are no comments for ICompanyDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICompanyDto")]
+    public partial class ICompanyDto : ICompanyBaseDto
+    {
+        /// <summary>
+        /// Create a new ICompanyDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ICompanyDto CreateICompanyDto(long ID)
+        {
+            ICompanyDto iCompanyDto = new ICompanyDto();
+            iCompanyDto.Id = ID;
+            return iCompanyDto;
+        }
+    }
+    /// <summary>
+    /// There are no comments for IPersonDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IPersonDtoSingle")]
+    public partial class IPersonDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IPersonDto>
+    {
+        /// <summary>
+        /// Initialize a new IPersonDtoSingle object.
+        /// </summary>
+        public IPersonDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IPersonDtoSingle object.
+        /// </summary>
+        public IPersonDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IPersonDtoSingle object.
+        /// </summary>
+        public IPersonDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IPersonDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Citizenship in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Citizenship")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle Citizenship
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Citizenship == null))
+                {
+                    this._Citizenship = new global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle(this.Context, GetPath("Citizenship"));
+                }
+                return this._Citizenship;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDtoSingle _Citizenship;
+        /// <summary>
+        /// There are no comments for City in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("City")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle City
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._City == null))
+                {
+                    this._City = new global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle(this.Context, GetPath("City"));
+                }
+                return this._City;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICityDtoSingle _City;
+        /// <summary>
+        /// There are no comments for Region in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Region")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle Region
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Region == null))
+                {
+                    this._Region = new global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle(this.Context, GetPath("Region"));
+                }
+                return this._Region;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.IRegionDtoSingle _Region;
+        /// <summary>
+        /// There are no comments for Bank in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Bank")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle Bank
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Bank == null))
+                {
+                    this._Bank = new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(this.Context, GetPath("Bank"));
+                }
+                return this._Bank;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle _Bank;
+        /// <summary>
+        /// There are no comments for ExchangeBoxes in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ExchangeBoxes")]
+        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> ExchangeBoxes
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._ExchangeBoxes == null))
+                {
+                    this._ExchangeBoxes = Context.CreateQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto>(GetPath("ExchangeBoxes"));
+                }
+                return this._ExchangeBoxes;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _ExchangeBoxes;
+        /// <summary>
+        /// There are no comments for Responsible in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Responsible")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle Responsible
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Responsible == null))
+                {
+                    this._Responsible = new global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle(this.Context, GetPath("Responsible"));
+                }
+                return this._Responsible;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.NewDreamSolution.IEmployeeDtoSingle _Responsible;
+        /// <summary>
+        /// There are no comments for Kind in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Kind")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle Kind
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Kind == null))
+                {
+                    this._Kind = new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle(this.Context, GetPath("Kind"));
+                }
+                return this._Kind;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle _Kind;
+    }
+    /// <summary>
+    /// There are no comments for IPersonDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IPersonDto")]
+    public partial class IPersonDto : ICounterpartyDto
+    {
+        /// <summary>
+        /// Create a new IPersonDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IPersonDto CreateIPersonDto(long ID)
+        {
+            IPersonDto iPersonDto = new IPersonDto();
+            iPersonDto.Id = ID;
+            return iPersonDto;
+        }
+        /// <summary>
+        /// There are no comments for Property LastName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("LastName")]
+        public virtual string LastName
+        {
+            get
+            {
+                return this._LastName;
+            }
+            set
+            {
+                this.OnLastNameChanging(value);
+                this._LastName = value;
+                this.OnLastNameChanged();
+                this.OnPropertyChanged("LastName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _LastName;
+        partial void OnLastNameChanging(string value);
+        partial void OnLastNameChanged();
+        /// <summary>
+        /// There are no comments for Property FirstName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FirstName")]
+        public virtual string FirstName
+        {
+            get
+            {
+                return this._FirstName;
+            }
+            set
+            {
+                this.OnFirstNameChanging(value);
+                this._FirstName = value;
+                this.OnFirstNameChanged();
+                this.OnPropertyChanged("FirstName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _FirstName;
+        partial void OnFirstNameChanging(string value);
+        partial void OnFirstNameChanged();
+        /// <summary>
+        /// There are no comments for Property MiddleName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("MiddleName")]
+        public virtual string MiddleName
+        {
+            get
+            {
+                return this._MiddleName;
+            }
+            set
+            {
+                this.OnMiddleNameChanging(value);
+                this._MiddleName = value;
+                this.OnMiddleNameChanged();
+                this.OnPropertyChanged("MiddleName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _MiddleName;
+        partial void OnMiddleNameChanging(string value);
+        partial void OnMiddleNameChanged();
+        /// <summary>
+        /// There are no comments for Property DateOfBirth in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("DateOfBirth")]
+        public virtual global::System.Nullable<global::System.DateTimeOffset> DateOfBirth
+        {
+            get
+            {
+                return this._DateOfBirth;
+            }
+            set
+            {
+                this.OnDateOfBirthChanging(value);
+                this._DateOfBirth = value;
+                this.OnDateOfBirthChanged();
+                this.OnPropertyChanged("DateOfBirth");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<global::System.DateTimeOffset> _DateOfBirth;
+        partial void OnDateOfBirthChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnDateOfBirthChanged();
+        /// <summary>
+        /// There are no comments for Property Sex in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Sex")]
+        public virtual string Sex
+        {
+            get
+            {
+                return this._Sex;
+            }
+            set
+            {
+                this.OnSexChanging(value);
+                this._Sex = value;
+                this.OnSexChanged();
+                this.OnPropertyChanged("Sex");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Sex;
+        partial void OnSexChanging(string value);
+        partial void OnSexChanged();
+        /// <summary>
+        /// There are no comments for Property INILA in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("INILA")]
+        public virtual string INILA
+        {
+            get
+            {
+                return this._INILA;
+            }
+            set
+            {
+                this.OnINILAChanging(value);
+                this._INILA = value;
+                this.OnINILAChanged();
+                this.OnPropertyChanged("INILA");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _INILA;
+        partial void OnINILAChanging(string value);
+        partial void OnINILAChanged();
+        /// <summary>
+        /// There are no comments for Property ShortName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("ShortName")]
+        public virtual string ShortName
+        {
+            get
+            {
+                return this._ShortName;
+            }
+            set
+            {
+                this.OnShortNameChanging(value);
+                this._ShortName = value;
+                this.OnShortNameChanged();
+                this.OnPropertyChanged("ShortName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _ShortName;
+        partial void OnShortNameChanging(string value);
+        partial void OnShortNameChanged();
+        /// <summary>
+        /// There are no comments for Property Citizenship in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Citizenship")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto Citizenship
+        {
+            get
+            {
+                return this._Citizenship;
+            }
+            set
+            {
+                this.OnCitizenshipChanging(value);
+                this._Citizenship = value;
+                this.OnCitizenshipChanged();
+                this.OnPropertyChanged("Citizenship");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto _Citizenship;
+        partial void OnCitizenshipChanging(global::Sungero.IntegrationService.Models.Generated.Commons.ICountryDto value);
+        partial void OnCitizenshipChanged();
+    }
+    /// <summary>
+    /// There are no comments for ICounterpartyExchangeBoxesDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICounterpartyExchangeBoxesDtoSingle")]
+    public partial class ICounterpartyExchangeBoxesDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<ICounterpartyExchangeBoxesDto>
+    {
+        /// <summary>
+        /// Initialize a new ICounterpartyExchangeBoxesDtoSingle object.
+        /// </summary>
+        public ICounterpartyExchangeBoxesDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new ICounterpartyExchangeBoxesDtoSingle object.
+        /// </summary>
+        public ICounterpartyExchangeBoxesDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new ICounterpartyExchangeBoxesDtoSingle object.
+        /// </summary>
+        public ICounterpartyExchangeBoxesDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<ICounterpartyExchangeBoxesDto> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Counterparty in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Counterparty")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDtoSingle Counterparty
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Counterparty == null))
+                {
+                    this._Counterparty = new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDtoSingle(this.Context, GetPath("Counterparty"));
+                }
+                return this._Counterparty;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDtoSingle _Counterparty;
+        /// <summary>
+        /// There are no comments for Box in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Box")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle Box
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Box == null))
+                {
+                    this._Box = new global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle(this.Context, GetPath("Box"));
+                }
+                return this._Box;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDtoSingle _Box;
+    }
+    /// <summary>
+    /// There are no comments for ICounterpartyExchangeBoxesDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("ICounterpartyExchangeBoxesDto")]
+    public partial class ICounterpartyExchangeBoxesDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new ICounterpartyExchangeBoxesDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static ICounterpartyExchangeBoxesDto CreateICounterpartyExchangeBoxesDto(long ID)
+        {
+            ICounterpartyExchangeBoxesDto iCounterpartyExchangeBoxesDto = new ICounterpartyExchangeBoxesDto();
+            iCounterpartyExchangeBoxesDto.Id = ID;
+            return iCounterpartyExchangeBoxesDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual long Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private long _Id;
+        partial void OnIdChanging(long value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Status")]
+        public virtual string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+                this.OnPropertyChanged("Status");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property OrganizationId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("OrganizationId")]
+        public virtual string OrganizationId
+        {
+            get
+            {
+                return this._OrganizationId;
+            }
+            set
+            {
+                this.OnOrganizationIdChanging(value);
+                this._OrganizationId = value;
+                this.OnOrganizationIdChanged();
+                this.OnPropertyChanged("OrganizationId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _OrganizationId;
+        partial void OnOrganizationIdChanging(string value);
+        partial void OnOrganizationIdChanged();
+        /// <summary>
+        /// There are no comments for Property InvitationText in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("InvitationText")]
+        public virtual string InvitationText
+        {
+            get
+            {
+                return this._InvitationText;
+            }
+            set
+            {
+                this.OnInvitationTextChanging(value);
+                this._InvitationText = value;
+                this.OnInvitationTextChanged();
+                this.OnPropertyChanged("InvitationText");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _InvitationText;
+        partial void OnInvitationTextChanging(string value);
+        partial void OnInvitationTextChanged();
+        /// <summary>
+        /// There are no comments for Property IsDefault in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IsDefault")]
+        public virtual global::System.Nullable<bool> IsDefault
+        {
+            get
+            {
+                return this._IsDefault;
+            }
+            set
+            {
+                this.OnIsDefaultChanging(value);
+                this._IsDefault = value;
+                this.OnIsDefaultChanged();
+                this.OnPropertyChanged("IsDefault");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _IsDefault;
+        partial void OnIsDefaultChanging(global::System.Nullable<bool> value);
+        partial void OnIsDefaultChanged();
+        /// <summary>
+        /// There are no comments for Property CounterpartyBox in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CounterpartyBox")]
+        public virtual string CounterpartyBox
+        {
+            get
+            {
+                return this._CounterpartyBox;
+            }
+            set
+            {
+                this.OnCounterpartyBoxChanging(value);
+                this._CounterpartyBox = value;
+                this.OnCounterpartyBoxChanged();
+                this.OnPropertyChanged("CounterpartyBox");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _CounterpartyBox;
+        partial void OnCounterpartyBoxChanging(string value);
+        partial void OnCounterpartyBoxChanged();
+        /// <summary>
+        /// There are no comments for Property IsRoaming in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("IsRoaming")]
+        public virtual global::System.Nullable<bool> IsRoaming
+        {
+            get
+            {
+                return this._IsRoaming;
+            }
+            set
+            {
+                this.OnIsRoamingChanging(value);
+                this._IsRoaming = value;
+                this.OnIsRoamingChanged();
+                this.OnPropertyChanged("IsRoaming");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::System.Nullable<bool> _IsRoaming;
+        partial void OnIsRoamingChanging(global::System.Nullable<bool> value);
+        partial void OnIsRoamingChanged();
+        /// <summary>
+        /// There are no comments for Property FtsId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("FtsId")]
+        public virtual string FtsId
+        {
+            get
+            {
+                return this._FtsId;
+            }
+            set
+            {
+                this.OnFtsIdChanging(value);
+                this._FtsId = value;
+                this.OnFtsIdChanged();
+                this.OnPropertyChanged("FtsId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _FtsId;
+        partial void OnFtsIdChanging(string value);
+        partial void OnFtsIdChanged();
+        /// <summary>
+        /// There are no comments for Property CounterpartyBranchId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CounterpartyBranchId")]
+        public virtual string CounterpartyBranchId
+        {
+            get
+            {
+                return this._CounterpartyBranchId;
+            }
+            set
+            {
+                this.OnCounterpartyBranchIdChanging(value);
+                this._CounterpartyBranchId = value;
+                this.OnCounterpartyBranchIdChanged();
+                this.OnPropertyChanged("CounterpartyBranchId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _CounterpartyBranchId;
+        partial void OnCounterpartyBranchIdChanging(string value);
+        partial void OnCounterpartyBranchIdChanged();
+        /// <summary>
+        /// There are no comments for Property CounterpartyParentBranchId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("CounterpartyParentBranchId")]
+        public virtual string CounterpartyParentBranchId
+        {
+            get
+            {
+                return this._CounterpartyParentBranchId;
+            }
+            set
+            {
+                this.OnCounterpartyParentBranchIdChanging(value);
+                this._CounterpartyParentBranchId = value;
+                this.OnCounterpartyParentBranchIdChanged();
+                this.OnPropertyChanged("CounterpartyParentBranchId");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private string _CounterpartyParentBranchId;
+        partial void OnCounterpartyParentBranchIdChanging(string value);
+        partial void OnCounterpartyParentBranchIdChanged();
+        /// <summary>
+        /// There are no comments for Property Counterparty in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Counterparty")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto Counterparty
+        {
+            get
+            {
+                return this._Counterparty;
+            }
+            set
+            {
+                this.OnCounterpartyChanging(value);
+                this._Counterparty = value;
+                this.OnCounterpartyChanged();
+                this.OnPropertyChanged("Counterparty");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto _Counterparty;
+        partial void OnCounterpartyChanging(global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto value);
+        partial void OnCounterpartyChanged();
+        /// <summary>
+        /// There are no comments for Property Box in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Box")]
+        public virtual global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto Box
+        {
+            get
+            {
+                return this._Box;
+            }
+            set
+            {
+                this.OnBoxChanging(value);
+                this._Box = value;
+                this.OnBoxChanged();
+                this.OnPropertyChanged("Box");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto _Box;
+        partial void OnBoxChanging(global::Sungero.IntegrationService.Models.Generated.ExchangeCore.IBusinessUnitBoxDto value);
+        partial void OnBoxChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyKindDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto to its derived type global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDtoSingle CastToICompanyBaseDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto as global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto as global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto to its derived type global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle CastToIBankDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto to its derived type global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle CastToIBankDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Parties.IBankDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.IBankDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto to its derived type global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle CastToICompanyDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyBaseDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto to its derived type global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle CastToICompanyDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICompanyDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto as global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto as global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Cast an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto to its derived type global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto
+        /// </summary>
+        /// <param name="_source">source entity</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle CastToIPersonDto(this global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyDto> _source)
+        {
+            global::Microsoft.OData.Client.DataServiceQuerySingle<global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto> query = _source.CastTo<global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDto>();
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.IPersonDtoSingle(_source.Context, query.GetPath(null));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto as global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDto> _source,
+            long id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Models.Generated.Parties.ICounterpartyExchangeBoxesDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.PowerOfAttorneyCore
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.SmartProcessing
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Models.Generated.Content.Interfaces
 {
 }
 namespace Sungero.IntegrationService.Controllers.Generated
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService.Generator
 {
+    /// <summary>
+    /// There are no comments for IBinaryObjectDtoSingle in the schema.
+    /// </summary>
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBinaryObjectDtoSingle")]
+    public partial class IBinaryObjectDtoSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<IBinaryObjectDto>
+    {
+        /// <summary>
+        /// Initialize a new IBinaryObjectDtoSingle object.
+        /// </summary>
+        public IBinaryObjectDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new IBinaryObjectDtoSingle object.
+        /// </summary>
+        public IBinaryObjectDtoSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new IBinaryObjectDtoSingle object.
+        /// </summary>
+        public IBinaryObjectDtoSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<IBinaryObjectDto> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for IBinaryObjectDto in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Id")]
+    [global::Microsoft.OData.Client.HasStream()]
+    [global::Microsoft.OData.Client.OriginalNameAttribute("IBinaryObjectDto")]
+    public partial class IBinaryObjectDto : global::Microsoft.OData.Client.BaseEntityType, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new IBinaryObjectDto object.
+        /// </summary>
+        /// <param name="ID">Initial value of Id.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public static IBinaryObjectDto CreateIBinaryObjectDto(int ID)
+        {
+            IBinaryObjectDto iBinaryObjectDto = new IBinaryObjectDto();
+            iBinaryObjectDto.Id = ID;
+            return iBinaryObjectDto;
+        }
+        /// <summary>
+        /// There are no comments for Property Id in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Id")]
+        [global::System.ComponentModel.DataAnnotations.RequiredAttribute(ErrorMessage = "Id is required.")]
+        public virtual int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private int _Id;
+        partial void OnIdChanging(int value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// There are no comments for Property Value in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Value")]
+        public virtual byte[] Value
+        {
+            get
+            {
+                return this._Value;
+            }
+            set
+            {
+                this.OnValueChanging(value);
+                this._Value = value;
+                this.OnValueChanged();
+                this.OnPropertyChanged("Value");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        private byte[] _Value;
+        partial void OnValueChanging(byte[] value);
+        partial void OnValueChanged();
+        /// <summary>
+        /// This event is raised when the value of the property is changed
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        /// <summary>
+        /// The value of the property is changed
+        /// </summary>
+        /// <param name="property">property name</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Generator.IBinaryObjectDto as global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="_keys">dictionary with the names and values of keys</param>
+        public static global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Generator.IBinaryObjectDto> _source, global::System.Collections.Generic.IDictionary<string, object> _keys)
+        {
+            return new global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::Sungero.IntegrationService.Generator.IBinaryObjectDto as global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="id">The value of id</param>
+        public static global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Generator.IBinaryObjectDto> _source,
+            int id)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> _keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Id", id }
+            };
+            return new global::Sungero.IntegrationService.Generator.IBinaryObjectDtoSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, _keys)));
+        }
+    }
 }
 namespace SmartProcessing
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Shell
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace RecordManagement
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Projects
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Parties
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Exchange
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace ExchangeCore
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Docflow
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Company
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Content
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace CoreEntities
 {
+    /// <summary>
+    /// Class containing all extension methods
+    /// </summary>
+    public static class ExtensionMethods
+    {
+    }
 }
 namespace Sungero.IntegrationService
 {
@@ -753,24 +10916,6 @@ namespace Sungero.IntegrationService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto> _ISubstitutions;
         /// <summary>
-        /// There are no comments for IEmployeeMutationsModuleEmployeeMutationKinds in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        [global::Microsoft.OData.Client.OriginalNameAttribute("IEmployeeMutationsModuleEmployeeMutationKinds")]
-        public virtual global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto> IEmployeeMutationsModuleEmployeeMutationKinds
-        {
-            get
-            {
-                if ((this._IEmployeeMutationsModuleEmployeeMutationKinds == null))
-                {
-                    this._IEmployeeMutationsModuleEmployeeMutationKinds = base.CreateQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto>("IEmployeeMutationsModuleEmployeeMutationKinds");
-                }
-                return this._IEmployeeMutationsModuleEmployeeMutationKinds;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        private global::Microsoft.OData.Client.DataServiceQuery<global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto> _IEmployeeMutationsModuleEmployeeMutationKinds;
-        /// <summary>
         /// There are no comments for IEmployeeMutationsModuleEmployeeMutationsLogs in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
@@ -1219,14 +11364,6 @@ namespace Sungero.IntegrationService
         public virtual void AddToISubstitutions(global::Sungero.IntegrationService.Models.Generated.CoreEntities.ISubstitutionDto iSubstitutionDto)
         {
             base.AddObject("ISubstitutions", iSubstitutionDto);
-        }
-        /// <summary>
-        /// There are no comments for IEmployeeMutationsModuleEmployeeMutationKinds in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "#VersionNumber#")]
-        public virtual void AddToIEmployeeMutationsModuleEmployeeMutationKinds(global::Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule.IEmployeeMutationKindDto iEmployeeMutationKindDto)
-        {
-            base.AddObject("IEmployeeMutationsModuleEmployeeMutationKinds", iEmployeeMutationKindDto);
         }
         /// <summary>
         /// There are no comments for IEmployeeMutationsModuleEmployeeMutationsLogs in the schema.
