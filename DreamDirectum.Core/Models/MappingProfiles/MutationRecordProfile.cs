@@ -18,11 +18,7 @@ namespace DreamDirectum.Core.Models.MappingProfiles
                     DepartmentName = src.Employee.Department != null ? src.Employee.Department.Name : null,
                     JobTitle = src.Employee.JobTitle != null ? src.Employee.JobTitle.Name : null
                 }))
-                .ForMember(dest => dest.Mutation, opt => opt.MapFrom(src => new MutationDto
-                {
-                    Id = src.Mutation.Id,
-                    Name = src.Mutation.Name
-                }))
+                .ForMember(dest => dest.Mutation, opt => opt.MapFrom(src => src.Mutation))
                 .ForMember(dest => dest.AppliedDate, opt => opt.MapFrom(src => src.AppliedDate.Value.DateTime))
                 .ForMember(dest => dest.Note, opt => opt.MapFrom(src => src.Note));
         }

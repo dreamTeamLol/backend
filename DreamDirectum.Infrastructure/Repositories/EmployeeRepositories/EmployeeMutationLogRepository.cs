@@ -1,4 +1,5 @@
 ﻿using DreamDirectum.Core.Interfaces;
+using Microsoft.OData.Client;
 using Sungero.IntegrationService;
 using Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule;
 
@@ -24,8 +25,7 @@ namespace DreamDirectum.Infrastructure.Repositories.EmployeeRepositories
                 result = result.AddQueryOption(option.key, option.value);
             }
 
-            result = result.Expand("Employee($expand=Department,Person,JobTitle)")
-                .Expand("Mutation");
+            result = result.Expand("Employee($expand=Department,Person,JobTitle)");
             return Task.FromResult(result.AsEnumerable());
         }
 
@@ -36,7 +36,6 @@ namespace DreamDirectum.Infrastructure.Repositories.EmployeeRepositories
                 .AddQueryOption("$top", limit)
                 .AddQueryOption("$skip", offset)
                 .Expand("Employee($expand=Department,Person,JobTitle)")
-                .Expand("Mutation")
                 .AsEnumerable());
         }
 
@@ -47,7 +46,6 @@ namespace DreamDirectum.Infrastructure.Repositories.EmployeeRepositories
                 (container
                 .IEmployeeMutationsModuleEmployeeMutationsLogs
                 .Expand("Employee($expand=Department,Person,JobTitle)")
-                .Expand("Mutation")
                 .Where(e => e.Id == id)
                 .SingleOrDefault());
         }
@@ -62,8 +60,7 @@ namespace DreamDirectum.Infrastructure.Repositories.EmployeeRepositories
                 result = result.AddQueryOption(option.key, option.value);
             }
 
-            result = result.Expand("Employee($expand=Department,Person,JobTitle)")
-                .Expand("Mutation");
+            result = result.Expand("Employee($expand=Department,Person,JobTitle)");
 
             return Task.FromResult(result.Where(e => e.Id == id).SingleOrDefault());
         }
