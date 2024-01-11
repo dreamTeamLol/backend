@@ -108,7 +108,7 @@
     "UseDataServiceCollection": true,
     "MakeTypesInternal": false,
     "OpenGeneratedFilesInIDE": false,
-    "GenerateMultipleFiles": true,
+    "GenerateMultipleFiles": false,
     "CustomHttpHeaders": null,
     "IncludeWebProxy": false,
     "WebProxyHost": null,
