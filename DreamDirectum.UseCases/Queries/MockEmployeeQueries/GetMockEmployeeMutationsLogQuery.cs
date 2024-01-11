@@ -16,17 +16,17 @@ namespace DreamDirectum.UseCases.Queries.MockEmployeeQueries
             new MutationRecordDto
             {
                 Employee = new EmployeeDto { FullName = "Иванов Сидор Петрович", JobTitle = "Главный специалист отдела экспертизы", Phone = "243" },
-                Mutation = new MutationDto {  Id = 1, Name = "Прием на работу" }, AppliedDate = new DateTime(2023, 7, 29),
+                Mutation = "Прием на работу", AppliedDate = new DateTime(2023, 7, 29),
             },
             new MutationRecordDto
             {
                 Employee = new EmployeeDto { FullName = "Сидорова Светлана Николаевна", JobTitle = "Главный специалист отдела кадров", Phone = "243" },
-                Mutation = new MutationDto {  Id = 2, Name = "Изменение данных" }, AppliedDate = new DateTime(2023, 7, 29),
+                Mutation = "Изменение данных", AppliedDate = new DateTime(2023, 7, 29),
             },
             new MutationRecordDto
             {
                 Employee = new EmployeeDto { FullName = "Петров Олег Сергеевич", JobTitle = "Ведущий специалист АХО", Phone = "243" },
-                Mutation = new MutationDto {  Id = 3, Name = "Увольнение" }, AppliedDate = new DateTime(2023, 8, 3),
+                Mutation = "Увольнение", AppliedDate = new DateTime(2023, 8, 3),
             },
         };
 
