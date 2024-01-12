@@ -1,5 +1,6 @@
 
 using AutoMapper;
+using DreamDirectum.Core.Factories;
 using DreamDirectum.Core.Interfaces;
 using DreamDirectum.Core.Models.Configuration;
 using DreamDirectum.Core.Models.MappingProfiles;
@@ -53,6 +54,7 @@ namespace DreamDirectum.Web
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<MediatrPing>());
 
             builder.Services.AddScoped<IUserAuthTokenService, UserAuthTokenService>();
+            builder.Services.AddScoped<ITokenOptionsFactory, TokenOptionsFactory>();
 
             builder.Services.AddScoped<IReadOnlyPaginalRepository<IEmployeeDto, long>, EmployeeRepository>();
             builder.Services.AddScoped<IReadOnlyRepository<IEmployeeDto, long>, EmployeeRepository>();
