@@ -1,5 +1,5 @@
-
 using AutoMapper;
+using DreamDirectum.Core.Factories;
 using DreamDirectum.Core.Interfaces;
 using DreamDirectum.Core.Models.Configuration;
 using DreamDirectum.Core.Models.MappingProfiles;
@@ -8,6 +8,7 @@ using DreamDirectum.Infrastructure.Repositories.EmployeeRepositories;
 using DreamDirectum.Infrastructure.Repositories.MeetingRepositories;
 using DreamDirectum.Infrastructure.Repositories.SubstitutionRepositories;
 using DreamDirectum.UseCases;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Sungero.IntegrationService;
 using Sungero.IntegrationService.Models.Generated.CoreEntities;
 using Sungero.IntegrationService.Models.Generated.EmployeeMutationsModule;
@@ -39,7 +40,39 @@ namespace DreamDirectum.Web
                                       .AllowAnyHeader()
                                       .AllowAnyHeader();
                                   });
+
+                options.AddPolicy(name: "AllowDomainOnly",
+                                  builder =>
+                                  {
+                                      builder.WithOrigins("https://directum.snedson.com/")
+                                      .SetIsOriginAllowed(a => true)
+                                      .AllowCredentials()
+                                      .AllowAnyMethod()
+                                      .AllowAnyHeader()
+                                      .WithExposedHeaders("Access-Control-Allow-Credentials");
+                                  });
             });
+
+            builder.Services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+                .AddJwtBearer(options =>
+                {
+                    options.RequireHttpsMetadata = false;
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnMessageReceived = context =>
+                        {
+                            if (context.Request.Cookies.TryGetValue("directum-token", out string accessToken))
+                            {
+                                context.Token = accessToken;
+                            }
+                            return Task.CompletedTask;
+                        }
+                    };
+                });
 
 
             builder.Services.AddSingleton(provider => new MapperConfiguration(cfg =>
@@ -53,6 +86,7 @@ namespace DreamDirectum.Web
             builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<MediatrPing>());
 
             builder.Services.AddScoped<IUserAuthTokenService, UserAuthTokenService>();
+            builder.Services.AddScoped<ITokenOptionsFactory, TokenOptionsFactory>();
 
             builder.Services.AddScoped<IReadOnlyPaginalRepository<IEmployeeDto, long>, EmployeeRepository>();
             builder.Services.AddScoped<IReadOnlyRepository<IEmployeeDto, long>, EmployeeRepository>();
