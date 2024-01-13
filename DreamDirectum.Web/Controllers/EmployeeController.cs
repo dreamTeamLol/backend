@@ -24,5 +24,15 @@ namespace DreamDirectum.Web.Controllers
                 DaysAfter = dateOffsetParameters.BirthdayRangeRightBorder,
             }));
         }
+
+        [HttpGet("{id:long}")]
+        public async Task<IActionResult> GetById([FromRoute] long id)
+        {
+            await SetAuthTokenToService();
+            return Ok(await mediator.Send(new GetSingleEmployeeQuery
+            {
+                Id = id
+            }));
+        }
     }
 }
