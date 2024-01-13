@@ -44,19 +44,19 @@ namespace DreamDirectum.Infrastructure.Repositories.EmployeeRepositories
             return Task.FromResult(result.AsEnumerable());
         }
 
-        public Task<IEmployeeDto?> GetByIdAsync(string authToken, long id, CancellationToken cancellationToken = default)
+        public Task<IEmployeeDto> GetByIdAsync(string authToken, long id, CancellationToken cancellationToken = default)
         {
             SetAuthorizationHeader(authToken);
             return Task.FromResult
                 (container.IEmployees
+                .ByKey(id)
                 .Expand("JobTitle")
                 .Expand("Department")
                 .Expand("Person")
-                .Where(e => e.Id == id)
-                .SingleOrDefault());
+                .GetValue());
         }
 
-        public Task<IEmployeeDto?> GetByIdWithSpecifiedOptionsAsync(string authToken, long id, CancellationToken cancellationToken = default, params (string key, string value)[] options)
+        public Task<IEmployeeDto> GetByIdWithSpecifiedOptionsAsync(string authToken, long id, CancellationToken cancellationToken = default, params (string key, string value)[] options)
         {
             SetAuthorizationHeader(authToken);
             var result = container.IEmployees;
@@ -70,7 +70,7 @@ namespace DreamDirectum.Infrastructure.Repositories.EmployeeRepositories
                 .Expand("Department")
                 .Expand("Person");
 
-            return Task.FromResult(result.Where(e => e.Id == id).SingleOrDefault());
+            return Task.FromResult(result.ByKey(id).GetValue());
         }
 
         public Task<IEnumerable<IEmployeeDto>> GetAllAsync(string authToken, CancellationToken cancellationToken = default)

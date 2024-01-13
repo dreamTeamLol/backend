@@ -24,5 +24,32 @@ namespace DreamDirectum.Web.Controllers
                 DaysAfter = dateOffsetParameters.BirthdayRangeRightBorder,
             }));
         }
+
+        [HttpGet("{id:long}")]
+        public async Task<IActionResult> GetById([FromRoute] long id)
+        {
+            await SetAuthTokenToService();
+            return Ok(await mediator.Send(new GetSingleEmployeeQuery
+            {
+                Id = id
+            }));
+        }
+
+        [HttpGet("{id:long}/avatar")]
+        public async Task<IActionResult> GetAvatarById([FromRoute] long id)
+        {
+            await SetAuthTokenToService();
+            var result = await mediator.Send(new GetEmployeeAvatarQuery
+            {
+                Id = id
+            });
+
+            if (result == null)
+            {
+                return NotFound(); 
+            }
+
+            return File(result, "image/png");
+        }
     }
 }
