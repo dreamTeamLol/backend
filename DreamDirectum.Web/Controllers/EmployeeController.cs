@@ -34,5 +34,22 @@ namespace DreamDirectum.Web.Controllers
                 Id = id
             }));
         }
+
+        [HttpGet("{id:long}/avatar")]
+        public async Task<IActionResult> GetAvatarById([FromRoute] long id)
+        {
+            await SetAuthTokenToService();
+            var result = await mediator.Send(new GetEmployeeAvatarQuery
+            {
+                Id = id
+            });
+
+            if (result == null)
+            {
+                return NotFound(); 
+            }
+
+            return File(result, "image/png");
+        }
     }
 }
